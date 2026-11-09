@@ -1,0 +1,672 @@
+{
+  "generated_utc": "2026-11-09T23:31:12.317665+00:00",
+  "scope": "Twelve completed TP8 seed-0 native conditions",
+  "hardware_alignment": {
+    "model_id": "llama-2-70b",
+    "model_dtype": "fp16",
+    "kv_dtype": "fp16",
+    "model_parameters": 68975329280,
+    "layers": 80,
+    "hidden_size": 8192,
+    "attention_heads": 64,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "gpu_id": "h100_sxm",
+    "splitwise_hardware": "h100-80gb",
+    "gpu_memory_bytes": 85899345920,
+    "runtime_reserved_bytes": 4169138176,
+    "gpus_per_instance": 8,
+    "tensor_parallel": 8,
+    "pipeline_parallel": 1,
+    "prefill_instances": 4,
+    "decode_instances": 4,
+    "block_tokens": 16,
+    "splitwise_profile": "splitwise-sim/data/perf_model.csv",
+    "splitwise_model_id": "llama2-70b",
+    "weights_bytes": 137950658560,
+    "weights_bytes_per_gpu": 17243832320,
+    "kv_bytes_per_token": 327680,
+    "kv_bytes_per_token_per_gpu": 40960,
+    "kv_blocks": 98398,
+    "kv_capacity_bytes": 515888906240,
+    "total_gpus": 64,
+    "source_sha256": "f59275128f851dc9951436dd310e86aa170e34e78d0763de4b75ba44d453d296",
+    "scope": "Model, physical GPUs and raw KV capacity; native admission, store and scheduling policies remain simulator-specific"
+  },
+  "run_root": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01",
+  "plan_sha256": "a44ed2e19d728a71cf8487bb3ea5ec22174c6121cd8582855fd2b9087fa7882e",
+  "generator_sha256": "e2ac0393ea21962688ecd022cc5256ceebb30654d29751a7ac69503a5559f1ee",
+  "tpot_population": "All completed source requests; single-output requests contribute zero; arithmetic mean of per-request means",
+  "rows": [
+    {
+      "backend": "splitwise",
+      "trace": "mooncake",
+      "method": "Serial",
+      "seed": 0,
+      "requests": 12031,
+      "output_tokens": 4122048,
+      "single_output_requests": 72,
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "observation_start_s": 0,
+      "observation_end_s": 6368.868731094895,
+      "metrics": {
+        "mean_ttft_s": 300.7936297218724,
+        "median_ttft_s": 121.44303902316778,
+        "p95_ttft_s": 1030.0133075937242,
+        "mean_lifecycle_s": 345.7288813702515,
+        "mean_tpot_ms": 834.9282763466078,
+        "output_tokens_per_s": 647.2182382837971
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 12031,
+          "mean": 300.7936297218724,
+          "median": 121.44303902316778,
+          "p95_nearest_rank": 1030.0133075937242,
+          "max": 2865.955860942626
+        },
+        "lifecycle_s": {
+          "count": 12031,
+          "mean": 345.7288813702515,
+          "median": 174.98112077868586,
+          "p95_nearest_rank": 1076.4677911062931,
+          "max": 2928.2546963521327
+        },
+        "tpot_s": {
+          "count": 12031,
+          "mean": 0.8349282763466078,
+          "median": 0.1218914170077745,
+          "p95_nearest_rank": 2.974130164425214,
+          "max": 82.98054343989634
+        }
+      },
+      "tpot_source": {
+        "path": "native-nodes.jsonl.gz",
+        "sha256": "2185a9e90c92a1cb4a29a4ffdcab639f3229536115b7a2b2a516eba6c671db32",
+        "definition": "(last emitting event - first emitting event)/(outputs - 1); singleton 0"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/splitwise/mooncake/Serial/seed-0",
+      "requests_sha256": "bc7fbb1f39f8c3deb765f19cd7c0f2275138c0dcf09a87e13290a0b2c4f561f6",
+      "condition_sha256": "e6e892a66671fca184eac6b40f9ae0fd1520a796ec2a444aca1c4a21332aa2ce",
+      "receipt_sha256": "60f566d1998c1980eeaa4907a771bdaf432086a5b32b469f55531de7206f01d7"
+    },
+    {
+      "backend": "splitwise",
+      "trace": "mooncake",
+      "method": "PPD",
+      "seed": 0,
+      "requests": 12031,
+      "output_tokens": 4122048,
+      "single_output_requests": 72,
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "observation_start_s": 0,
+      "observation_end_s": 6368.830658846891,
+      "metrics": {
+        "mean_ttft_s": 303.56375011294097,
+        "median_ttft_s": 120.17506329142043,
+        "p95_ttft_s": 1115.3158773260998,
+        "mean_lifecycle_s": 349.8955194311494,
+        "mean_tpot_ms": 860.1665808359518,
+        "output_tokens_per_s": 647.2221072912492
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 12031,
+          "mean": 303.56375011294097,
+          "median": 120.17506329142043,
+          "p95_nearest_rank": 1115.3158773260998,
+          "max": 3399.1204047002448
+        },
+        "lifecycle_s": {
+          "count": 12031,
+          "mean": 349.8955194311494,
+          "median": 179.1600532246839,
+          "p95_nearest_rank": 1152.0432240933983,
+          "max": 3410.8303163769315
+        },
+        "tpot_s": {
+          "count": 12031,
+          "mean": 0.8601665808359518,
+          "median": 0.12788660087359194,
+          "p95_nearest_rank": 2.9754878458179443,
+          "max": 83.68833781392777
+        }
+      },
+      "tpot_source": {
+        "path": "native-nodes.jsonl.gz",
+        "sha256": "eb7174089119acd4c0b7556bd3937a4806172312878674bd47d814b8e11ab317",
+        "definition": "(last emitting event - first emitting event)/(outputs - 1); singleton 0"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/splitwise/mooncake/PPD/seed-0",
+      "requests_sha256": "901d800e5082e536fc2c3f302b5c08005358d24f8fb4a0f8d0df5b90b89ae121",
+      "condition_sha256": "f64fb8107f66c59755f1257c392432a8b76fac4c5d8a6c9d4c01d0e0299230d9",
+      "receipt_sha256": "454b06cef3357b7c0c70896db1bc8fcceeeac71bcbf6073ce98d9c6a0387814b"
+    },
+    {
+      "backend": "splitwise",
+      "trace": "mooncake",
+      "method": "MigrationTax",
+      "seed": 0,
+      "requests": 12031,
+      "output_tokens": 4122048,
+      "single_output_requests": 72,
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "observation_start_s": 0,
+      "observation_end_s": 6368.830658846891,
+      "metrics": {
+        "mean_ttft_s": 390.2432655797429,
+        "median_ttft_s": 132.54674741871395,
+        "p95_ttft_s": 1654.505014913358,
+        "mean_lifecycle_s": 441.0962514444094,
+        "mean_tpot_ms": 989.2421394625443,
+        "output_tokens_per_s": 647.2221072912492
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 12031,
+          "mean": 390.2432655797429,
+          "median": 132.54674741871395,
+          "p95_nearest_rank": 1654.505014913358,
+          "max": 3799.395325514046
+        },
+        "lifecycle_s": {
+          "count": 12031,
+          "mean": 441.0962514444094,
+          "median": 193.2970110761296,
+          "p95_nearest_rank": 1694.2340705701772,
+          "max": 3810.6876989068824
+        },
+        "tpot_s": {
+          "count": 12031,
+          "mean": 0.9892421394625442,
+          "median": 0.14908776015097278,
+          "p95_nearest_rank": 3.5743807399567484,
+          "max": 88.51675006971118
+        }
+      },
+      "tpot_source": {
+        "path": "native-nodes.jsonl.gz",
+        "sha256": "f85a53f8e1f05efc6df2c32aa8abe20d266408ff3335be3b3392d37fccf7ab4c",
+        "definition": "(last emitting event - first emitting event)/(outputs - 1); singleton 0"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/splitwise/mooncake/MigrationTax/seed-0",
+      "requests_sha256": "7046c3d761f7ef8f1a588c47d8ec86e68ba178bcd0bc0aa2034a54f7460a3101",
+      "condition_sha256": "5c3204b35220cd790a63378546fd4cca34a5f3d4dd7024064270392fa1a0327f",
+      "receipt_sha256": "d5e082af6bd1aa0f4def103d604bf5ad1e6f02f2798de03338fbdbdbd46aad99"
+    },
+    {
+      "backend": "splitwise",
+      "trace": "servegen",
+      "method": "Serial",
+      "seed": 0,
+      "requests": 39698,
+      "output_tokens": 42344145,
+      "single_output_requests": 0,
+      "input_sha256": "aba4ee164f794e19252a1acbf3410662dca4b7e233ee2113a14490786c500b22",
+      "observation_start_s": 0,
+      "observation_end_s": 137889.01556518395,
+      "metrics": {
+        "mean_ttft_s": 50.74761285296668,
+        "median_ttft_s": 1.267331884272835,
+        "p95_ttft_s": 172.13729958330623,
+        "mean_lifecycle_s": 102.48173349132612,
+        "mean_tpot_ms": 112.62782415930458,
+        "output_tokens_per_s": 307.0886018472063
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 39698,
+          "mean": 50.74761285296668,
+          "median": 1.267331884272835,
+          "p95_nearest_rank": 172.13729958330623,
+          "max": 9451.28742659356
+        },
+        "lifecycle_s": {
+          "count": 39698,
+          "mean": 102.48173349132612,
+          "median": 47.958223998895846,
+          "p95_nearest_rank": 276.4199841979116,
+          "max": 9488.029445796943
+        },
+        "tpot_s": {
+          "count": 39698,
+          "mean": 0.11262782415930458,
+          "median": 0.031481774625780376,
+          "p95_nearest_rank": 0.2402576117146941,
+          "max": 56.88426247117908
+        }
+      },
+      "tpot_source": {
+        "path": "native-nodes.jsonl.gz",
+        "sha256": "3eeb813d10d981fd5f8a94aad970b509adb14cfcd076c8a594e1ad329a10b726",
+        "definition": "(last emitting event - first emitting event)/(outputs - 1); singleton 0"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/splitwise/servegen/Serial/seed-0",
+      "requests_sha256": "b2beb7dc19b71f10c3925aa5282d83e3d98ded2db5368dfe3495845ab3a665bc",
+      "condition_sha256": "b39311b098064347ffd9061b0af26445c4cfd52f167fdcb7215579b320818479",
+      "receipt_sha256": "72e47d21404ae5b595c3d85e0c70b1665f3ce569546e4408922c6da4f225ddde"
+    },
+    {
+      "backend": "splitwise",
+      "trace": "servegen",
+      "method": "PPD",
+      "seed": 0,
+      "requests": 39698,
+      "output_tokens": 42344145,
+      "single_output_requests": 0,
+      "input_sha256": "aba4ee164f794e19252a1acbf3410662dca4b7e233ee2113a14490786c500b22",
+      "observation_start_s": 0,
+      "observation_end_s": 137888.96721689115,
+      "metrics": {
+        "mean_ttft_s": 37.19461135474902,
+        "median_ttft_s": 1.7699114829520113,
+        "p95_ttft_s": 146.34435093005777,
+        "mean_lifecycle_s": 89.27457982624799,
+        "mean_tpot_ms": 108.00008390081493,
+        "output_tokens_per_s": 307.0887095223157
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 39698,
+          "mean": 37.19461135474902,
+          "median": 1.7699114829520113,
+          "p95_nearest_rank": 146.34435093005777,
+          "max": 5298.800021450508
+        },
+        "lifecycle_s": {
+          "count": 39698,
+          "mean": 89.27457982624799,
+          "median": 50.90370674563201,
+          "p95_nearest_rank": 251.85215406018142,
+          "max": 5368.3482200067265
+        },
+        "tpot_s": {
+          "count": 39698,
+          "mean": 0.10800008390081493,
+          "median": 0.03321307316483393,
+          "p95_nearest_rank": 0.22428785167067083,
+          "max": 58.8152510040527
+        }
+      },
+      "tpot_source": {
+        "path": "native-nodes.jsonl.gz",
+        "sha256": "327a020d26074bb4acef0671049e733ea078915261a239ac5371683d24c19b6b",
+        "definition": "(last emitting event - first emitting event)/(outputs - 1); singleton 0"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/splitwise/servegen/PPD/seed-0",
+      "requests_sha256": "352ae97577971604bb5e1dac4daf800b97e186ce436008debab019a1d4981679",
+      "condition_sha256": "85dd9dd80b11c0ff9dfbc6e209c8b487d01295c5c8b08d4d82194f61b1084a67",
+      "receipt_sha256": "42c7da68a47fdc0d1bbad596dccb3e31531b4ee92da1376dab78b918611adcb9"
+    },
+    {
+      "backend": "splitwise",
+      "trace": "servegen",
+      "method": "MigrationTax",
+      "seed": 0,
+      "requests": 39698,
+      "output_tokens": 42344145,
+      "single_output_requests": 0,
+      "input_sha256": "aba4ee164f794e19252a1acbf3410662dca4b7e233ee2113a14490786c500b22",
+      "observation_start_s": 0,
+      "observation_end_s": 137888.96721689115,
+      "metrics": {
+        "mean_ttft_s": 92.1040166474998,
+        "median_ttft_s": 0.972755959348433,
+        "p95_ttft_s": 240.65718563181144,
+        "mean_lifecycle_s": 149.5391032954637,
+        "mean_tpot_ms": 133.55693408477376,
+        "output_tokens_per_s": 307.0887095223157
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 39698,
+          "mean": 92.1040166474998,
+          "median": 0.972755959348433,
+          "p95_nearest_rank": 240.65718563181144,
+          "max": 14307.888531369314
+        },
+        "lifecycle_s": {
+          "count": 39698,
+          "mean": 149.5391032954637,
+          "median": 53.17217212507603,
+          "p95_nearest_rank": 360.5172713600623,
+          "max": 14369.953331997793
+        },
+        "tpot_s": {
+          "count": 39698,
+          "mean": 0.13355693408477376,
+          "median": 0.03312848981239862,
+          "p95_nearest_rank": 0.2623943955856416,
+          "max": 47.96046088817699
+        }
+      },
+      "tpot_source": {
+        "path": "native-nodes.jsonl.gz",
+        "sha256": "021ebe253d50c797584b918801779ea27ab314a8d15c11e08302b28920ffd297",
+        "definition": "(last emitting event - first emitting event)/(outputs - 1); singleton 0"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/splitwise/servegen/MigrationTax/seed-0",
+      "requests_sha256": "b30fd5250cd55f278949943b3ebb1e6ee21be02d4c0f2b67802d2a3b8f674416",
+      "condition_sha256": "839011195878ec3ec5a27e1b89888abe3d7a298d782e5f08c9de306ce313f1be",
+      "receipt_sha256": "336c6a4684a57aa27bb908df86a5886547f15b13fbdb7203d7edf5d65d215b85"
+    },
+    {
+      "backend": "tokensim",
+      "trace": "mooncake",
+      "method": "Serial",
+      "seed": 0,
+      "requests": 12031,
+      "output_tokens": 4122048,
+      "single_output_requests": 72,
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "observation_start_s": 0,
+      "observation_end_s": 6344.12710915768,
+      "metrics": {
+        "mean_ttft_s": 1.5076843778343425,
+        "median_ttft_s": 0.8303314447282446,
+        "p95_ttft_s": 5.379895403361388,
+        "mean_lifecycle_s": 9.104159020306183,
+        "mean_tpot_ms": 21.65497302578095,
+        "output_tokens_per_s": 649.7423410779187
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 12031,
+          "mean": 1.5076843778343425,
+          "median": 0.8303314447282446,
+          "p95_nearest_rank": 5.379895403361388,
+          "max": 34.90610244060781
+        },
+        "lifecycle_s": {
+          "count": 12031,
+          "mean": 9.104159020306183,
+          "median": 8.941777096635903,
+          "p95_nearest_rank": 18.43517205768717,
+          "max": 59.109788197197986
+        },
+        "tpot_s": {
+          "count": 12031,
+          "mean": 0.02165497302578095,
+          "median": 0.021466582378032565,
+          "p95_nearest_rank": 0.025326935910856746,
+          "max": 0.11898369684642883
+        }
+      },
+      "tpot_source": {
+        "path": "requests.jsonl",
+        "definition": "native_decode_time_sum_s / max(1, generated - 1); singleton 0",
+        "native_result": "native/result_1.907841628092216.json",
+        "native_sha256": "d4910b06611a2173388b6b99b8da5c1d53473ca92b1fafb8eef95ca971053210"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/tokensim/mooncake/Serial/seed-0",
+      "requests_sha256": "181069348c6b4e23bb132c1bcb80397fa04cfc52e45c7798854377b435b3b6c9",
+      "condition_sha256": "9adb5d9f620cba3027112449aed1ca9f9fae742acf76c3551082fd482b55d2d2",
+      "receipt_sha256": "87f516dee14dcb5391e7160582ee643c0cdc17c7cb1b56e776509bff832393a7"
+    },
+    {
+      "backend": "tokensim",
+      "trace": "mooncake",
+      "method": "PPD",
+      "seed": 0,
+      "requests": 12031,
+      "output_tokens": 4122048,
+      "single_output_requests": 72,
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "observation_start_s": 0,
+      "observation_end_s": 6344.12710915768,
+      "metrics": {
+        "mean_ttft_s": 1.503227876766416,
+        "median_ttft_s": 0.8654922199460771,
+        "p95_ttft_s": 5.217103970592689,
+        "mean_lifecycle_s": 9.111052395141424,
+        "mean_tpot_ms": 21.70241758641814,
+        "output_tokens_per_s": 649.7423410779187
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 12031,
+          "mean": 1.503227876766416,
+          "median": 0.8654922199460771,
+          "p95_nearest_rank": 5.217103970592689,
+          "max": 35.346111253737035
+        },
+        "lifecycle_s": {
+          "count": 12031,
+          "mean": 9.111052395141424,
+          "median": 8.924658496729194,
+          "p95_nearest_rank": 18.36820280299048,
+          "max": 60.19829814098466
+        },
+        "tpot_s": {
+          "count": 12031,
+          "mean": 0.021702417586418138,
+          "median": 0.021490703394124466,
+          "p95_nearest_rank": 0.02552817086345621,
+          "max": 0.09120136786390276
+        }
+      },
+      "tpot_source": {
+        "path": "requests.jsonl",
+        "definition": "native_decode_time_sum_s / max(1, generated - 1); singleton 0",
+        "native_result": "native/result_1.907841628092216.json",
+        "native_sha256": "9e68b6e0873497c72215ba8ff3cb024c7f5813202483a5203eace482f6609d5f"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/tokensim/mooncake/PPD/seed-0",
+      "requests_sha256": "b1a276eb598a1bc4428be998ce69d1ea6ee150d8324b0d72e01d61a0fcdc1174",
+      "condition_sha256": "789a3503564080aade10366f3f00e2bc41843cc3e4a04caebcfa2fce00ca3e76",
+      "receipt_sha256": "f6ea8acecc6ab327d3e7ef2e90642e84348008c173cf157ca74d8ef5b23af5d9"
+    },
+    {
+      "backend": "tokensim",
+      "trace": "mooncake",
+      "method": "MigrationTax",
+      "seed": 0,
+      "requests": 12031,
+      "output_tokens": 4122048,
+      "single_output_requests": 72,
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "observation_start_s": 0,
+      "observation_end_s": 6344.120440312744,
+      "metrics": {
+        "mean_ttft_s": 1.0097258064572516,
+        "median_ttft_s": 0.48692734993278464,
+        "p95_ttft_s": 3.783952683719235,
+        "mean_lifecycle_s": 8.405899401150906,
+        "mean_tpot_ms": 21.10642276639056,
+        "output_tokens_per_s": 649.7430240773923
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 12031,
+          "mean": 1.0097258064572516,
+          "median": 0.48692734993278464,
+          "p95_nearest_rank": 3.783952683719235,
+          "max": 29.80270428936319
+        },
+        "lifecycle_s": {
+          "count": 12031,
+          "mean": 8.405899401150906,
+          "median": 8.359336022213938,
+          "p95_nearest_rank": 17.173347259767752,
+          "max": 56.12597560915265
+        },
+        "tpot_s": {
+          "count": 12031,
+          "mean": 0.02110642276639056,
+          "median": 0.020800031090592894,
+          "p95_nearest_rank": 0.024399444784125025,
+          "max": 0.16926702599874943
+        }
+      },
+      "tpot_source": {
+        "path": "requests.jsonl",
+        "definition": "native_decode_time_sum_s / max(1, generated - 1); singleton 0",
+        "native_result": "native/result_1.907841628092216.json",
+        "native_sha256": "42a8e4f04f106371fe8c9014c325ad57f72bf6cf809bee152f15b065e2e23002"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/tokensim/mooncake/MigrationTax/seed-0",
+      "requests_sha256": "36ad2a1ffb6341b0115bd9647b010687270b09568d27505358286ac9a30b7302",
+      "condition_sha256": "e2623de8d8df05ac731cfff40f9d94b2cda7804167d431b8b2690f2280e1815b",
+      "receipt_sha256": "2bb19b4723029732b84157e8b59223ec6a5785c114116b73c772f3f5f60de1b1"
+    },
+    {
+      "backend": "tokensim",
+      "trace": "servegen",
+      "method": "Serial",
+      "seed": 0,
+      "requests": 39698,
+      "output_tokens": 42344145,
+      "single_output_requests": 0,
+      "input_sha256": "aba4ee164f794e19252a1acbf3410662dca4b7e233ee2113a14490786c500b22",
+      "observation_start_s": 0,
+      "observation_end_s": 137870.84896922237,
+      "metrics": {
+        "mean_ttft_s": 1.1663842962295652,
+        "median_ttft_s": 0.24609414709357225,
+        "p95_ttft_s": 5.482492535142228,
+        "mean_lifecycle_s": 22.468279121595113,
+        "mean_tpot_ms": 19.52506852023448,
+        "output_tokens_per_s": 307.129065473824
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 39698,
+          "mean": 1.1663842962295652,
+          "median": 0.24609414709357225,
+          "p95_nearest_rank": 5.482492535142228,
+          "max": 56.09178491467537
+        },
+        "lifecycle_s": {
+          "count": 39698,
+          "mean": 22.468279121595113,
+          "median": 18.374951078959384,
+          "p95_nearest_rank": 57.303450284358405,
+          "max": 223.2717271239817
+        },
+        "tpot_s": {
+          "count": 39698,
+          "mean": 0.01952506852023448,
+          "median": 0.019094968184762338,
+          "p95_nearest_rank": 0.022730947861614885,
+          "max": 0.04343567849126798
+        }
+      },
+      "tpot_source": {
+        "path": "requests.jsonl",
+        "definition": "native_decode_time_sum_s / max(1, generated - 1); singleton 0",
+        "native_result": "native/result_0.2880214823110706.json",
+        "native_sha256": "8257fa8d767f554a6e3978a5367edb55f40a13f72e5e876665afe6c6ebe06852"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/tokensim/servegen/Serial/seed-0",
+      "requests_sha256": "712636cea7c1caed3aaf2bd7703b478c8baf7551cff2c1287b34e74c0af76a1f",
+      "condition_sha256": "447ac7da6ec630f2ec0afd57ebfe382c0fab7772cefa4c4b2218c9267b4219df",
+      "receipt_sha256": "fa93c7a7714196412af176ea141e2c20b48188ba9eb270bbcaed21ab73030429"
+    },
+    {
+      "backend": "tokensim",
+      "trace": "servegen",
+      "method": "PPD",
+      "seed": 0,
+      "requests": 39698,
+      "output_tokens": 42344145,
+      "single_output_requests": 0,
+      "input_sha256": "aba4ee164f794e19252a1acbf3410662dca4b7e233ee2113a14490786c500b22",
+      "observation_start_s": 0,
+      "observation_end_s": 137870.84896922237,
+      "metrics": {
+        "mean_ttft_s": 1.1683831571900443,
+        "median_ttft_s": 0.24705431427037183,
+        "p95_ttft_s": 5.397684951341944,
+        "mean_lifecycle_s": 22.495467451735138,
+        "mean_tpot_ms": 19.54379996054713,
+        "output_tokens_per_s": 307.129065473824
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 39698,
+          "mean": 1.1683831571900443,
+          "median": 0.24705431427037183,
+          "p95_nearest_rank": 5.397684951341944,
+          "max": 55.11241301469272
+        },
+        "lifecycle_s": {
+          "count": 39698,
+          "mean": 22.495467451735138,
+          "median": 18.39132648166742,
+          "p95_nearest_rank": 56.997039585301536,
+          "max": 223.97902780600998
+        },
+        "tpot_s": {
+          "count": 39698,
+          "mean": 0.01954379996054713,
+          "median": 0.01911723098625982,
+          "p95_nearest_rank": 0.022731547306271124,
+          "max": 0.03726102649668005
+        }
+      },
+      "tpot_source": {
+        "path": "requests.jsonl",
+        "definition": "native_decode_time_sum_s / max(1, generated - 1); singleton 0",
+        "native_result": "native/result_0.2880214823110706.json",
+        "native_sha256": "dab3fdf57151024c2237c1505e6ab52aa6dc2ad6dd7b46d54e045e7fe51d602a"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/tokensim/servegen/PPD/seed-0",
+      "requests_sha256": "0acf248e26932d1c46790df1169c4b2a0d3bd6a7aafbb4ec76b1f9db674a350f",
+      "condition_sha256": "d6b1c00bb64fd3f759682594201a930150b085aa6ce7fe1f6ca46d849c811239",
+      "receipt_sha256": "0887bb3551758d08b69ac04ce72381560831a08996a7ec145f7b1ff0abf0de3f"
+    },
+    {
+      "backend": "tokensim",
+      "trace": "servegen",
+      "method": "MigrationTax",
+      "seed": 0,
+      "requests": 39698,
+      "output_tokens": 42344145,
+      "single_output_requests": 0,
+      "input_sha256": "aba4ee164f794e19252a1acbf3410662dca4b7e233ee2113a14490786c500b22",
+      "observation_start_s": 0,
+      "observation_end_s": 137870.8321059806,
+      "metrics": {
+        "mean_ttft_s": 1.4384652281605828,
+        "median_ttft_s": 0.2817237274648505,
+        "p95_ttft_s": 7.292783519515069,
+        "mean_lifecycle_s": 22.673924755179318,
+        "mean_tpot_ms": 19.464508798688456,
+        "output_tokens_per_s": 307.12910303935985
+      },
+      "distributions": {
+        "ttft_s": {
+          "count": 39698,
+          "mean": 1.4384652281605828,
+          "median": 0.2817237274648505,
+          "p95_nearest_rank": 7.292783519515069,
+          "max": 53.65362503036158
+        },
+        "lifecycle_s": {
+          "count": 39698,
+          "mean": 22.673924755179318,
+          "median": 18.60197098743629,
+          "p95_nearest_rank": 57.652314340812154,
+          "max": 212.7529220237193
+        },
+        "tpot_s": {
+          "count": 39698,
+          "mean": 0.019464508798688458,
+          "median": 0.019044519882704572,
+          "p95_nearest_rank": 0.02256997290155419,
+          "max": 0.03502100674306045
+        }
+      },
+      "tpot_source": {
+        "path": "requests.jsonl",
+        "definition": "native_decode_time_sum_s / max(1, generated - 1); singleton 0",
+        "native_result": "native/result_0.2880214823110706.json",
+        "native_sha256": "0770e97208d3731192cdf827c302b2416d5a32944b3e490b9dddab7618de8ed4"
+      },
+      "source_directory": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/native_research/runs/tp8-aligned-s0-shifted-v1-01/tokensim/servegen/MigrationTax/seed-0",
+      "requests_sha256": "aec5202ad14e2747292dc26b3b9c3c1ab6bb7c3a8df44f71c46944623e1f28e9",
+      "condition_sha256": "62a67fd618db1c7dc626bfda7dc412295bbbf0263e0986b978cb59688ccedb20",
+      "receipt_sha256": "5a871da89ec5441627c6ab2d80de2b02e71e518d0ce83147e3423d709146c723"
+    }
+  ]
+}
