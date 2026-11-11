@@ -130,16 +130,40 @@ def legend(figure, y):
                   loc="upper center", bbox_to_anchor=(.5, y), fontsize=12)
 
 
+def zoom_panel(ax, rows, bandwidth):
+    """Magnify the top two percentage points without altering stack values."""
+    ordered = [next(r for r in rows if r["method"] == method) for method in METHODS]
+    bottom = [0.0] * 3
+    for key, _, color in PARTS:
+        values = [r[f"{key}_percent"] for r in ordered]
+        ax.bar(range(3), values, bottom=bottom, width=.62, color=color,
+               edgecolor="white", linewidth=.4)
+        if key == "after_admission":
+            for i, percent in enumerate(values):
+                ax.text(i, bottom[i] + percent / 2, percent_label(percent),
+                        ha="center", va="center", color="white", weight="bold", fontsize=10)
+        bottom = [a + b for a, b in zip(bottom, values)]
+    style_axes(ax)
+    ax.set_ylim(98, 100.05)
+    ax.set_yticks([98, 99, 100], ["98%", "99%", "100%"])
+    ax.set_xticks(range(3), METHODS, fontsize=9)
+    ax.set_title(f"TP1 top-of-stack zoom: 98-100% | {bandwidth} GB/s", fontsize=10, weight="bold")
+
+
 def overall(rows, destination):
     import matplotlib.pyplot as plt
-    figure, axes = plt.subplots(4, 3, figsize=(18, 16), facecolor="white")
-    figure.subplots_adjust(left=.06, right=.985, top=.87, bottom=.11, hspace=.48, wspace=.19)
+    figure, axes = plt.subplots(5, 3, figsize=(18, 18), facecolor="white",
+                                gridspec_kw={"height_ratios": [2.7, 1.2, 2.7, 2.7, 2.7]})
+    figure.subplots_adjust(left=.06, right=.985, top=.87, bottom=.11, hspace=.60, wspace=.19)
     for i, tp in enumerate(TPS):
+        plot_row = 0 if tp == 1 else i + 1
         for j, (link, bandwidth) in enumerate(LINKS):
             group = [r for r in rows if r["tp"] == tp and r["link"] == link]
-            panel(axes[i, j], group, f"TP{tp} ({tp*8} GPUs) | {bandwidth} GB/s")
+            panel(axes[plot_row, j], group, f"TP{tp} ({tp*8} GPUs) | {bandwidth} GB/s")
             if j == 0:
-                axes[i, j].set_ylabel("Share of mean client TTFT")
+                axes[plot_row, j].set_ylabel("Share of mean client TTFT")
+            if tp == 1:
+                zoom_panel(axes[1, j], group, bandwidth)
     figure.suptitle("TokenSim | Mooncake | Client TTFT decomposition | TP1 / TP2 / TP4 / TP8",
                    y=.98, fontsize=21, weight="bold")
     legend(figure, .946)
@@ -147,6 +171,7 @@ def overall(rows, destination):
             y=.905, fontsize=12)
     caption(figure, "Bar = 100% of mean client TTFT; number above bar = mean TTFT in seconds.\n"
             "Labels use 1 decimal; shares >99.5% truncate instead of round. Segments below 5% are not labeled.\n"
+            "TP1 detail row magnifies 98-100% of the same stack; blue labels show the full segment share.\n"
             "After admission includes engine queueing, compute and transfer; reconstructed from saved timestamps and waits.\n"
             "Bold green total: lowest mean TTFT within the same TP/link. GPU count and KV capacity vary with TP.",
             y=.045, fontsize=11)
@@ -155,15 +180,19 @@ def overall(rows, destination):
 
 def per_report(rows, destination, tp, repeat=False):
     import matplotlib.pyplot as plt
-    figure = plt.figure(figsize=(18, 11), facecolor="white")
-    grid = figure.add_gridspec(2, 3, height_ratios=(2.8, 2), left=.06, right=.985,
-                              top=.81, bottom=.15, hspace=.23, wspace=.19)
+    magnify = tp == 1
+    figure = plt.figure(figsize=(18, 13 if magnify else 11), facecolor="white")
+    heights = (2.8, 1.2, 2) if magnify else (2.8, 2)
+    grid = figure.add_gridspec(len(heights), 3, height_ratios=heights, left=.06, right=.985,
+                              top=.81, bottom=.15, hspace=.38 if magnify else .23, wspace=.19)
     for j, (link, bandwidth) in enumerate(LINKS):
         ax = figure.add_subplot(grid[0, j])
         ordered = panel(ax, [r for r in rows if r["link"] == link], f"{bandwidth} GB/s | data_{link}")
         if j == 0:
             ax.set_ylabel("Share of mean client TTFT")
-        tab = figure.add_subplot(grid[1, j])
+        if magnify:
+            zoom_panel(figure.add_subplot(grid[1, j]), ordered, bandwidth)
+        tab = figure.add_subplot(grid[2 if magnify else 1, j])
         keys = [f"mean_{k}_s" for k, _, _ in PARTS] + ["mean_ttft_s"] + [f"{k}_percent" for k, _, _ in PARTS]
         labels = ["Parent wait (s)", "Admission wait (s)", "After admission (s)", "Avg client TTFT (s)",
                   "Parent wait (%)", "Admission wait (%)", "After admission (%)"]
@@ -178,6 +207,7 @@ def per_report(rows, destination, tp, repeat=False):
     caption(figure, "TTFT = parent completion wait + KV admission wait + after admission to first client token.\n"
             "Parent completion includes writeback. After admission includes engine queueing, compute and transfer.\n"
             "Shares use mean seconds / mean TTFT. Labels use 1 decimal; values >99.5% truncate instead of round.\n"
+            + ("Detail row magnifies the same stack from 98% to 100%; blue labels show its full segment share.\n" if magnify else "") +
             "All completed requests included; inf reference is in the CSV only. Native analytical compute.",
             y=.06, fontsize=11)
     return save_figure(figure, destination, "ttft-decomposition")
@@ -195,6 +225,7 @@ def explanation(rows, png):
         "client_TTFT = parent_wait + admission_wait + after_admission", "```", "",
         "占比＝每段平均秒數／平均 client TTFT × 100%，也等於各段累計時間／累計 TTFT；不是先逐請求算百分比再平均。", "",
         "柱內占比標籤保留小數點後一位：大於 99.5% 時採截位，其餘正常四捨五入。例如 99.996309% 顯示為 99.9%，75.176950% 顯示為 75.2%。柱高、CSV 與下方六位小數表保留原始計算值；低於 5% 的段落不在柱內標示。", "",
+        "TP1 另加一列 98%～100% 的局部放大圖，使用相同堆疊數值，讓約 0.4%～0.7% 的藍色區段可見。放大圖的藍色標籤仍表示它占完整 TTFT 的比例；主圖維持原本 0%～100% 的比例。", "",
         "分母包含全部 12,031 個完成請求，其中 3,959 筆 returning。初輪亦納入，前輪等待為 0。", "",
         "准入後時間以既有 TTFT 減去兩段等待重建；另外核對原生路由時間戳等於到達＋前輪等待＋准入等待。沒有新增逐 step profiler，也沒有由這張圖拆分引擎內部的計算／傳輸／排隊。", "",
         "這是平均值的組成，不能將三段各自的 P50／P95 相加視為 TTFT P50／P95。占比較高不代表絕對秒數較高；圖上方另標平均 TTFT 秒數。", "",

@@ -177,7 +177,7 @@
     }
   ],
   "percent_label_policy": "one decimal; truncate only values >99.5%, otherwise round; bar heights and CSV retain calculated values",
-  "generator_sha256": "201ca49d4d1a4915a4ec5b61c253b5bf13bf797e83245c18d656398e33d5636e",
+  "generator_sha256": "1b761dd80840242d2b374e11b1797a951a4dabb3f0036d7a1fe3824e9e0f2b72",
   "figures": [
     {
       "file": "ttft-decomposition.png",
@@ -185,7 +185,7 @@
     },
     {
       "file": "ttft-decomposition.svg",
-      "sha256": "b099b87a3fb7d60a9382a2b32b5ce3e9844d6f98f7c23e3737a70f4188b3bc43"
+      "sha256": "29ad0e524f9605f5c8c56a0ce1f07d422c8d93c767ab6610d7032a10aaa2ebcd"
     }
   ]
 }
