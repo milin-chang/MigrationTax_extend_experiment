@@ -8,6 +8,8 @@
 
 Release 收錄本文三批實驗的原始 log、逐請求結果、來源快照與報表。ServeGen 200／8,000 筆各完成 10 組；五階段的 Mooncake 12 組全部完成，另保留 ServeGen 1 組完成與 1 組失敗紀錄，完整 22 組尚未全部完成。其他批次的執行紀錄、probes 與已被取代的設定不納入這次發布。
 
+分支也直接保留這三批的 `native_research/reports/<實驗名稱>/`，可在 GitHub 查看指標表、CSV 與目錄內的圖表。原始 `runs/` 與額外的 Mooncake 圖包仍由 Release 提供。
+
 
 ### 一些資料夾的用意
 | 資料夾 | 用處 |

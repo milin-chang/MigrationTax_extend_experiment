@@ -1,0 +1,196 @@
+{
+  "status": "passed",
+  "conditions": 10,
+  "requests_per_condition": 200,
+  "returning_per_condition": 80,
+  "output_tokens_per_condition": 137909,
+  "paired_csv_rechecks": [
+    {
+      "bandwidth": "bw50",
+      "method": "Serial",
+      "returning": 80,
+      "affected_d_count": 54,
+      "affected_client_count": 54
+    },
+    {
+      "bandwidth": "bw50",
+      "method": "PPD",
+      "returning": 80,
+      "affected_d_count": 54,
+      "affected_client_count": 54
+    },
+    {
+      "bandwidth": "bw50",
+      "method": "MigrationTax",
+      "returning": 80,
+      "affected_d_count": 14,
+      "affected_client_count": 14
+    },
+    {
+      "bandwidth": "bw100",
+      "method": "Serial",
+      "returning": 80,
+      "affected_d_count": 6,
+      "affected_client_count": 6
+    },
+    {
+      "bandwidth": "bw100",
+      "method": "PPD",
+      "returning": 80,
+      "affected_d_count": 5,
+      "affected_client_count": 5
+    },
+    {
+      "bandwidth": "bw100",
+      "method": "MigrationTax",
+      "returning": 80,
+      "affected_d_count": 2,
+      "affected_client_count": 2
+    },
+    {
+      "bandwidth": "bw200",
+      "method": "Serial",
+      "returning": 80,
+      "affected_d_count": 1,
+      "affected_client_count": 1
+    },
+    {
+      "bandwidth": "bw200",
+      "method": "PPD",
+      "returning": 80,
+      "affected_d_count": 1,
+      "affected_client_count": 1
+    },
+    {
+      "bandwidth": "bw200",
+      "method": "MigrationTax",
+      "returning": 80,
+      "affected_d_count": 1,
+      "affected_client_count": 1
+    }
+  ],
+  "all_native_compute_matches_analytical": true,
+  "all_TP_collectives_executed": true,
+  "frozen_plan_guard": "passed",
+  "full_tests": {
+    "passed": 651,
+    "log_sha256": "ea8851d6c8013899ca8af34fe7cdcf956132c001b2568066437a4bccc7e5d30b"
+  },
+  "wall_seconds": 75.957584,
+  "min_job_wall_seconds": 16.824612952000052,
+  "max_job_wall_seconds": 20.230103750999888,
+  "peak_rss_gib": 0.5228614807128906,
+  "report_sha256": "9dbab63b1799ab96489c0a93b177677eddc41641b5f2ea7c9897874bf8af3c8d",
+  "ttft_decomposition": [
+    {
+      "bandwidth": "reference",
+      "method": "Serial",
+      "requests": 200,
+      "mean_ttft_s": 0.04196845043567262,
+      "median_ttft_s": 0.012131399993677405,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.04196845043567262,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw50",
+      "method": "Serial",
+      "requests": 200,
+      "mean_ttft_s": 0.1131813414551473,
+      "median_ttft_s": 0.02218359555030247,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.1131813414551473,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw50",
+      "method": "PPD",
+      "requests": 200,
+      "mean_ttft_s": 0.11287720567115198,
+      "median_ttft_s": 0.022011326057167935,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.11287720567115198,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw50",
+      "method": "MigrationTax",
+      "requests": 200,
+      "mean_ttft_s": 0.08046370106011379,
+      "median_ttft_s": 0.016440220654317272,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.08046370106011379,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw100",
+      "method": "Serial",
+      "requests": 200,
+      "mean_ttft_s": 0.07749582338398844,
+      "median_ttft_s": 0.016951393527079972,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.07749582338398844,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw100",
+      "method": "PPD",
+      "requests": 200,
+      "mean_ttft_s": 0.07733294075473927,
+      "median_ttft_s": 0.016654760972556915,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.07733294075473927,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw100",
+      "method": "MigrationTax",
+      "requests": 200,
+      "mean_ttft_s": 0.06002675797137479,
+      "median_ttft_s": 0.014209595514074636,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.06002675797137479,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw200",
+      "method": "Serial",
+      "requests": 200,
+      "mean_ttft_s": 0.05961128698535888,
+      "median_ttft_s": 0.014355670532225417,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.05961128698535888,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw200",
+      "method": "PPD",
+      "requests": 200,
+      "mean_ttft_s": 0.05951902311295826,
+      "median_ttft_s": 0.014248117421189477,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.05951902311295826,
+      "max_admission_wait_s": 0.0
+    },
+    {
+      "bandwidth": "bw200",
+      "method": "MigrationTax",
+      "requests": 200,
+      "mean_ttft_s": 0.050924922608158237,
+      "median_ttft_s": 0.012992435163312166,
+      "mean_parent_wait_s": 0,
+      "mean_admission_wait_s": 0.0,
+      "mean_after_admission_to_client_token_s": 0.050924922608158237,
+      "max_admission_wait_s": 0.0
+    }
+  ]
+}

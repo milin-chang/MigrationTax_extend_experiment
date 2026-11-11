@@ -3,19 +3,24 @@
   "release_tag": "tokensim-llama7b-tp8-bandwidth-s0-2026-11-11",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 289,
+      "sha256": "94fb78442c40aee631459741866d2e97508619b8ccafba6d7712666e714de642"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 1228,
-      "sha256": "c84136c0cccd43e47b3fb30ced143e285f19087e03772130a3bd964ed0bb39e5"
+      "bytes": 1408,
+      "sha256": "3226ddaf890264d26b6ffca62d2bd44c5b3b8a93952c57a0845c542c7940e521"
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 5477,
-      "sha256": "f140530b8a9b7c35a9c120e723f1a99b418cdea26a38c5427212ee7215d6cd0c"
+      "bytes": 5766,
+      "sha256": "ef0b47b4fd27a2e2c6086f584cfa48a54c471e3d76b393f4592271af0b51a8b8"
     },
     {
       "path": "Readme.md",
-      "bytes": 8579,
-      "sha256": "59102e27dc8aeef49df75824ac6bee46519d3029841a0c61bd2c24e5b6d6b09c"
+      "bytes": 8786,
+      "sha256": "f50b582f7dd4ebf379d7e5bb70a272451fc0983aee7958fba3544c0d2a7cc6b1"
     },
     {
       "path": "SOURCE_BASE.json",
@@ -6043,6 +6048,11 @@
       "sha256": "951e93c696cd6fb0cd50a719196176808c261b50ea734a3995ed28b6a712e49f"
     },
     {
+      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution-batches.json",
+      "bytes": 2197,
+      "sha256": "4592a5ecf04f9cc65af3e796b260072d64e92d7dd92e950240a2fc9542332d8d"
+    },
+    {
       "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/00-sanity.plan.json",
       "bytes": 146991,
       "sha256": "c13537b3ce89c372306a180bb0833c6393a3f6ec0ce2497967ee0bd1396b0f56"
@@ -6081,11 +6091,6 @@
       "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/index.json",
       "bytes": 2559,
       "sha256": "1ac5f5c5edf7af4d533d7e9f9021d99f7bdc6344a2b2794fb6099e35aacb83ff"
-    },
-    {
-      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution-batches.json",
-      "bytes": 2197,
-      "sha256": "4592a5ecf04f9cc65af3e796b260072d64e92d7dd92e950240a2fc9542332d8d"
     },
     {
       "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/experiment.json",
@@ -14699,5 +14704,403 @@
       "current_sha256": "e037f00df9f896df8d772cb89119f7e41af732099df979eeae0257be758f2308"
     }
   ],
-  "local_source_head": "0e63d369c4e0778ab4dfce18ec7fe8e5f03201b7"
+  "local_source_head": "0e63d369c4e0778ab4dfce18ec7fe8e5f03201b7",
+  "report_files": [
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/SPECIFICATIONS.md",
+      "bytes": 6451,
+      "sha256": "b3573ea0e4d7835c540e58c25821d53fd481050990f107b394ab2247d64d35e3"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/TTFT_DECOMPOSITION.md",
+      "bytes": 1565,
+      "sha256": "7b5f3c1e118c7ff56de68c4a4f7535ba52b0d8491a3e94f3932bb9e4dac71e6f"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bandwidth-trends.png",
+      "bytes": 283841,
+      "sha256": "4c2859f78bd98bc4c622da27ddee620008e53384827ec6a5402dedabde37c3a9"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bandwidth-trends.svg",
+      "bytes": 115183,
+      "sha256": "449fcf9ba052f33803bc8d723bda8f9dd28238b5b2119fee19c51ffa8060cca9"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw100-MigrationTax-requests.csv",
+      "bytes": 98579,
+      "sha256": "a2d54e5cd15a35cf0bbdc53b217a73ecaa8423244d72725452ccfa13198cff26"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw100-PPD-requests.csv",
+      "bytes": 98835,
+      "sha256": "bbc9dbf094959cba751236985e747ad8caf86d463e7c3b65c694451d8b13a15c"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw100-Serial-requests.csv",
+      "bytes": 97022,
+      "sha256": "145ae0e288bebaa31f12bd3dc607f520d1e4f4892a521e61cdbac48803c7b53a"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw200-MigrationTax-requests.csv",
+      "bytes": 98650,
+      "sha256": "a3130807740c5bcf9de972a06ea0dc15b7a27e4e47c13ff846fbc43a93dea4ee"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw200-PPD-requests.csv",
+      "bytes": 98867,
+      "sha256": "b3855cae53e6afb5b7cee03c374dfdff5f949af466ff76c9dfda2653420cc592"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw200-Serial-requests.csv",
+      "bytes": 97063,
+      "sha256": "e85a985dc81b4c2cae991020944c32e1cd532bb97d1d67b256fda1d2bd765c2c"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw50-MigrationTax-requests.csv",
+      "bytes": 98568,
+      "sha256": "95eeb94da8f1de9304aa3a59794d92dbb61660ba403091f439903b2666aa26ff"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw50-PPD-requests.csv",
+      "bytes": 98634,
+      "sha256": "c16742bbdfa6fb037bf42374143556a46c946aa97eb24ffa0b78253bc4444579"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/bw50-Serial-requests.csv",
+      "bytes": 96837,
+      "sha256": "9bd06e56487d7c8260eb6ca45f2cf8f8103f2abf8d7d0db01a65fe2eb473373e"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/comparison.csv",
+      "bytes": 839,
+      "sha256": "4be011bbc0c32362988ef50343a3bc4052e92bbcce3cce221af0afdb164f1202"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/native-metrics.csv",
+      "bytes": 8323,
+      "sha256": "7ac3b0c951e75b47eb2e6ed6088cea0558443961ddf82de38c91c948479090dd"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/reference-Serial-requests.csv",
+      "bytes": 69864,
+      "sha256": "57476d94d8deaec8222507940837abc6e459ae305cb9280ce19172b4d8a0aea3"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/results.json",
+      "bytes": 23051,
+      "sha256": "9e776e3ee259226d334ca5acc961b525ee748f09514a86fe82a9999361a64d8d"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/results.md",
+      "bytes": 4116,
+      "sha256": "9dbab63b1799ab96489c0a93b177677eddc41641b5f2ea7c9897874bf8af3c8d"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/ttft-decomposition.csv",
+      "bytes": 1056,
+      "sha256": "4bcb0b3903e821a0b2c7d67b71ca6b72d6d23865d2968324ce4d6e5df4d8c0bb"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-200-01/verification.json",
+      "bytes": 5566,
+      "sha256": "a1001373c522183494e1ca4cf1d4c27d16a1c46554ced12a72b08975f0ec7522"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/SPECIFICATIONS.md",
+      "bytes": 6534,
+      "sha256": "ba5cd328b0eed0fbb9165e449b3c897390e414a431e75132f1fc2f5be0ce185e"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/TP1_VS_TP8.md",
+      "bytes": 2480,
+      "sha256": "993499b927f993b43c9c471c37a378b38a2ea8b7493d860008937d14ccd2535e"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/TTFT_DECOMPOSITION.md",
+      "bytes": 965,
+      "sha256": "921def592a8d587ed3da41501be9190836e5da26a563ce04239e0fed02ae66c4"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bandwidth-trends.png",
+      "bytes": 279040,
+      "sha256": "4a6c81784fa0ebe70f30f79da82c6b146e64f0c963d842e3ddf3ac4672cdeb3d"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bandwidth-trends.svg",
+      "bytes": 112969,
+      "sha256": "6ade264b8101fbfe6cf9679d7a9680f6e04567a0d13c7ae31552d23ddbe90f12"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw100-MigrationTax-requests.csv",
+      "bytes": 3964666,
+      "sha256": "fdf4dce01562d74119aede7ff8bd17307e52f44de7c8b8da5193ac6b337ac284"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw100-PPD-requests.csv",
+      "bytes": 3975902,
+      "sha256": "81f352ba12af834cd490dcb000704e21b5f4ec686a2d3c98adc544c2df58a1e0"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw100-Serial-requests.csv",
+      "bytes": 3903660,
+      "sha256": "0ac22dc111840df879c4a976ce22f1b4627d5870a92d3523bca3eb9e6f3d7dad"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw200-MigrationTax-requests.csv",
+      "bytes": 3965618,
+      "sha256": "5d9ffd52a21dcb3e2a0bc7caccce592cf93fa894930dda6018f0004f8bf90091"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw200-PPD-requests.csv",
+      "bytes": 3980727,
+      "sha256": "b40b80f8e8e04987f0a7c8ecedaa28936c912f2a928907cdfd737bf4254cf66e"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw200-Serial-requests.csv",
+      "bytes": 3908525,
+      "sha256": "2a0865a4a3c04c47c6db19f04ab3e17b1db911eb2fd5de3fc75568e69eea5776"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw50-MigrationTax-requests.csv",
+      "bytes": 3958309,
+      "sha256": "3512dfd85d1cd8863c3ca541c105e4bf39573ecff62250c151df6b3508e4e37e"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw50-PPD-requests.csv",
+      "bytes": 3964763,
+      "sha256": "e5413411ed937eff8b510286f0f1d30afe80029988b2976b56f26fa08716b064"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/bw50-Serial-requests.csv",
+      "bytes": 3892442,
+      "sha256": "f60db7e3be4d5a9ccf7ae40ad3ce02464ee68fd74f16e021e7745d46b87a7b30"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/comparison.csv",
+      "bytes": 1497,
+      "sha256": "9d0fdf4af0acfafbf98566ffdd521a9d2f97bcfbb6a6eaf55bb22079dbe8b5c1"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/deployment-comparison-checks.json",
+      "bytes": 766,
+      "sha256": "6de999a72f26d845af1ccfb12d49eaad4ebcdefd1ab4b496989719b694d4ebd1"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/native-metrics.csv",
+      "bytes": 9348,
+      "sha256": "71a0ddf80b0b542519a089d269b7579726741959bea1235b76aba2db40caaffd"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/reference-Serial-requests.csv",
+      "bytes": 2813183,
+      "sha256": "d24a162a50bb00cb034caec94ca1766305f59bd4c516325ecb71cc2459f64959"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/results.json",
+      "bytes": 25624,
+      "sha256": "78faf784bb1ba223da61357609d86475ec4a2b477d595a1eb6d3b68815ab6180"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/results.md",
+      "bytes": 4603,
+      "sha256": "7b4aa1485b4a6a3e737d7d7eda6e98a7a1df38d1a6ea59fe64c9657e5f1b66ed"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/tp1-vs-tp8.csv",
+      "bytes": 3958,
+      "sha256": "643a55d1a6af470166ab055ea4271c4c9ca8d120fd54cce78c2c456e5164fc54"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/tp1-vs-tp8.json",
+      "bytes": 9532,
+      "sha256": "b8d0b5ab5cb3357baa5ff7a0d7a902a4f43fc332c1ffaf3a0e62855c9ce5f261"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/ttft-decomposition.csv",
+      "bytes": 1343,
+      "sha256": "a48f9322ea43aa979bd124bddd587b1a70e98690f16aea8427053f572f7e4508"
+    },
+    {
+      "path": "native_research/reports/servegen7b-tp8-bw-s0-8000-01/verification.json",
+      "bytes": 7340,
+      "sha256": "43b932df8657ab5cd79e812ada48cf192e1f249f785a1aaf1a9c690952572670"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/comparison.csv",
+      "bytes": 1753,
+      "sha256": "a1ae489f319644b1b0247ef383b081230d17a171b5918f9b0316217bc248a68a"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/csv-index.json",
+      "bytes": 1973,
+      "sha256": "86ddff78857c930119c6537d8da8b73f0b7b76ef02caabcdf2bac6dbc4de0b2f"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/comparison.csv",
+      "bytes": 1753,
+      "sha256": "a1ae489f319644b1b0247ef383b081230d17a171b5918f9b0316217bc248a68a"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/csv-index.json",
+      "bytes": 1973,
+      "sha256": "86ddff78857c930119c6537d8da8b73f0b7b76ef02caabcdf2bac6dbc4de0b2f"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/native-metrics.csv",
+      "bytes": 5704,
+      "sha256": "38cde3e7b147a0dc5bdee9f897a4f9570cd558e182434b231b30274568bf7057"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p0-mooncake-ib400-serial-s0-requests.csv",
+      "bytes": 68851,
+      "sha256": "5a4d5a66d8ffe728797a6309e454d4c50b4aea0be5a3a307bd45097a20cba097"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p0-mooncake-nvl4-serial-s0-requests.csv",
+      "bytes": 69098,
+      "sha256": "0b38cee8ce0ca64f2c5274f58d4c582595427d628002a42e69e6b34d812b47fc"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p1-mooncake-inf-serial-s0-requests.csv",
+      "bytes": 4196197,
+      "sha256": "92182a59be022acf4db6b470c6a544d1938aa1ebe6ac1cff7f19fb9ec150e196"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p1-mooncake-nvl4-migrationtax-s0-requests.csv",
+      "bytes": 4973817,
+      "sha256": "b7cecd779ed754d8cf45fe725cdd45866e2ac194eb114db63463d624a9239bb6"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p1-mooncake-nvl4-ppd-s0-requests.csv",
+      "bytes": 4989503,
+      "sha256": "f156e4ffe3aab81697da5ded86fb7b4b475f9102c1c3018cabf40e39bfc78133"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p1-mooncake-nvl4-serial-s0-requests.csv",
+      "bytes": 4881240,
+      "sha256": "b642c6e125571955b93da2b5848851a3802861361b30016cc613109540b84bbe"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p3-mooncake-pcie6-migrationtax-s0-requests.csv",
+      "bytes": 4967558,
+      "sha256": "9a245da794adadc8f2ccee9033e605a2365fde190c2b1ffa886cca5cc7636eca"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p3-mooncake-pcie6-ppd-s0-requests.csv",
+      "bytes": 4982350,
+      "sha256": "a00b745dc695ccbcccc61730f7b0e7c34a632f6e0d767ea6290ce76ac0166526"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p3-mooncake-pcie6-serial-s0-requests.csv",
+      "bytes": 4873276,
+      "sha256": "8e67322aa5d62780c6d6af06bb32be3c042b0939920f0b7e5a54bbd35986c178"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p4-mooncake-ib400-migrationtax-s0-requests.csv",
+      "bytes": 4961069,
+      "sha256": "3957589e674e736682bce4a647af04ce38c359638a5f555f4d8e2c723f710081"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p4-mooncake-ib400-ppd-s0-requests.csv",
+      "bytes": 4969334,
+      "sha256": "e0529b0ab5eeba92b4a59bc2bc7ed4897d3b9a15f02720c642e0a61e70d20b66"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/p4-mooncake-ib400-serial-s0-requests.csv",
+      "bytes": 4860944,
+      "sha256": "2afe79f76b1b6a3c5ea27f589b8261558d418a03509e653725284b73b6cae8c9"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/results.json",
+      "bytes": 18467,
+      "sha256": "44d07e63a859b140776e955ac3fc7e9b732f8aecee4155e520ca93ae9bb6d5ec"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete/results.md",
+      "bytes": 3660,
+      "sha256": "41bde986db3995f450486613ba02837e72784cb0316bea6e369ced5fc3bc1932"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/native-metrics.csv",
+      "bytes": 5704,
+      "sha256": "38cde3e7b147a0dc5bdee9f897a4f9570cd558e182434b231b30274568bf7057"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p0-mooncake-ib400-serial-s0-requests.csv",
+      "bytes": 68851,
+      "sha256": "5a4d5a66d8ffe728797a6309e454d4c50b4aea0be5a3a307bd45097a20cba097"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p0-mooncake-nvl4-serial-s0-requests.csv",
+      "bytes": 69098,
+      "sha256": "0b38cee8ce0ca64f2c5274f58d4c582595427d628002a42e69e6b34d812b47fc"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p1-mooncake-inf-serial-s0-requests.csv",
+      "bytes": 4196197,
+      "sha256": "92182a59be022acf4db6b470c6a544d1938aa1ebe6ac1cff7f19fb9ec150e196"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p1-mooncake-nvl4-migrationtax-s0-requests.csv",
+      "bytes": 4973817,
+      "sha256": "b7cecd779ed754d8cf45fe725cdd45866e2ac194eb114db63463d624a9239bb6"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p1-mooncake-nvl4-ppd-s0-requests.csv",
+      "bytes": 4989503,
+      "sha256": "f156e4ffe3aab81697da5ded86fb7b4b475f9102c1c3018cabf40e39bfc78133"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p1-mooncake-nvl4-serial-s0-requests.csv",
+      "bytes": 4881240,
+      "sha256": "b642c6e125571955b93da2b5848851a3802861361b30016cc613109540b84bbe"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p3-mooncake-pcie6-migrationtax-s0-requests.csv",
+      "bytes": 4967558,
+      "sha256": "9a245da794adadc8f2ccee9033e605a2365fde190c2b1ffa886cca5cc7636eca"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p3-mooncake-pcie6-ppd-s0-requests.csv",
+      "bytes": 4982350,
+      "sha256": "a00b745dc695ccbcccc61730f7b0e7c34a632f6e0d767ea6290ce76ac0166526"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p3-mooncake-pcie6-serial-s0-requests.csv",
+      "bytes": 4873276,
+      "sha256": "8e67322aa5d62780c6d6af06bb32be3c042b0939920f0b7e5a54bbd35986c178"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p4-mooncake-ib400-migrationtax-s0-requests.csv",
+      "bytes": 4961069,
+      "sha256": "3957589e674e736682bce4a647af04ce38c359638a5f555f4d8e2c723f710081"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p4-mooncake-ib400-ppd-s0-requests.csv",
+      "bytes": 4969334,
+      "sha256": "e0529b0ab5eeba92b4a59bc2bc7ed4897d3b9a15f02720c642e0a61e70d20b66"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/p4-mooncake-ib400-serial-s0-requests.csv",
+      "bytes": 4860944,
+      "sha256": "2afe79f76b1b6a3c5ea27f589b8261558d418a03509e653725284b73b6cae8c9"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/results.json",
+      "bytes": 18467,
+      "sha256": "6037ff7833c93ea07806625a72bdc4be66d083c1573a1885b8c77e7b6e414340"
+    },
+    {
+      "path": "native_research/reports/five-stage-llama7b-h100-tp8-s0-01/results.md",
+      "bytes": 3660,
+      "sha256": "41bde986db3995f450486613ba02837e72784cb0316bea6e369ced5fc3bc1932"
+    }
+  ],
+  "report_scope": [
+    "servegen7b-tp8-bw-s0-200-01",
+    "servegen7b-tp8-bw-s0-8000-01",
+    "five-stage-llama7b-h100-tp8-s0-01"
+  ],
+  "reports_verified_against_release_manifest": true
 }

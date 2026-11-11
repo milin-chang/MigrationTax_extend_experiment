@@ -6,10 +6,13 @@ __pycache__/
 .env.*
 !.env.example
 
-# Raw logs, results and release archives are stored in GitHub Releases.
+# Raw logs and release archives stay in Releases; track only selected reports.
 /native_research/runs/
 /native_research/probes/
-/native_research/reports/
+/native_research/reports/*
+!/native_research/reports/servegen7b-tp8-bw-s0-200-01/
+!/native_research/reports/servegen7b-tp8-bw-s0-8000-01/
+!/native_research/reports/five-stage-llama7b-h100-tp8-s0-01/
 /native_research/release-assets/
 /native_research/*.log
 /native_research/overnight-launch.json

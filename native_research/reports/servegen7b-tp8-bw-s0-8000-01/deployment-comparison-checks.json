@@ -1,0 +1,25 @@
+{
+  "same_input_sha256": true,
+  "tp1_imported_python_files_unchanged": 341,
+  "tp1_imported_python_files_changed": [],
+  "hardware_profile_changes": {
+    "gpus_per_instance": {
+      "tp1": 1,
+      "tp8": 8
+    },
+    "tensor_parallel": {
+      "tp1": 1,
+      "tp8": 8
+    }
+  },
+  "tp_collective_link_tp1": "bandwidth_study_link (TP1 has no TP collectives)",
+  "tp_collective_link_tp8": "nvlink4; independent of KV bandwidth sweep",
+  "simulation_batching": {
+    "batching": "paged-attn",
+    "block_size": 64,
+    "max_num_seqs": 64,
+    "max_num_batched_tokens": 8192
+  },
+  "tp1_source_condition": "native_research/runs/servegen7b-bw-s0-8000-01/bw100/Serial/seed-0",
+  "source_state": "native_research/runs/servegen7b-tp8-bw-s0-8000-01/source-state.json"
+}

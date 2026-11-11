@@ -1,0 +1,10 @@
+﻿bandwidth_label,bandwidth_gb_per_s,method,returning_requests,affected_d_count,affected_d_percent,affected_client_count,affected_client_percent,decode_miss_at_arrival_count,decode_miss_at_arrival_percent,zero_d_prefix_at_arrival_percent,partial_d_prefix_at_arrival_percent,d_choice_changed_after_arrival_count
+bw100,100.0,MigrationTax,80,2,2.5,2,2.5,79,98.75,25.0,73.75,0
+bw100,100.0,PPD,80,5,6.25,5,6.25,79,98.75,25.0,73.75,0
+bw100,100.0,Serial,80,6,7.5,6,7.5,79,98.75,25.0,73.75,0
+bw200,200.0,MigrationTax,80,1,1.25,1,1.25,79,98.75,25.0,73.75,0
+bw200,200.0,PPD,80,1,1.25,1,1.25,79,98.75,25.0,73.75,0
+bw200,200.0,Serial,80,1,1.25,1,1.25,79,98.75,25.0,73.75,0
+bw50,50.0,MigrationTax,80,14,17.5,14,17.5,79,98.75,25.0,73.75,0
+bw50,50.0,PPD,80,54,67.5,54,67.5,79,98.75,25.0,73.75,0
+bw50,50.0,Serial,80,54,67.5,54,67.5,79,98.75,25.0,73.75,0

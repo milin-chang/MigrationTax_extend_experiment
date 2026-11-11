@@ -1,1 +1,6 @@
 *.csv text eol=lf
+
+# Preserve report bytes so their checksums match the original Release files.
+/native_research/reports/servegen7b-tp8-bw-s0-200-01/** -text
+/native_research/reports/servegen7b-tp8-bw-s0-8000-01/** -text
+/native_research/reports/five-stage-llama7b-h100-tp8-s0-01/** -text

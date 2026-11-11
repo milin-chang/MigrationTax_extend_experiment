@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p0-mooncake-nvl4-serial-s0",
+    "phase": 0,
+    "trace": "mooncake",
+    "csv": "p0-mooncake-nvl4-serial-s0-requests.csv",
+    "rows": 200
+  },
+  {
+    "id": "p0-mooncake-ib400-serial-s0",
+    "phase": 0,
+    "trace": "mooncake",
+    "csv": "p0-mooncake-ib400-serial-s0-requests.csv",
+    "rows": 200
+  },
+  {
+    "id": "p1-mooncake-inf-serial-s0",
+    "phase": 1,
+    "trace": "mooncake",
+    "csv": "p1-mooncake-inf-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p1-mooncake-nvl4-serial-s0",
+    "phase": 1,
+    "trace": "mooncake",
+    "csv": "p1-mooncake-nvl4-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p1-mooncake-nvl4-ppd-s0",
+    "phase": 1,
+    "trace": "mooncake",
+    "csv": "p1-mooncake-nvl4-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p1-mooncake-nvl4-migrationtax-s0",
+    "phase": 1,
+    "trace": "mooncake",
+    "csv": "p1-mooncake-nvl4-migrationtax-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p3-mooncake-pcie6-serial-s0",
+    "phase": 3,
+    "trace": "mooncake",
+    "csv": "p3-mooncake-pcie6-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p3-mooncake-pcie6-ppd-s0",
+    "phase": 3,
+    "trace": "mooncake",
+    "csv": "p3-mooncake-pcie6-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p3-mooncake-pcie6-migrationtax-s0",
+    "phase": 3,
+    "trace": "mooncake",
+    "csv": "p3-mooncake-pcie6-migrationtax-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p4-mooncake-ib400-serial-s0",
+    "phase": 4,
+    "trace": "mooncake",
+    "csv": "p4-mooncake-ib400-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p4-mooncake-ib400-ppd-s0",
+    "phase": 4,
+    "trace": "mooncake",
+    "csv": "p4-mooncake-ib400-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "p4-mooncake-ib400-migrationtax-s0",
+    "phase": 4,
+    "trace": "mooncake",
+    "csv": "p4-mooncake-ib400-migrationtax-s0-requests.csv",
+    "rows": 12031
+  }
+]

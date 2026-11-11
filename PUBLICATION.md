@@ -1,6 +1,6 @@
 # TokenSim 通訊頻寬實驗發布範圍
 
-程式、設定與 Trace 放在 [tokensim-llama7b-tp8-bandwidth-s0 分支](https://github.com/milin-chang/MigrationTax_extend_experiment/tree/tokensim-llama7b-tp8-bandwidth-s0)。原始 log、逐請求結果、來源快照、圖與報告放在 [GitHub Release](https://github.com/milin-chang/MigrationTax_extend_experiment/releases/tag/tokensim-llama7b-tp8-bandwidth-s0-2026-11-11)。
+程式、設定、Trace 與三批實驗的報告目錄放在 [tokensim-llama7b-tp8-bandwidth-s0 分支](https://github.com/milin-chang/MigrationTax_extend_experiment/tree/tokensim-llama7b-tp8-bandwidth-s0)。原始 log、逐請求結果、來源快照、圖與報告的完整備份放在 [GitHub Release](https://github.com/milin-chang/MigrationTax_extend_experiment/releases/tag/tokensim-llama7b-tp8-bandwidth-s0-2026-11-11)。
 
 ## 收錄的實驗
 
@@ -16,7 +16,7 @@
 
 ## 分支與 Release 的分工
 
-- 分支：TokenSim 與客製化程式、共用方法與執行工具、三批實驗設定、兩份 ServeGen 執行計畫、五階段執行計畫，以及實際輸入和來源資訊。
+- 分支：TokenSim 與客製化程式、共用方法與執行工具、三批實驗設定、兩份 ServeGen 執行計畫、五階段執行計畫、實際輸入和來源資訊，以及上述三批各自的 `native_research/reports/<實驗名稱>/`。
 - Release：各實驗的 `native_research/runs/<實驗名稱>/` 與 `native_research/reports/<實驗名稱>/`，包含原始 log、收據、原生結果、逐請求時間、執行時來源快照、稽核與圖表。
 - 五階段封裝另收錄 `native_research/reports/mooncake-four-part-s0-01/`，內有 Times New Roman 字體的 PNG／SVG 圖與圖表 ZIP。
 - 其他批次的 runs／reports、所有 probes、已被取代的 `config/archive/`、本機依賴與暫存檔不納入本次發布。本機檔案仍保留。
@@ -57,12 +57,12 @@ cd native_research/release-assets/download
 sha256sum -c SHA256SUMS
 cd ../../..
 
-tar --keep-old-files -xzf native_research/release-assets/download/servegen7b-tp8-bw-s0-200-01.tar.gz
-tar --keep-old-files -xzf native_research/release-assets/download/servegen7b-tp8-bw-s0-8000-01.tar.gz
-tar --keep-old-files -xzf native_research/release-assets/download/five-stage-llama7b-h100-tp8-s0-01.tar.gz
+tar --skip-old-files -xzf native_research/release-assets/download/servegen7b-tp8-bw-s0-200-01.tar.gz
+tar --skip-old-files -xzf native_research/release-assets/download/servegen7b-tp8-bw-s0-8000-01.tar.gz
+tar --skip-old-files -xzf native_research/release-assets/download/five-stage-llama7b-h100-tp8-s0-01.tar.gz
 ```
 
-封裝保留原本的相對目錄；還原後可按照 `Readme.md` 的路徑查看。`--keep-old-files` 會拒絕覆寫已存在的檔案。
+封裝保留原本的相對目錄；還原後可按照 `Readme.md` 的路徑查看。目前分支已包含三批報告，`--skip-old-files` 會略過 checkout 已存在的檔案，繼續還原原始執行紀錄。Release 內的舊版 `RESTORE.md` 保留發布當時內容；目前分支的還原步驟以本節為準。
 
 ## 歷史來源與重新執行
 
