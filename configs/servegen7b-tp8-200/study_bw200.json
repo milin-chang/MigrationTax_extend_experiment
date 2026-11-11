@@ -1,0 +1,16 @@
+{
+  "label": "bw200",
+  "bandwidth_bytes_per_s": 200000000000.0,
+  "bandwidth_scope": "Aggregate full-TP KV bundle per replica endpoint; not per GPU rank",
+  "tp_collective_link": "nvlink4",
+  "tp_collective_bandwidth_bytes_per_s": 450000000000.0,
+  "data_root": "configs/servegen7b-tp8-200/data_bw200",
+  "cluster_path": "configs/servegen7b-tp8-200/cluster.json",
+  "transfer_path": "configs/servegen7b-tp8-200/transfer_bw200.json",
+  "input_manifest": "inputs/servegen-s0-first200-tp8.manifest.json",
+  "input_selection": "\u540c\u4e00\u4efd ServeGen seed 0 \u5bb9\u91cf\u7be9\u9078\u5b50\u96c6\u7684\u524d 200 \u7b46\uff1b\u672a\u518d\u6392\u9664\u8acb\u6c42\u3001\u622a\u77ed token \u6216\u91cd\u7e2e\u5230\u9054\u6642\u9593\uff1b\u4fdd\u7559\u524d\u8f2a\u76f8\u4f9d\u3002",
+  "memory_bandwidth_changed": false,
+  "time_unit": "s",
+  "bandwidth_unit": "decimal bytes/s",
+  "reference": false
+}

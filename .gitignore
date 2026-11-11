@@ -1,5 +1,45 @@
 __pycache__/
 *.py[cod]
-native_research/runs/
-*.tar.gz
-*.chunk-*
+.deps/
+.venv*/
+.env
+.env.*
+!.env.example
+
+# Raw logs, results and release archives are stored in GitHub Releases.
+/native_research/runs/
+/native_research/probes/
+/native_research/reports/
+/native_research/release-assets/
+/native_research/*.log
+/native_research/overnight-launch.json
+/inputs/*.log
+/test.md
+
+# Keep only the plans for the selected TP8 ServeGen experiments.
+/native_research/plans/*
+!/native_research/plans/servegen7b-tp8-bandwidth-s0-200.json
+!/native_research/plans/servegen7b-tp8-bandwidth-s0-8000.json
+
+# Keep the active five-stage design; superseded designs stay local.
+/config/*
+!/config/five-stage-llama7b-h100-sxm80gb-tp8-s0/
+
+# Selected TP8 configurations and dependencies pinned by their frozen plans.
+/configs/*
+!/configs/servegen7b-tp8-200/
+!/configs/servegen7b-tp8-8000/
+!/configs/data_bw50/
+!/configs/data_bw100/
+!/configs/data_bw200/
+!/configs/data_reference/
+!/configs/cluster_4p4d_h100.json
+!/configs/hardware-llama7b-h100-tp1-block64.json
+!/configs/study_bw50.json
+!/configs/study_bw100.json
+!/configs/study_bw200.json
+!/configs/study_reference.json
+!/configs/transfer_bw50.json
+!/configs/transfer_bw100.json
+!/configs/transfer_bw200.json
+!/configs/transfer_reference.json

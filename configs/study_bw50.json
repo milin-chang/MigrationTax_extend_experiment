@@ -1,0 +1,11 @@
+{
+  "label": "bw50",
+  "bandwidth_bytes_per_s": 50000000000.0,
+  "data_root": "configs/data_bw50",
+  "cluster_path": "configs/cluster_4p4d_h100.json",
+  "transfer_path": "configs/transfer_bw50.json",
+  "memory_bandwidth_changed": false,
+  "time_unit": "s",
+  "bandwidth_unit": "decimal bytes/s",
+  "reference": false
+}

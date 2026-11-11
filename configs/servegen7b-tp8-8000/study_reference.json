@@ -1,0 +1,16 @@
+{
+  "label": "reference",
+  "bandwidth_bytes_per_s": 1000000000000000.0,
+  "bandwidth_scope": "Aggregate full-TP KV bundle per replica endpoint; not per GPU rank",
+  "tp_collective_link": "nvlink4",
+  "tp_collective_bandwidth_bytes_per_s": 450000000000.0,
+  "data_root": "configs/servegen7b-tp8-8000/data_reference",
+  "cluster_path": "configs/servegen7b-tp8-8000/cluster.json",
+  "transfer_path": "configs/servegen7b-tp8-8000/transfer_reference.json",
+  "input_manifest": "inputs/subset-manifest.json",
+  "input_selection": "\u6cbf\u7528 TP1 \u5be6\u9a57\u540c\u4e00\u4efd ServeGen seed 0 \u7684 8,000 \u7b46\u5bb9\u91cf\u7be9\u9078\u5b50\u96c6\uff1b\u5148\u4f9d\u539f TP1 \u5bb9\u91cf\u898f\u5247\u6392\u9664\u6574\u6bb5\u5c0d\u8a71\uff0c\u518d\u6309\u539f\u59cb\u5230\u9054\u9806\u5e8f\u53d6\u6a23\uff1b\u672c\u8f2a\u6c92\u6709\u65b0\u589e\u6392\u9664\u3001\u622a\u77ed token \u6216\u91cd\u7e2e\u5230\u9054\u6642\u9593\uff1b\u4fdd\u7559\u524d\u8f2a\u76f8\u4f9d\u3002",
+  "memory_bandwidth_changed": false,
+  "time_unit": "s",
+  "bandwidth_unit": "decimal bytes/s",
+  "reference": true
+}

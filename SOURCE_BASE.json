@@ -1,0 +1,10 @@
+{
+  "original_worktree": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review",
+  "original_commit": "cae56d38daca165d402838f0bb1144612c260733",
+  "copied_source_sha256": {
+    "native_methods/worker.py": "a6a12cb6cd1b0bbf422a2ce59e8e57007ba801a75b35fd88173a4c61d897915c",
+    "native_methods/hardware_profile.py": "f8c0df0d9a465c46e53a829c55d89acfe88d6a48952ee165cef57efb7cfaba81",
+    "TokenSim/TokenSim/research/native_runtime.py": "7af4a6e84e26eeb640ea19e32cf177133437afb9e5560a27777e5de953093148"
+  },
+  "new_scope": "TokenSim only; Llama-7B TP1; block64; communication bandwidth sweep; previous run folders untouched"
+}

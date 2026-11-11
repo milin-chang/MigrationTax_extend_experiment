@@ -1,0 +1,92 @@
+{
+  "priority": "mooncake_first",
+  "logical_phases": 5,
+  "execution_batches": [
+    {
+      "id": "00-sanity",
+      "phase": 0,
+      "trace": "mooncake",
+      "count": 2,
+      "job_ids": [
+        "p0-mooncake-nvl4-serial-s0",
+        "p0-mooncake-ib400-serial-s0"
+      ],
+      "previous_batch": null
+    },
+    {
+      "id": "01-mooncake-fast",
+      "phase": 1,
+      "trace": "mooncake",
+      "count": 4,
+      "job_ids": [
+        "p1-mooncake-inf-serial-s0",
+        "p1-mooncake-nvl4-serial-s0",
+        "p1-mooncake-nvl4-ppd-s0",
+        "p1-mooncake-nvl4-migrationtax-s0"
+      ],
+      "previous_batch": "00-sanity"
+    },
+    {
+      "id": "02-mooncake-pcie6",
+      "phase": 3,
+      "trace": "mooncake",
+      "count": 3,
+      "job_ids": [
+        "p3-mooncake-pcie6-serial-s0",
+        "p3-mooncake-pcie6-ppd-s0",
+        "p3-mooncake-pcie6-migrationtax-s0"
+      ],
+      "previous_batch": "01-mooncake-fast"
+    },
+    {
+      "id": "03-mooncake-ib400",
+      "phase": 4,
+      "trace": "mooncake",
+      "count": 3,
+      "job_ids": [
+        "p4-mooncake-ib400-serial-s0",
+        "p4-mooncake-ib400-ppd-s0",
+        "p4-mooncake-ib400-migrationtax-s0"
+      ],
+      "previous_batch": "02-mooncake-pcie6"
+    },
+    {
+      "id": "04-servegen-fast",
+      "phase": 2,
+      "trace": "servegen",
+      "count": 4,
+      "job_ids": [
+        "p2-servegen-inf-serial-s0",
+        "p2-servegen-nvl4-serial-s0",
+        "p2-servegen-nvl4-ppd-s0",
+        "p2-servegen-nvl4-migrationtax-s0"
+      ],
+      "previous_batch": "03-mooncake-ib400"
+    },
+    {
+      "id": "05-servegen-pcie6",
+      "phase": 3,
+      "trace": "servegen",
+      "count": 3,
+      "job_ids": [
+        "p3-servegen-pcie6-serial-s0",
+        "p3-servegen-pcie6-ppd-s0",
+        "p3-servegen-pcie6-migrationtax-s0"
+      ],
+      "previous_batch": "04-servegen-fast"
+    },
+    {
+      "id": "06-servegen-ib400",
+      "phase": 4,
+      "trace": "servegen",
+      "count": 3,
+      "job_ids": [
+        "p4-servegen-ib400-serial-s0",
+        "p4-servegen-ib400-ppd-s0",
+        "p4-servegen-ib400-migrationtax-s0"
+      ],
+      "previous_batch": "05-servegen-pcie6"
+    }
+  ],
+  "total_jobs": 22
+}

@@ -1,0 +1,90 @@
+{
+  "phases": [
+    {
+      "phase": 0,
+      "batch": "00-sanity",
+      "trace": "mooncake",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/00-sanity.plan.json",
+      "count": 2,
+      "job_ids": [
+        "p0-mooncake-nvl4-serial-s0",
+        "p0-mooncake-ib400-serial-s0"
+      ]
+    },
+    {
+      "phase": 1,
+      "batch": "01-mooncake-fast",
+      "trace": "mooncake",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/01-mooncake-fast.plan.json",
+      "count": 4,
+      "job_ids": [
+        "p1-mooncake-inf-serial-s0",
+        "p1-mooncake-nvl4-serial-s0",
+        "p1-mooncake-nvl4-ppd-s0",
+        "p1-mooncake-nvl4-migrationtax-s0"
+      ]
+    },
+    {
+      "phase": 3,
+      "batch": "02-mooncake-pcie6",
+      "trace": "mooncake",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/02-mooncake-pcie6.plan.json",
+      "count": 3,
+      "job_ids": [
+        "p3-mooncake-pcie6-serial-s0",
+        "p3-mooncake-pcie6-ppd-s0",
+        "p3-mooncake-pcie6-migrationtax-s0"
+      ]
+    },
+    {
+      "phase": 4,
+      "batch": "03-mooncake-ib400",
+      "trace": "mooncake",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/03-mooncake-ib400.plan.json",
+      "count": 3,
+      "job_ids": [
+        "p4-mooncake-ib400-serial-s0",
+        "p4-mooncake-ib400-ppd-s0",
+        "p4-mooncake-ib400-migrationtax-s0"
+      ]
+    },
+    {
+      "phase": 2,
+      "batch": "04-servegen-fast",
+      "trace": "servegen",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/04-servegen-fast.plan.json",
+      "count": 4,
+      "job_ids": [
+        "p2-servegen-inf-serial-s0",
+        "p2-servegen-nvl4-serial-s0",
+        "p2-servegen-nvl4-ppd-s0",
+        "p2-servegen-nvl4-migrationtax-s0"
+      ]
+    },
+    {
+      "phase": 3,
+      "batch": "05-servegen-pcie6",
+      "trace": "servegen",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/05-servegen-pcie6.plan.json",
+      "count": 3,
+      "job_ids": [
+        "p3-servegen-pcie6-serial-s0",
+        "p3-servegen-pcie6-ppd-s0",
+        "p3-servegen-pcie6-migrationtax-s0"
+      ]
+    },
+    {
+      "phase": 4,
+      "batch": "06-servegen-ib400",
+      "trace": "servegen",
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/execution/06-servegen-ib400.plan.json",
+      "count": 3,
+      "job_ids": [
+        "p4-servegen-ib400-serial-s0",
+        "p4-servegen-ib400-ppd-s0",
+        "p4-servegen-ib400-migrationtax-s0"
+      ]
+    }
+  ],
+  "total_jobs": 22
+}

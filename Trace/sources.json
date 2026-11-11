@@ -1,0 +1,33 @@
+{
+  "downloaded_at_utc": "2026-11-06T18:55:31.135737+00:00",
+  "note": "Official candidate trace versions; not yet confirmed as the exact versions used by MigrationTax. Original data retained without preprocessing.",
+  "files": [
+    {
+      "name": "Mooncake",
+      "file": "mooncake/conversation_trace.jsonl",
+      "repository": "https://github.com/kvcache-ai/Mooncake",
+      "commit": "0ff71517f0f80a198eebff3009834ed00504b982",
+      "upstream_path": "FAST25-release/traces/conversation_trace.jsonl",
+      "expected_bytes": 3029533,
+      "git_blob_sha1": "5a371794b81d7fc7487ec8a02a2c631bcc7fbdf8",
+      "jsonl_records": 12031,
+      "bytes": 3029533,
+      "sha256": "b8cbb061a85206d729d91cdc2981f43c9e0d99209dce588d3af5f7934408b9df",
+      "download_url": "https://raw.githubusercontent.com/kvcache-ai/Mooncake/0ff71517f0f80a198eebff3009834ed00504b982/FAST25-release/traces/conversation_trace.jsonl"
+    },
+    {
+      "name": "ServeGen",
+      "file": "servegen/conversations_hashed.json",
+      "repository": "https://github.com/alibaba/ServeGen",
+      "commit": "d70c8b2d5bc45f4b60a146fbc43dc5523f871c8b",
+      "upstream_path": "data/conversations/conversations_hashed.json",
+      "expected_bytes": 50475041,
+      "git_blob_sha1": "a8cc92632d01a9e0a8a8a42d9f22f86bdd74f9f0",
+      "json_top_level_type": "list",
+      "json_top_level_entries": 1616,
+      "bytes": 50475041,
+      "sha256": "cff99af3a2bb610fd76c6933e34fcf6d32e92cf2d67705e820c36950e25e9d24",
+      "download_url": "https://raw.githubusercontent.com/alibaba/ServeGen/d70c8b2d5bc45f4b60a146fbc43dc5523f871c8b/data/conversations/conversations_hashed.json"
+    }
+  ]
+}

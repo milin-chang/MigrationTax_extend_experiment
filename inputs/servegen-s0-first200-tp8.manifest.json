@@ -1,0 +1,15 @@
+{
+  "source": "inputs/servegen-s0-first8000.jsonl",
+  "source_sha256": "66d767ac2b84181eb7cf8fb94245b12779280eaa098a9eed0845ea2b9883caf5",
+  "source_manifest": "inputs/subset-manifest.json",
+  "subset": "inputs/servegen-s0-first200-tp8.jsonl",
+  "subset_sha256": "d053822266c1529fc9fc6b44317a679f1878ac389a2e378aaa6dc5cac57166e1",
+  "selection": "First 200 chronological rows of the existing capacity-filtered 8000-row ServeGen seed-0 subset; no additional exclusions, token clipping or arrival rescaling; explicit parents preserved",
+  "requests": 200,
+  "returning": 80,
+  "conversations": 120,
+  "output_tokens": 137909,
+  "first_arrival_s": 0.0,
+  "last_arrival_s": 752.9012389499694,
+  "max_live_tokens": 98975
+}

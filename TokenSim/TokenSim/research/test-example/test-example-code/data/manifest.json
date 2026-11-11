@@ -1,0 +1,7 @@
+{
+  "source": "public normalized Mooncake seed 0",
+  "rows": 243,
+  "normalized_full_sha256": "785b8079a2ac0dde140e58332cb79dc8f0f5664f24fc34695facb6b5a32bd321",
+  "prefix_sha256": "154f5e7b6342992be2ed8ab4c93a779d37bc5e776dc41922e61a6cdbb488a671",
+  "expected_values_used_only_in_assertions": true
+}

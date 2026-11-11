@@ -1,0 +1,105 @@
+{
+  "name": "five-stage-llama7b-h100-sxm80gb-tp8-s0",
+  "generation_does_not_execute": true,
+  "execution_status": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/status.json",
+  "model": "llama-7b",
+  "gpu_display_name": "H100 SXM 80GB",
+  "gpu_catalog_bytes": 85899345920,
+  "hardware": {
+    "model_id": "llama-7b",
+    "model_dtype": "fp16",
+    "kv_dtype": "fp16",
+    "model_parameters": 6738149376,
+    "layers": 32,
+    "hidden_size": 4096,
+    "attention_heads": 32,
+    "kv_heads": 32,
+    "head_dim": 128,
+    "gpu_id": "h100_sxm",
+    "splitwise_hardware": "h100-80gb",
+    "gpu_memory_bytes": 85899345920,
+    "runtime_reserved_bytes": 4169138176,
+    "gpus_per_instance": 8,
+    "tensor_parallel": 8,
+    "pipeline_parallel": 1,
+    "prefill_instances": 4,
+    "decode_instances": 4,
+    "block_tokens": 64,
+    "splitwise_profile": "splitwise-sim/data/perf_model-llama3-8b-h100-tp1-bf16.csv",
+    "splitwise_model_id": "",
+    "weights_bytes": 13476298752,
+    "weights_bytes_per_gpu": 1684537344,
+    "kv_bytes_per_token": 524288,
+    "kv_bytes_per_token_per_gpu": 65536,
+    "kv_blocks": 19084,
+    "kv_capacity_bytes": 640352780288,
+    "total_gpus": 64,
+    "source_sha256": "b2c0305f8305799c544f71914a197cdd89a9296ab8840d00d7987d98c828db8b",
+    "scope": "Model, physical GPUs and raw KV capacity; native admission, store and scheduling policies remain simulator-specific"
+  },
+  "cluster": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/cluster.json",
+  "seed": 0,
+  "phases": [
+    {
+      "phase": 0,
+      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/phases/00-sanity.json",
+      "jobs": 2
+    },
+    {
+      "phase": 1,
+      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/phases/01-mooncake-fast.json",
+      "jobs": 4
+    },
+    {
+      "phase": 2,
+      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/phases/02-servegen-fast.json",
+      "jobs": 4
+    },
+    {
+      "phase": 3,
+      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/phases/03-both-pcie6.json",
+      "jobs": 6
+    },
+    {
+      "phase": 4,
+      "path": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/phases/04-both-ib400.json",
+      "jobs": 6
+    }
+  ],
+  "total_jobs": 22,
+  "sanity_jobs": 2,
+  "formal_jobs": 20,
+  "first_delivery": {
+    "after_batch": "03-mooncake-ib400",
+    "cumulative_jobs": 12,
+    "sanity_jobs": 2,
+    "mooncake_formal_jobs": 10,
+    "contents": [
+      "All Mooncake per-request CSVs",
+      "Affected share for 450, 128 and 50 GB/s",
+      "Mooncake reference and native metrics"
+    ]
+  },
+  "resources": {
+    "cpu_pool_max": 12,
+    "logical_cpus_per_job": 1,
+    "memory_limit_bytes": 8589934592,
+    "minimum_host_available_bytes": 2147483648,
+    "concurrency": "Dynamic memory admission; no execution launched by this design"
+  },
+  "execution_note": "Create and freeze runtime execution plans from phase job records when execution is requested; design JSON files do not launch the current bandwidth runner",
+  "current_50_100_200_study": "Separate running experiment; native named-link latencies differ, so do not relabel existing 50 GB/s outputs as ib400",
+  "execution_priority": "mooncake_first",
+  "execution_batches": "execution-batches.json",
+  "phase2_delivery": {
+    "after_batch": "04-servegen-fast",
+    "cumulative_jobs": 16,
+    "includes": "All Mooncake results and ServeGen reference plus three methods at 450 GB/s"
+  },
+  "launch_policy": {
+    "start_immediately": true,
+    "wait_for_other_matrix": false,
+    "previous_8000_matrix": "paused_by_user; preserve process state until a later resume instruction",
+    "priority": "all Mooncake conditions before ServeGen full input"
+  }
+}

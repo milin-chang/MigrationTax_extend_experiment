@@ -1,0 +1,71 @@
+{
+  "num_workers": 64,
+  "networks": {
+    "prefill-0": "ethernet800Gb",
+    "prefill-1": "ethernet800Gb",
+    "prefill-2": "ethernet800Gb",
+    "prefill-3": "ethernet800Gb",
+    "decode-0": "ethernet800Gb",
+    "decode-1": "ethernet800Gb",
+    "decode-2": "ethernet800Gb",
+    "decode-3": "ethernet800Gb"
+  },
+  "worker_groups": [
+    {
+      "role": "prefill",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "prefill-0",
+      "name": "prefill-0"
+    },
+    {
+      "role": "prefill",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "prefill-1",
+      "name": "prefill-1"
+    },
+    {
+      "role": "prefill",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "prefill-2",
+      "name": "prefill-2"
+    },
+    {
+      "role": "prefill",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "prefill-3",
+      "name": "prefill-3"
+    },
+    {
+      "role": "decode",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "decode-0",
+      "name": "decode-0"
+    },
+    {
+      "role": "decode",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "decode-1",
+      "name": "decode-1"
+    },
+    {
+      "role": "decode",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "decode-2",
+      "name": "decode-2"
+    },
+    {
+      "role": "decode",
+      "hardware": "h100_sxm",
+      "num_workers": 8,
+      "network": "decode-3",
+      "name": "decode-3"
+    }
+  ]
+}

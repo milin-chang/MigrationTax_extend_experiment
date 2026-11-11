@@ -1,0 +1,20 @@
+{
+  "num_workers": 8,
+  "networks": {
+    "node0": "ib_ndr400"
+  },
+  "worker_groups": [
+    {
+      "role": "prefill",
+      "hardware": "h100_sxm",
+      "num_workers": 4,
+      "network": "node0"
+    },
+    {
+      "role": "decode",
+      "hardware": "h100_sxm",
+      "num_workers": 4,
+      "network": "node0"
+    }
+  ]
+}

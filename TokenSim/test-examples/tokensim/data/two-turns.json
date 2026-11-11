@@ -1,0 +1,30 @@
+{
+  "purpose": "Human-readable prefix example; not the TokenSim loader schema",
+  "block_size": 1,
+  "turns": [
+    {
+      "request_id": 1,
+      "conversation_id": "chat-1",
+      "turn": 0,
+      "arrival_s": 0.0,
+      "input_tokens": 4,
+      "new_input_tokens": 4,
+      "prefix_tokens": 0,
+      "output_tokens": 3,
+      "input_identities": ["a", "b", "c", "d"],
+      "materialized_output_identities": ["out-1", "out-2"]
+    },
+    {
+      "request_id": 2,
+      "conversation_id": "chat-1",
+      "turn": 1,
+      "arrival_s": 0.0002,
+      "input_tokens": 7,
+      "new_input_tokens": 3,
+      "prefix_tokens": 4,
+      "output_tokens": 2,
+      "input_identities": ["a", "b", "c", "d", "x", "y", "z"],
+      "materialized_output_identities": ["out-3"]
+    }
+  ]
+}

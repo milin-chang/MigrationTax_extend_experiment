@@ -1,0 +1,1628 @@
+{
+  "projects": {
+    "TokenSim": {
+      "upstream": "https://github.com/pku-lemonade/TokenSim.git",
+      "base_commit": "8ec1450c30655fad3c06ab18f39ef77f124e0812"
+    },
+    "splitwise-sim": {
+      "upstream": "https://github.com/mutinifni/splitwise-sim.git",
+      "base_commit": "8f99e7dc9b407f4ce2488d03dd44c0b8b946dab0"
+    },
+    "SimAI": {
+      "upstream": "https://github.com/aliyun/SimAI.git",
+      "base_commit": "a57d765c5478f319c5f5ab6fdc53f9cc7f461743"
+    }
+  },
+  "assets": [
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/sglang/collective_perf.parquet",
+      "sha256": "271f4d8f6094f0e25bea8bfbe327b502a200149699ebd4a697a933b7d2291064",
+      "bytes": 6634
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/sglang/context_attention_perf.parquet",
+      "sha256": "eb1c493b64e9e22141595dc990f572feda148f72af508ad93ae3c6363b06d58a",
+      "bytes": 53450
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/sglang/gemm_perf.parquet",
+      "sha256": "e94efdf037e03fe718e2cbcba02290d070efcd9ec4c6ffbde2d87a068dee3248",
+      "bytes": 361893
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/sglang/generation_attention_perf.parquet",
+      "sha256": "9da8bbe839aab63136283e37e26269c87f6e60fc76919766af4941c5b6d2326a",
+      "bytes": 46733
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/sglang/moe_perf.parquet",
+      "sha256": "0379a61250d989351937a16272884af3014a26a991e4c60c5976a0d899e884c1",
+      "bytes": 485713
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/trtllm/collective_perf.parquet",
+      "sha256": "cbf5d469582f8a0dc37f08af5c7938b27989eb9dd1a0148333955dbdcf01c016",
+      "bytes": 6552
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/trtllm/context_attention_perf.parquet",
+      "sha256": "f513390329cfb7e57c601f7b38574489c0f48163df74116955f7d20240154aa3",
+      "bytes": 39803
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/trtllm/gemm_perf.parquet",
+      "sha256": "e754083689d5da867f2fccad69a8a1dad139a71bf90a81936bb8a318114c4cbd",
+      "bytes": 108888
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/trtllm/generation_attention_perf.parquet",
+      "sha256": "460e0ec963ff87bc5fd2877f84a774ece0c1424d531431143de3d7fb4aa7248f",
+      "bytes": 27641
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/trtllm/moe_perf.parquet",
+      "sha256": "1c35397d6d16a911ef9b13ffe5d4d67be9a30df986bac82cb4273f491a7663fb",
+      "bytes": 73491
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/vllm/collective_perf.parquet",
+      "sha256": "93a258eaee14637f3a90bc31887d66159188679972d74201cbf10a45321a8cff",
+      "bytes": 6600
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/vllm/context_attention_perf.parquet",
+      "sha256": "1ca5ebfb3d1b8e72922cae0c76d4c3e175c56c4a05b940824b2b7649a4fce5b7",
+      "bytes": 49501
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/vllm/gemm_perf.parquet",
+      "sha256": "67b87cd3bae4e6649a48579b3fed6606abda0ca2a6fe1b08a81cfc4fea6784e7",
+      "bytes": 85109
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/vllm/generation_attention_perf.parquet",
+      "sha256": "01d3dc6cedd89b23d3bd3dae0ef5efa00930966b1e8e8c727af96c55cb764edc",
+      "bytes": 44694
+    },
+    {
+      "path": "TokenSim/data/operator_data/a100_sxm_80g/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/a100_sxm_80g/vllm/moe_perf.parquet",
+      "sha256": "7de11667fe14888ec335390dcdf496f639ff4291af9194f12610db4abff4c1f1",
+      "bytes": 68117
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/collective_perf.parquet",
+      "sha256": "9495df16495c252b6e85912cb978f9d5c3c02d3a90f35ee92315f306bd1ac910",
+      "bytes": 6634
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/context_attention_perf.parquet",
+      "sha256": "deac43b7a57583031876918d13715c1dad6b0a23c274d184bd4dc7fb0a799935",
+      "bytes": 298600
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/dsv4_megamoe_perf.parquet",
+      "sha256": "cac9f4ea38080e32dd22d57b2c8a07b48bb92053cb3c53eb161dbe80c27dca33",
+      "bytes": 10115
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/ep_all2all_perf.parquet",
+      "sha256": "d076264a4f19e61e8d5ecec9d401b565b24688b0c840eed289b105ac9313fb54",
+      "bytes": 14805
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/gemm_perf.parquet",
+      "sha256": "573511ba96ed72be54a4ec7263fe499d81c9e3e4fbd2408058f4246422c318ea",
+      "bytes": 1029523
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/generation_attention_perf.parquet",
+      "sha256": "2fa5187cb77248154818f1a81564aa74fb7c72f9c931457cdec48ba8da0dfd4b",
+      "bytes": 215326
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/mhc_perf.parquet",
+      "sha256": "b8dac8c6241d0b4de68839f67ab9ecd73759f263288b27ef9a1adabb0419c2bb",
+      "bytes": 5792
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/sglang/moe_perf.parquet",
+      "sha256": "43be893dc1a11dfda83b8bbcfa3b4a2aa8d7a1186c1ef4a999834d90ccf60e1a",
+      "bytes": 1271831
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/collective_perf.parquet",
+      "sha256": "e160b98f9f9f0e72e12eaadc0c269523d5a8f6c7931ad45d263839a7c206aac2",
+      "bytes": 6566
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/context_attention_perf.parquet",
+      "sha256": "ff7baed75308a5d7cb4a504da39072f622b5c889c1d565785cbcdf849f9e9424",
+      "bytes": 489908
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/dsv4_megamoe_perf.parquet",
+      "sha256": "cac9f4ea38080e32dd22d57b2c8a07b48bb92053cb3c53eb161dbe80c27dca33",
+      "bytes": 10115
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/ep_all2all_perf.parquet",
+      "sha256": "23843dd0b9a7781d016ea23d82e1be0172cf07975ea459fd576c6a7987e72cab",
+      "bytes": 10261
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/gemm_perf.parquet",
+      "sha256": "9b5cdf820d329159df2ced2b8eb567479c650d30da71aa3414cbd4401a64cc62",
+      "bytes": 825766
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/generation_attention_perf.parquet",
+      "sha256": "b30aebe3945f4077cae793c750a2e83a30623a6104705752a8039fe9e47ce189",
+      "bytes": 233723
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/mhc_perf.parquet",
+      "sha256": "a919066c346755efd007fd80737f063c1ebadc401e0d22cc3ffa8689581f0b72",
+      "bytes": 5913
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/trtllm/moe_perf.parquet",
+      "sha256": "0d23c95a4f3d1be00aa592687e07babcdb5af911e6fcbdc80a01ca7c33461320",
+      "bytes": 1179136
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/collective_perf.parquet",
+      "sha256": "d4eef5723456f3fb33aa9f7a0cde23a54e6ec57c7a41d692f3bd4921ff43ccc4",
+      "bytes": 6593
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/context_attention_perf.parquet",
+      "sha256": "662be0e9a7d9855dfa95bc75b5abfe1d446c719ded58c33b09b239adbd2bb636",
+      "bytes": 347806
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/dsv4_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/dsv4_attention_perf.parquet",
+      "sha256": "753737f5e74054035ab0aeceacf75c1e4e099c30f456ab2265d62bb58b8ad5f8",
+      "bytes": 93094
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/dsv4_megamoe_perf.parquet",
+      "sha256": "86d5f76ca104eb5c8ae7dd614b1ff5791810b5153354908aaf6e846d641f4430",
+      "bytes": 11624
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/ep_all2all_perf.parquet",
+      "sha256": "d0c40dfc688150825bc4ae24695c2eb7afd09ddbfe9c22809e5fa40935a50936",
+      "bytes": 6981
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/gemm_perf.parquet",
+      "sha256": "f445725e5ff7abae74029b7c885625ce0954eee4774a92c1d97b50c66cd85cea",
+      "bytes": 950563
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/generation_attention_perf.parquet",
+      "sha256": "e1137ecc76e469667779d1f2a391725f86a0a9cd6a953003cf229e7adeb6a1b2",
+      "bytes": 239533
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/mhc_perf.parquet",
+      "sha256": "566ab773cab4091462b3afb0eb4db14693b52cb64b3da5788d92ceb9c13d3f6f",
+      "bytes": 6143
+    },
+    {
+      "path": "TokenSim/data/operator_data/b200_sxm/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b200_sxm/vllm/moe_perf.parquet",
+      "sha256": "e6008fbce7d2ced405f6cd7f18723da8f9a5f8ae08e2f69de7812bfa55fc02fd",
+      "bytes": 883522
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/collective_perf.parquet",
+      "sha256": "52b5aebf03d81296140a7411dbf09f8ee84070c46125478fa15b54930f55c75c",
+      "bytes": 6586
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/context_attention_perf.parquet",
+      "sha256": "c693445df76c32f5abcbc890bc75694e6379271af1a756dc98b59f38f3f452a8",
+      "bytes": 259867
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/ep_all2all_perf.parquet",
+      "sha256": "491cab8339918d842838466eaa0cbb8df56ebd7d4c900797fd081011047cc3f3",
+      "bytes": 14791
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/gemm_perf.parquet",
+      "sha256": "dc7b7a8020b29f4a5ccc5b4cc744f19a870a58f72a1403df8f93679269bce53a",
+      "bytes": 1048753
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/generation_attention_perf.parquet",
+      "sha256": "670005e2c93d10eb41967dae861a19c0c9f5e14fdecb72a136bf9507d57ff3e4",
+      "bytes": 178642
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/mhc_perf.parquet",
+      "sha256": "151bb7488524df465c816c343d4ef3b2461246fefddd5159e488c1748dba3714",
+      "bytes": 5837
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/sglang/moe_perf.parquet",
+      "sha256": "456c7410c50f25610a6e6a5f1f3b9bf489dc7c2556789f79a9e8f570fe5c03a6",
+      "bytes": 1251834
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/collective_perf.parquet",
+      "sha256": "682191d2902c5fb25bc7f65bffd56baea3449a7ab1e1d78cadc5cd00bc8bbe33",
+      "bytes": 6527
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/context_attention_perf.parquet",
+      "sha256": "2c42e55622fba312a685738c59c1736282c8104eb35afaf8a5ea23a52001437d",
+      "bytes": 481759
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/ep_all2all_perf.parquet",
+      "sha256": "a40c80b804b5fce154520d991f44d7a31583aa47b2aa1ac7eca1ecce4b0275d1",
+      "bytes": 10256
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/gemm_perf.parquet",
+      "sha256": "968a8e5860c418031c6f481ca1cc2c192cd529a7244f914606020aee1cc63d4c",
+      "bytes": 838473
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/generation_attention_perf.parquet",
+      "sha256": "46095ceaf895768b4cf8ab244bffc71539c0dd1ddff32a536a738d3aa7c060b0",
+      "bytes": 233499
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/mhc_perf.parquet",
+      "sha256": "266e0823779a87607e9e42c13835edb2cec33dcd07c70b5f60f3d7d90b98aa85",
+      "bytes": 5947
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/trtllm/moe_perf.parquet",
+      "sha256": "377c144fa29163e574e4d908d59c5dbe56d0da237b5a7c2d8e4a6eb8a06e2435",
+      "bytes": 1184018
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/collective_perf.parquet",
+      "sha256": "7e459ed49f481c953b146dee060f020ac8a085819db97b4c468fb0596028b395",
+      "bytes": 6546
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/context_attention_perf.parquet",
+      "sha256": "4c1ab705907245573349b446cc67608e313215ded288f77c98ca9061ea292ee6",
+      "bytes": 336363
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/dsv4_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/dsv4_attention_perf.parquet",
+      "sha256": "3e7e0c2dd9e06a970864be5f782573894dd5b9bf8509c1fe3c015ee23c3ef334",
+      "bytes": 91373
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/dsv4_megamoe_perf.parquet",
+      "sha256": "59c20d814f0ff11689d1e71d96eccb1d5b38ba237961a1b69348c9fed6e7a9b1",
+      "bytes": 13457
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/ep_all2all_perf.parquet",
+      "sha256": "902dc18c6cc3feec47d27f5b9bef4bea048e9483947969f243716457bef67485",
+      "bytes": 6974
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/gemm_perf.parquet",
+      "sha256": "c2d9924f1a6f36011edd46cdf07567c43782fa17cca6dbfe8b854e60630fadbd",
+      "bytes": 954425
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/generation_attention_perf.parquet",
+      "sha256": "8c44621c66e7b5db7b2ae1d92fdfcbff497e8bf03967bf87b8e320ca6b27b037",
+      "bytes": 227189
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/mhc_perf.parquet",
+      "sha256": "b8cf766922ad6075fee0e9735ed9a87dc3e45987c7dc88d9e057b926b62f34cb",
+      "bytes": 6127
+    },
+    {
+      "path": "TokenSim/data/operator_data/b300_sxm/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/b300_sxm/vllm/moe_perf.parquet",
+      "sha256": "3eb550dd13954121ec2bfab526b41c6056aa5a91eb06f494211cfa6d2d459b6c",
+      "bytes": 598761
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/collective_perf.parquet",
+      "sha256": "986c767cae17d0336a68802f63a0ad28018008f7e37f3ec104f802e7b24da7ad",
+      "bytes": 5289
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/context_attention_perf.parquet",
+      "sha256": "9944bf2efa65dd09d5429617dffd0d32dd719364d2f709c3ff8491e6b049e6ce",
+      "bytes": 286026
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/dsv4_megamoe_perf.parquet",
+      "sha256": "86d5f76ca104eb5c8ae7dd614b1ff5791810b5153354908aaf6e846d641f4430",
+      "bytes": 11624
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/ep_all2all_perf.parquet",
+      "sha256": "11052d5d5107cbb6a98f758d50db4d5700315d6b03dcb3797444e6bf0640a3e1",
+      "bytes": 15276
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/gemm_perf.parquet",
+      "sha256": "7c5df8acac4f80d95662d3f33deff266f38d6d165393db7c03e34ce76515ddd3",
+      "bytes": 1026315
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/generation_attention_perf.parquet",
+      "sha256": "1e7be403b437ccec634b9bd43d80ec0e768d5dc77ebe20e6905177e27a7b8db8",
+      "bytes": 201171
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/mhc_perf.parquet",
+      "sha256": "eca699f6a83de8bebea9f0f9ffd4914d5cd255f96cd09b077ef4d05a5a59900f",
+      "bytes": 5781
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/sglang/moe_perf.parquet",
+      "sha256": "7d71d5d1ac686b6308a92f275f0854fb7d7fcfff1a5b8ecc85debeacf085a22c",
+      "bytes": 1234664
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/collective_perf.parquet",
+      "sha256": "9e75adb9b307e98d015c849302c7f68867e8843adeaa682467d6699b663346b6",
+      "bytes": 5235
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/context_attention_perf.parquet",
+      "sha256": "b9b9014b0f62e526f08407c300af2b72fa4a9f61efcfdf4d219442b302b7de1b",
+      "bytes": 469319
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/dsv4_megamoe_perf.parquet",
+      "sha256": "86d5f76ca104eb5c8ae7dd614b1ff5791810b5153354908aaf6e846d641f4430",
+      "bytes": 11624
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/ep_all2all_perf.parquet",
+      "sha256": "3f42caf3abca1eab6c0c7ba5ac7db2af9f9964092fbcda0bb554ce10713e30be",
+      "bytes": 10273
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/gemm_perf.parquet",
+      "sha256": "e3f2394106acfbfdf470c5a9520a9fcaae7a24845cbac6be65559c41640d9fd2",
+      "bytes": 799032
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/generation_attention_perf.parquet",
+      "sha256": "de61b7303decea28c0b9e4516c1f1cd361375b7e03b50fdf0cb105d882e9d29c",
+      "bytes": 220355
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/mhc_perf.parquet",
+      "sha256": "b6e15f364a773a372cd3e785b42f6c497d7a9a18d562195fa37ec52fa9b3d8b9",
+      "bytes": 5913
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/trtllm/moe_perf.parquet",
+      "sha256": "21653849b88e03e4d0860b2a297ca2e75da7c56588ff482846326b2a3f93e997",
+      "bytes": 1072841
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/collective_perf.parquet",
+      "sha256": "e65db5f88774bb198999c64abcc6b89126182246dfa78d04fe9a1dc244194f96",
+      "bytes": 5246
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/context_attention_perf.parquet",
+      "sha256": "622f34fbc38aadab571658e9b08dcb44e42820c443d6bfce05057eee201f3247",
+      "bytes": 326684
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/dsv4_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/dsv4_attention_perf.parquet",
+      "sha256": "16c794a3fb96e9c266a84100989737333d2733c69fb3538bfd14049f376c1621",
+      "bytes": 91308
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/dsv4_megamoe_perf.parquet",
+      "sha256": "86d5f76ca104eb5c8ae7dd614b1ff5791810b5153354908aaf6e846d641f4430",
+      "bytes": 11624
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/ep_all2all_perf.parquet",
+      "sha256": "d47a30b9ecb13837c5a491d3e1a7e516ac5897e086c290ff0e82d7fd5eed022c",
+      "bytes": 6952
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/gemm_perf.parquet",
+      "sha256": "2caea134f9b0ed9d5ba4648cfa15e262043c75833952e588e39c9204cff75876",
+      "bytes": 975149
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/generation_attention_perf.parquet",
+      "sha256": "a0893c5e6e7f36787e587dab07704c92a282386e56d650490d7aa8349d7a5571",
+      "bytes": 211938
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/mhc_perf.parquet",
+      "sha256": "ea6a0efe52cedd0a5316fcd96a727d64616f62b6595c8d62ced93a91d2f46663",
+      "bytes": 6140
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb200/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb200/vllm/moe_perf.parquet",
+      "sha256": "e00023448a9f056cbe62ad375f05ab10bc71ad92bc140e362c1d42737938e1cf",
+      "bytes": 583975
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/collective_perf.parquet",
+      "sha256": "4b5ea54bf433b6b63385690454d1d6a26f819b344c25bf71e206a62141470682",
+      "bytes": 5754
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/context_attention_perf.parquet",
+      "sha256": "8b945bce6d2e1e7d98c8c55d96687fcaa2e7fdf188c496f8ef56dd4de6763faa",
+      "bytes": 283286
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/dsv4_megamoe_perf.parquet",
+      "sha256": "59c20d814f0ff11689d1e71d96eccb1d5b38ba237961a1b69348c9fed6e7a9b1",
+      "bytes": 13457
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/ep_all2all_perf.parquet",
+      "sha256": "b0799a12dcf05ddb01b9eb03d0cf59a59dc7180255b1c969686368fee8461d20",
+      "bytes": 15204
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/gemm_perf.parquet",
+      "sha256": "6c3b413e07a2aec778c64dad71ffb1e4a00d55b147ecab1e82e7f2f1d47832d8",
+      "bytes": 1022656
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/generation_attention_perf.parquet",
+      "sha256": "597a2c204d316800b7ab9b55aaace6e1b0c97918f5cba76a561f202f1cae3476",
+      "bytes": 200586
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/mhc_perf.parquet",
+      "sha256": "c6a162b43e8370af6b30d0463f4da34aa62cf464ecafc60fa3346b9df52b2d62",
+      "bytes": 5818
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/sglang/moe_perf.parquet",
+      "sha256": "78df207781eb0cabc646c1c1d3ba0562b220aac68616ef05203c1305cfb90a41",
+      "bytes": 1221150
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/collective_perf.parquet",
+      "sha256": "7d5d81eac7e69d34fd0d860576d275cfe93dee5fc3c88723fd34dca5d88ce0ca",
+      "bytes": 5742
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/context_attention_perf.parquet",
+      "sha256": "e5a8a12c29d5d68d9153a64f82cf826ca89045e0f80548b4c7ba47826f45a6e6",
+      "bytes": 465100
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/dsv4_megamoe_perf.parquet",
+      "sha256": "59c20d814f0ff11689d1e71d96eccb1d5b38ba237961a1b69348c9fed6e7a9b1",
+      "bytes": 13457
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/ep_all2all_perf.parquet",
+      "sha256": "69984d0241d583a433a624dfb9510c0ff0bee71584b76717a5d8bf06bde7b53d",
+      "bytes": 10231
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/gemm_perf.parquet",
+      "sha256": "ee45d2578b3e3a93c06c292463eac23f861dc5590dbcb1ac1e5aaad5ad91f084",
+      "bytes": 816561
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/generation_attention_perf.parquet",
+      "sha256": "6d6a697aa7e9b17a75097e54a301d2e158c8265a5553e9723a25df17042113b1",
+      "bytes": 225793
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/mhc_perf.parquet",
+      "sha256": "ec024f4b9b9f170ded5dc9b475858d7fafea679b9fb3838860ebaa0794f66d6c",
+      "bytes": 5927
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/trtllm/moe_perf.parquet",
+      "sha256": "82a706c017b382c42ba28b74190b69a0d5989fbaa33fd777af0213273891c89a",
+      "bytes": 1083637
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/collective_perf.parquet",
+      "sha256": "b0e4b75dd34d5c5a266dd26dbfb0c7224ffaee99b1d6955466e9c54e60f8ca90",
+      "bytes": 5780
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/context_attention_perf.parquet",
+      "sha256": "341c74b90a28f31cc438cb066d0581fa0d644251ee4ce0dd156dc67fbf491662",
+      "bytes": 314484
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/dsv4_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/dsv4_attention_perf.parquet",
+      "sha256": "e1bf787babbd65a8d2b46ba3100e4c146e86de1402bb13e96509724871cba82b",
+      "bytes": 90164
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/dsv4_megamoe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/dsv4_megamoe_perf.parquet",
+      "sha256": "59c20d814f0ff11689d1e71d96eccb1d5b38ba237961a1b69348c9fed6e7a9b1",
+      "bytes": 13457
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/ep_all2all_perf.parquet",
+      "sha256": "c362508ac51f4d3eff0741ead69f3cd5ed70d2b2c7e61a2a29f525aa4a663071",
+      "bytes": 6905
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/gemm_perf.parquet",
+      "sha256": "6883ca13f0500107cade72777b0e398433efefb3105e918233a3cb3a143a50d6",
+      "bytes": 987064
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/generation_attention_perf.parquet",
+      "sha256": "f310407e1d0d1458deb6b9eb0262472244ecc17abc2786c5fef423eab3ab35c0",
+      "bytes": 207463
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/mhc_perf.parquet",
+      "sha256": "4fa31dc65084017825993ab80f4f341c7451f51ddc8cfbbeb99ea674fe455c5d",
+      "bytes": 6133
+    },
+    {
+      "path": "TokenSim/data/operator_data/gb300/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/gb300/vllm/moe_perf.parquet",
+      "sha256": "9cce7385031a552e060a0680b9f94bedcfed944a19ef4b6942c555b0eaeb6f6b",
+      "bytes": 557686
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/context_attention_analysis.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/context_attention_analysis.parquet",
+      "sha256": "44ba6bb08e75a5e2519a575a2a1c7cda6d0d61c0a8ed2774d746d8fe87ea9920",
+      "bytes": 8585
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/context_attention_perf.parquet",
+      "sha256": "a3057dff16702fa5bbecbc0c2a10c3ee1dcc61b04e01316bd9acb71d66c69fd1",
+      "bytes": 3726
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/elementwise_analysis.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/elementwise_analysis.parquet",
+      "sha256": "90e49e14f33d3bd679d5948308827a06818bf6483a646785c0615943d7cc8575",
+      "bytes": 9844
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/elementwise_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/elementwise_perf.parquet",
+      "sha256": "dbb0f67f467fdabe39b457c7a78da20e09cceb4c5dd8b5bc46c845698b24e5f9",
+      "bytes": 3147
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/gemm_analysis.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/gemm_analysis.parquet",
+      "sha256": "214906e374111d546d4a7616f0a60b705f6a09613f5f71173c1dd7ff46fc74e0",
+      "bytes": 14007
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/gemm_perf.parquet",
+      "sha256": "7784f199f331494dff4ea578b92d98a17fe77af3164aec1dd2fc48d1037be4e6",
+      "bytes": 3616
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/generation_attention_analysis.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/generation_attention_analysis.parquet",
+      "sha256": "43009370cac07ef22765e561b801ee8517eb6a22e76911658d2522b016ec7276",
+      "bytes": 10827
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/generation_attention_perf.parquet",
+      "sha256": "e493d7476734c376b3a4541634bc9233eedde9543fa70ed7f88defa14f7122ed",
+      "bytes": 4235
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/moe_analysis.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/moe_analysis.parquet",
+      "sha256": "fcd75ff00de0ed145dd0d0035c57c7a76f8d89f1dd241575795df63a894fd194",
+      "bytes": 8662
+    },
+    {
+      "path": "TokenSim/data/operator_data/groqchip_v1/analytical/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/groqchip_v1/analytical/moe_perf.parquet",
+      "sha256": "7b48c8ec3aa7bf325abf6f4b12c937096152f4fd82fc1c143b156beaeae849a6",
+      "bytes": 3822
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/collective_perf.parquet",
+      "sha256": "8e4e9f5cde45ba3095aafe82e1615cb072194b074ffdee74abfa99c12d8b06ba",
+      "bytes": 6584
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/context_attention_perf.parquet",
+      "sha256": "4edc57516d1b33d7d4732b7055b7493e349b8a52cf91e7a9f1f48b4592adf357",
+      "bytes": 292129
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/ep_all2all_perf.parquet",
+      "sha256": "b8a52e635fd64540c097cf21a7d624a0bf457213259400493d43e517d33b2af9",
+      "bytes": 17029
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/gemm_perf.parquet",
+      "sha256": "663b7afb002f44640d343a0d07d79db37909bb90f8a5622189b6c2d5814b414a",
+      "bytes": 1027285
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/generation_attention_perf.parquet",
+      "sha256": "e764b0d69d3a3f1fae5c62c8120bd61c76c31f73068961356effdd437befbb8e",
+      "bytes": 273632
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/mhc_perf.parquet",
+      "sha256": "bf0af56f6248e08a59cf71f577dbc3c38f456568f05e79743e7c5165e8a22bf2",
+      "bytes": 5942
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/sglang/moe_perf.parquet",
+      "sha256": "7df80eeaaf6cc1bff0306641a59665a2089a94a8c20cfaf33945dfb5de51e364",
+      "bytes": 1227190
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/collective_perf.parquet",
+      "sha256": "42e574beef6fc0f163f74b0422eefd4e51a945c765e224ba91ff2f55adffde14",
+      "bytes": 6519
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/context_attention_perf.parquet",
+      "sha256": "17a4d716fd4889caeaeef29ddde84411aaff3dab88f321cf18db0557c2b2a40a",
+      "bytes": 573217
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/ep_all2all_perf.parquet",
+      "sha256": "d8b6417740b0fb119c2594c8225ca1b6450c63e690df5918d9efdf5bd22a1618",
+      "bytes": 9154
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/gemm_perf.parquet",
+      "sha256": "c866e6e721138ab41ae3fc0f157f0df3065ea29d79fee107f8d069b2c63126c6",
+      "bytes": 749048
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/generation_attention_perf.parquet",
+      "sha256": "a2f538bd354b0bc8708aa601dcd666dc380df1c995debff85f95157a2a5a0ec1",
+      "bytes": 289602
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/mhc_perf.parquet",
+      "sha256": "abe3f95e77b0598de8ca960a75f6082e62c8e379544644abb5c947c4a13d52eb",
+      "bytes": 6021
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/trtllm/moe_perf.parquet",
+      "sha256": "99a58c0eee48e976f5166991497b8442b1e26cd20c15b921b5e38f97e8aa8877",
+      "bytes": 1226206
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/collective_perf.parquet",
+      "sha256": "20d3c7ce75ffc46d3e6c54ea27def60229a1a1fe8007c8509aef0ba53037b701",
+      "bytes": 6540
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/context_attention_perf.parquet",
+      "sha256": "dd8e7cb4e690b73bd55e1fd05753fffe72343a56e30a88ac8683a7666a1579d3",
+      "bytes": 381518
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/dsv4_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/dsv4_attention_perf.parquet",
+      "sha256": "02b78fe0a9d27cf263d7601ac626359d210248b246be7fadf6f6e518da0326c3",
+      "bytes": 98554
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/ep_all2all_perf.parquet",
+      "sha256": "38e497bd41d84ba05400b3536c15152d4a35d0544819d340b6544c38582c0c9b",
+      "bytes": 9849
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/gemm_perf.parquet",
+      "sha256": "b4152085e2c91d24508326c85199187bb8fd0134a8877f1170eca3496f5fbdf5",
+      "bytes": 840034
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/generation_attention_perf.parquet",
+      "sha256": "dfb9a54aa22c0d4236a5c7d0921dcb7f0d61a67abe218ac43e4924e5b321ab4d",
+      "bytes": 293601
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/mhc_perf.parquet",
+      "sha256": "29e365f9cca82d9faf4c4322298b5da1885f373a7b66638e8ba6eed303eba4d9",
+      "bytes": 6279
+    },
+    {
+      "path": "TokenSim/data/operator_data/h100_sxm/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h100_sxm/vllm/moe_perf.parquet",
+      "sha256": "7a99a911f284c0c238456ee2bca06e2502cab756a192b1e53db6281e3726afbf",
+      "bytes": 525131
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/collective_perf.parquet",
+      "sha256": "fc20e4bf5ed5182a04d27e2fcb33653613ff5783e7bdd5ad627de25fee808399",
+      "bytes": 6527
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/context_attention_perf.parquet",
+      "sha256": "b926a2de67d40b61ec858c0d0cd8b2eb14e14af4017c7a0e3d9e6e6cd5204812",
+      "bytes": 296332
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/ep_all2all_perf.parquet",
+      "sha256": "177faa1617da55317e49f8fe3c09adf3ce00838a22249b570147eb868985a850",
+      "bytes": 17017
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/gemm_perf.parquet",
+      "sha256": "9d8063efd762bb642e1617c52f041ab21d1b2a11dc856a9179ed7157459ca196",
+      "bytes": 912413
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/generation_attention_perf.parquet",
+      "sha256": "8d75aa68d475c3fd57380e9775b35d1b675c5bed8f74f560b05e8c671f38cb6a",
+      "bytes": 274967
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/mhc_perf.parquet",
+      "sha256": "ec92c934b9770602a926e96d7d283f7686f108b5f000efed6ff142f6a0abac5a",
+      "bytes": 5917
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/sglang/moe_perf.parquet",
+      "sha256": "8518bf2d56a886ebaab69dace04036d97cdca9a4c166230d8923db4b314923dd",
+      "bytes": 1234025
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/collective_perf.parquet",
+      "sha256": "bcc849021d8d2d8091a4ce71f481e01e964f4d328dd8883c6ab36c251e25b214",
+      "bytes": 6469
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/context_attention_perf.parquet",
+      "sha256": "ccda48edde8c5c871dcc712c961949bc726d29dcec554e7ea1258a8f80857fd4",
+      "bytes": 576808
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/ep_all2all_perf.parquet",
+      "sha256": "62a0d5f7ad4863a98b472b2a4513db1f506d77df560cc2ee67af19793c1df5b6",
+      "bytes": 9112
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/gemm_perf.parquet",
+      "sha256": "af02071ae81f96ce758d5dae9ed3d38e06adc432f7bc238ec4b78bb96512a6da",
+      "bytes": 750948
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/generation_attention_perf.parquet",
+      "sha256": "e0ac1d7bce5a9dd652f2d98ea1d79a0cb7ffb3caa56a3bba0c7eaeb0f5f86bef",
+      "bytes": 289248
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/mhc_perf.parquet",
+      "sha256": "4267c558149d4ffa236cbac46643e4aaa0abf47440fe9ecf2ec13074bb92e058",
+      "bytes": 6064
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/trtllm/moe_perf.parquet",
+      "sha256": "6f5d123f7fbb5d307f055929165ea74f5058c1e12a9ce4cd09cf108d518b513e",
+      "bytes": 1190278
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/collective_perf.parquet",
+      "sha256": "b8bea234e2b135391d6926d131d649c4d329b171363796e1e9bdec4b2346c19c",
+      "bytes": 6489
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/context_attention_perf.parquet",
+      "sha256": "ab22e42eb7deea176ab439480b7ed0c5885800e1abfb295d167f5e28e901227e",
+      "bytes": 383002
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/dsv4_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/dsv4_attention_perf.parquet",
+      "sha256": "5388ef1e03e063c105ceb6c56147436d453bd78b4b036c196b5c2fc0e83611a0",
+      "bytes": 96981
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/ep_all2all_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/ep_all2all_perf.parquet",
+      "sha256": "cebdc77150ab5d31798006eb33613eadaec4e12df03cc1b47b8cab98908cfba1",
+      "bytes": 6989
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/gemm_perf.parquet",
+      "sha256": "8b0c8cf9c38e5e26bc1560f0a8709d7f52174c7dfb0e8175f25c82c680e664e6",
+      "bytes": 829048
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/generation_attention_perf.parquet",
+      "sha256": "723f74864a7ede166391f67c24dc8a7925c8b84a5892a693e3dd5a5e4c6749b5",
+      "bytes": 296370
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/mhc_perf.parquet",
+      "sha256": "c9b82a4c8a2bb17c4bcd8f4376f412d8a2b5dbdd81382b90134246ad8c1eacea",
+      "bytes": 6249
+    },
+    {
+      "path": "TokenSim/data/operator_data/h200_sxm/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/h200_sxm/vllm/moe_perf.parquet",
+      "sha256": "7b5a89f744d06ac930a5ef82fe0ea2946dd1d6990a8902ecc7ba60e63869a695",
+      "bytes": 705590
+    },
+    {
+      "path": "TokenSim/data/operator_data/intel_arc_pro_b60/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/intel_arc_pro_b60/vllm/collective_perf.parquet",
+      "sha256": "e75a4088a3aec71898bff73cab2a68560372e3f42d213717cf30b8d81285f543",
+      "bytes": 5930
+    },
+    {
+      "path": "TokenSim/data/operator_data/intel_arc_pro_b60/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/intel_arc_pro_b60/vllm/context_attention_perf.parquet",
+      "sha256": "4dc050e439c1c28c95983b80d81e0d6803234c465c53cb1cc736025759a0553a",
+      "bytes": 149672
+    },
+    {
+      "path": "TokenSim/data/operator_data/intel_arc_pro_b60/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/intel_arc_pro_b60/vllm/gemm_perf.parquet",
+      "sha256": "705383fe57f1f159fe3a59b9142ef3c2b56e714b6719c8ba1795931e811d532f",
+      "bytes": 214996
+    },
+    {
+      "path": "TokenSim/data/operator_data/intel_arc_pro_b60/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/intel_arc_pro_b60/vllm/generation_attention_perf.parquet",
+      "sha256": "bd2d61abf605a7462727eb9a3e315737ed064f19255e33765ff7f40f0e00f91f",
+      "bytes": 175048
+    },
+    {
+      "path": "TokenSim/data/operator_data/intel_arc_pro_b60/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/intel_arc_pro_b60/vllm/moe_perf.parquet",
+      "sha256": "c76032de1f836511d7738c4a59c0e3c60f596a8be6e5cdb4966f4e1d70c15f51",
+      "bytes": 34342
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/sglang/collective_perf.parquet",
+      "sha256": "7fdf246b418c2d04026beb4d6f74c5c8b19b1801cb03fb15ea53b77eb919a4da",
+      "bytes": 6795
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/sglang/context_attention_perf.parquet",
+      "sha256": "e918e02dc86df97c8048d843d559cfd89b056728d79b10b8cf7f4925fda50261",
+      "bytes": 247595
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/sglang/gemm_perf.parquet",
+      "sha256": "003dfae83dacde5f4500c20e9e2fc042e9b1aaaae969fea84a3b25bc2c4ca21b",
+      "bytes": 526887
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/sglang/generation_attention_perf.parquet",
+      "sha256": "950ab99e111d5203d41883f442a34a92e3d23f757559141e125205d4ebe8637b",
+      "bytes": 181325
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/sglang/moe_perf.parquet",
+      "sha256": "6d1a669cedd11771058632115ef559579708e4af465aa8fb15dfe4addb23fa5e",
+      "bytes": 497925
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/trtllm/collective_perf.parquet",
+      "sha256": "5a4e46454bda61dfaca4f43927e1ebb2b0ae36b6b5906e97fe4574724d508695",
+      "bytes": 6742
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/trtllm/context_attention_perf.parquet",
+      "sha256": "cd73614b29d2d17b2e80d8fc81ae799a4136f845bbff16dc578fb8209b36bc78",
+      "bytes": 429921
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/trtllm/gemm_perf.parquet",
+      "sha256": "37fa1d35230d5645a996926219e0661f323bdde587fd34a2fc60d115e3207023",
+      "bytes": 551710
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/trtllm/generation_attention_perf.parquet",
+      "sha256": "1b864f4ba70f6423b0aa7991b400dd707c5129f97d9234a21560cab8c82e6c14",
+      "bytes": 224934
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/trtllm/mhc_perf.parquet",
+      "sha256": "bb576c1eb5ca389a7291d003d7ec9a6018fe19d3d4a9c29d58a5708cde0278e6",
+      "bytes": 5889
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/trtllm/moe_perf.parquet",
+      "sha256": "7a3b2a1f6984850aae114fda14025aeb93144a4299e76991c1c78f8bacbf5d1e",
+      "bytes": 595868
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/vllm/collective_perf.parquet",
+      "sha256": "c77c626b65caa232636ace7063d801a937d7cd6ae427e4369d26cc66f3d7fccf",
+      "bytes": 6762
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/vllm/context_attention_perf.parquet",
+      "sha256": "0e94975dce43bcb43dae3248c98f819ac574c13a0abdff021ec071a92e1dba88",
+      "bytes": 292889
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/vllm/gemm_perf.parquet",
+      "sha256": "10c4f90d12367de0ea138c372a3d0c49b23e306aadae475d73fdcdad8d5902d0",
+      "bytes": 666406
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/vllm/generation_attention_perf.parquet",
+      "sha256": "9e598f0a99c523c68ae881841d4bb0f88d17772ecf28f10a5c7a786109d54e24",
+      "bytes": 246079
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/vllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/vllm/mhc_perf.parquet",
+      "sha256": "bf61316d98783b5d9d7412b65f5f539e40801fc8289775ddf9560afaefcc47df",
+      "bytes": 6279
+    },
+    {
+      "path": "TokenSim/data/operator_data/l40s/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/l40s/vllm/moe_perf.parquet",
+      "sha256": "8aeca23a51b820dbb63f4cd0fbd10396d9b2e39608142ec2ef45e9dc3f80e26e",
+      "bytes": 521221
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/sglang/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/sglang/collective_perf.parquet",
+      "sha256": "af3feb0a27fe2d66368075c9bc79ebd7b1bc2d7f6034d54b5b3105348a65ee12",
+      "bytes": 6880
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/sglang/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/sglang/context_attention_perf.parquet",
+      "sha256": "7d4bffc60e6836eb96ef7e21c1360a3e22ee9f8a1759eac9da33e4c7993f9bff",
+      "bytes": 259143
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/sglang/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/sglang/gemm_perf.parquet",
+      "sha256": "fa0617212f107a23939a99723ad9a453a31c97690296753a83a9f57f1d3e3ddb",
+      "bytes": 940863
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/sglang/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/sglang/generation_attention_perf.parquet",
+      "sha256": "4c3eec0b0163f0cc5aff5aadd535be3f5eb1129589a57705ce79ab7975417c66",
+      "bytes": 166780
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/sglang/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/sglang/mhc_perf.parquet",
+      "sha256": "ff87617e336e2d2093920b3a113607004b9a321a3c82b2e642c4565b81e16285",
+      "bytes": 5940
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/sglang/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/sglang/moe_perf.parquet",
+      "sha256": "e1370b6eb5662f5224adbf140da9e72876277c648562636c29f6ccccecf48229",
+      "bytes": 1063072
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/trtllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/trtllm/collective_perf.parquet",
+      "sha256": "224404f1e22d330115b3bff53055261b112a308324b7f184ef809fd4e3a0dea1",
+      "bytes": 6825
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/trtllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/trtllm/context_attention_perf.parquet",
+      "sha256": "b92df3a99f159a49929f5ba9e5c1e2e3dcb9dbcc5a9ab3dee8c0b99cd7c80754",
+      "bytes": 545117
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/trtllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/trtllm/gemm_perf.parquet",
+      "sha256": "69016c1a8ef5fa63c435142f3d82051f62c4c6b956cefd274221a334e2092039",
+      "bytes": 929140
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/trtllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/trtllm/generation_attention_perf.parquet",
+      "sha256": "58ea52cb5606ab69c3ac78b2d828d25eaf69cd53cc837ad080625f7b3f0aaa08",
+      "bytes": 270000
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/trtllm/mhc_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/trtllm/mhc_perf.parquet",
+      "sha256": "0f2fe8978d8d2bd9db4bdd2fb8ec7b22475f6cffc00194ff01029ce541af155a",
+      "bytes": 5935
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/trtllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/trtllm/moe_perf.parquet",
+      "sha256": "337e866f440e83c9c4144a56e6e6adce05a837739ee73a4113ffe25a8b29dafb",
+      "bytes": 1380455
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/vllm/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/vllm/collective_perf.parquet",
+      "sha256": "b482d165e61e42645b286d8fe5fbe87c225c2b09cb2e5e029fc6a442ec020e82",
+      "bytes": 6840
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/vllm/context_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/vllm/context_attention_perf.parquet",
+      "sha256": "4bc6fe9ff343d6d34f185d23490962c2fff15c50b907fd1f6862c3058ff8631b",
+      "bytes": 311316
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/vllm/gemm_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/vllm/gemm_perf.parquet",
+      "sha256": "8c4c1b2a0c26764f924eaa0be891586c8282e36ee67a8dc925886e34eae28ec6",
+      "bytes": 661929
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/vllm/generation_attention_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/vllm/generation_attention_perf.parquet",
+      "sha256": "f8932e0b90420821538f8bfbdc1d3f80e995500cb9add99077067431c6e6b87d",
+      "bytes": 216815
+    },
+    {
+      "path": "TokenSim/data/operator_data/rtx_pro_6000_server/vllm/moe_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/rtx_pro_6000_server/vllm/moe_perf.parquet",
+      "sha256": "b795a524b4d200579585ca71a57a6e7e63500ce24d3b16a3840250582ad5787e",
+      "bytes": 382062
+    },
+    {
+      "path": "TokenSim/data/operator_data/v100_sxm2/nccl/collective_perf.parquet",
+      "project": "TokenSim",
+      "relative": "data/operator_data/v100_sxm2/nccl/collective_perf.parquet",
+      "sha256": "3214c9d0ebde1a72a981d913d86fcf735fd1af02f2f31f999b4ff648eea88c4b",
+      "bytes": 3248
+    },
+    {
+      "path": "SimAI/docs/SimAI_Intro_Online.pdf",
+      "project": "SimAI",
+      "relative": "docs/SimAI_Intro_Online.pdf",
+      "sha256": "120a4f2cbddefa70fbd2c014d3b22c2efec426bbf6b1281f0021b53d49f6c7d1",
+      "bytes": 8049710
+    },
+    {
+      "path": "SimAI/docs/images/DCN+.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/DCN+.jpg",
+      "sha256": "4960380fdb35f8d3fc2f236377d9cd8f76c5ce564407652be7f83549d1c0bde9",
+      "bytes": 556106
+    },
+    {
+      "path": "SimAI/docs/images/DCN+DualToR.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/DCN+DualToR.jpg",
+      "sha256": "bc6d7a74166db804d0b7921ac37b702bcd594efd6e4c322ab82782ee1f0d194c",
+      "bytes": 562806
+    },
+    {
+      "path": "SimAI/docs/images/DCN+SingleToR.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/DCN+SingleToR.jpg",
+      "sha256": "d34e4f50f20ddf88267ae9e2909c6e9f5f70251bb0fe6123e991628bd7b73a30",
+      "bytes": 394396
+    },
+    {
+      "path": "SimAI/docs/images/HPNDualPlane.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/HPNDualPlane.jpg",
+      "sha256": "4b8ace1bddae952ee235f2edef39f7fb49c443ba74fb0913b76a78284e5a03c8",
+      "bytes": 686987
+    },
+    {
+      "path": "SimAI/docs/images/HPNSinglePlane.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/HPNSinglePlane.jpg",
+      "sha256": "e3bcda5c86c723fbf32d78b2679ab11b716f90a63e9e4c5c120c290ec363e963",
+      "bytes": 627358
+    },
+    {
+      "path": "SimAI/docs/images/Sim-phynet_finished.png",
+      "project": "SimAI",
+      "relative": "docs/images/Sim-phynet_finished.png",
+      "sha256": "0cf25bf8622b336a0ed4d905f105210504006d785882051e1477b862a8ddafdc",
+      "bytes": 918250
+    },
+    {
+      "path": "SimAI/docs/images/SimAI_Arc.png",
+      "project": "SimAI",
+      "relative": "docs/images/SimAI_Arc.png",
+      "sha256": "759741194ba179a142786eb00a5941b17a6d193942ad41dcd6ea8a57ebaf994b",
+      "bytes": 12751791
+    },
+    {
+      "path": "SimAI/docs/images/Spectrum-X.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/Spectrum-X.jpg",
+      "sha256": "d81fc8ddcb3d11c1893ac12f41fdfa7f1026787f3bc9a58ba275ac4f64974ed2",
+      "bytes": 514017
+    },
+    {
+      "path": "SimAI/docs/images/Spectrum.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/Spectrum.jpg",
+      "sha256": "213d0c4f12ce9fe55d3086705035ea7382a41e813c8f1f399b4328352d36e44b",
+      "bytes": 164875
+    },
+    {
+      "path": "SimAI/docs/images/Spectrum8gpus.png",
+      "project": "SimAI",
+      "relative": "docs/images/Spectrum8gpus.png",
+      "sha256": "1445d0b5e3b2eb04259d08798caa07d62b9c233236504b9064e86042ca3be2c9",
+      "bytes": 131723
+    },
+    {
+      "path": "SimAI/docs/images/simai_dingtalk.jpg",
+      "project": "SimAI",
+      "relative": "docs/images/simai_dingtalk.jpg",
+      "sha256": "eb1147f140064d1a5f8d3aef90814dfd486338cc7ca2d887ffeb09787b1cf3d7",
+      "bytes": 94912
+    },
+    {
+      "path": "SimAI/docs/images/simai_raw.png",
+      "project": "SimAI",
+      "relative": "docs/images/simai_raw.png",
+      "sha256": "4b6dbd746181adc1c0841abb2b68c389c25a28d330a58374902db1873fc42599",
+      "bytes": 674997
+    },
+    {
+      "path": "SimAI/docs/images/simai_topo.png",
+      "project": "SimAI",
+      "relative": "docs/images/simai_topo.png",
+      "sha256": "2c02e320076fb9771b0ee70c5b20f0875fcb9a4fb6f41ad8932c971570629180",
+      "bytes": 504459
+    },
+    {
+      "path": "SimAI/docs/images/simai_visual.png",
+      "project": "SimAI",
+      "relative": "docs/images/simai_visual.png",
+      "sha256": "7dfe36b1f224e1ce4b465689b15b9199035758d570b85dbfd369dcea5cc05ae8",
+      "bytes": 552391
+    },
+    {
+      "path": "SimAI/docs/images/simai_wechat.jpeg",
+      "project": "SimAI",
+      "relative": "docs/images/simai_wechat.jpeg",
+      "sha256": "d28d8a972ab4e259e50d6ce2f7b1e47943a93a07b404f573fa2962feb593e7d0",
+      "bytes": 158457
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/assets/batch_size.png",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/assets/batch_size.png",
+      "sha256": "80f85d348de6b61c2ea049b894ef757f7f448bc1ec0e9e9af82d7b082cf2f12e",
+      "bytes": 28391
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/assets/chrome_trace.png",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/assets/chrome_trace.png",
+      "sha256": "b3aba13ffd1e6b19527e403050d28139c2881e7ef24fe1e1f5953fbde1e13f96",
+      "bytes": 243441
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/assets/decode_time_execution_plus_preemption_normalized.png",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/assets/decode_time_execution_plus_preemption_normalized.png",
+      "sha256": "323c07726884650ca69417a027beebe17c89965dbe888f9334a874f6c1c51ee8",
+      "bytes": 33599
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/assets/llama70b_Chat1M_ttft_tbt_90_99_2.0_0.2.jpeg",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/assets/llama70b_Chat1M_ttft_tbt_90_99_2.0_0.2.jpeg",
+      "sha256": "653745153e4fe2909eede2b65406bec3e77090fccfa21cef7fdd15e9b5a45ed1",
+      "bytes": 590817
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/assets/prefill_e2e_time.png",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/assets/prefill_e2e_time.png",
+      "sha256": "afd3940987d363cc8b92e854dbde39337ed5535aca66d43a86f03abfaad1da23",
+      "bytes": 31129
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/assets/request_e2e_time.png",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/assets/request_e2e_time.png",
+      "sha256": "5e584c988fef64d280aadd0e74d1b5d238aa15f9f5f43d7d20d1ca559345ea72",
+      "bytes": 29472
+    },
+    {
+      "path": "SimAI/vidur-alibabacloud/vidur/config_optimizer/analyzer/dashboard/assets/favicon.png",
+      "project": "SimAI",
+      "relative": "vidur-alibabacloud/vidur/config_optimizer/analyzer/dashboard/assets/favicon.png",
+      "sha256": "1c3dcabbafd606a0ce09748e14c4cd879c024f6f4a8c5ac6879e930337a8c08e",
+      "bytes": 24442
+    }
+  ]
+}
