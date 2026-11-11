@@ -1,0 +1,34 @@
+{
+  "kv_connector": "MultiConnector",
+  "kv_role": "kv_both",
+  "kv_connector_extra_config": {
+    "connectors": [
+      {
+        "kv_connector": "MooncakeConnector",
+        "kv_connector_extra_config": {
+          "protocol": "rdma",
+          "bandwidth_bytes_per_s": 128000000000.0,
+          "fixed_latency_us": 2.0
+        }
+      },
+      {
+        "kv_connector": "MooncakeStoreConnector",
+        "kv_connector_extra_config": {
+          "mode": "embedded",
+          "protocol": "rdma",
+          "local_buffer_size_gb": 1,
+          "memory_capacity_blocks": 10000000,
+          "enable_offload": false,
+          "replica_num": 1,
+          "admission_policy": "always",
+          "eviction_policy": "lru",
+          "save_policy": "mooncake",
+          "load_async": false,
+          "transfer_overlap": false,
+          "bandwidth_bytes_per_s": 128000000000.0,
+          "fixed_latency_us": 0.0
+        }
+      }
+    ]
+  }
+}

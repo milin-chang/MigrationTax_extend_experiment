@@ -1,0 +1,15 @@
+{
+    "kv_connector": "MooncakeStoreConnector",
+    "kv_connector_extra_config": {
+        "mode": "embedded",
+        "protocol": "rdma",
+        "local_buffer_size_gb": 1,
+        "memory_capacity_blocks": 128,
+        "enable_offload": false,
+        "replica_num": 1,
+        "admission_policy": "always",
+        "eviction_policy": "lru",
+        "load_async": false,
+        "transfer_overlap": false
+    }
+}

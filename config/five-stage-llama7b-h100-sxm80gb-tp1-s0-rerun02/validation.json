@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "simulations_launched": false,
+  "total_jobs": 10,
+  "phase_counts": {
+    "1": 4,
+    "3": 3,
+    "4": 3
+  },
+  "tensor_parallel": 1,
+  "total_gpus": 8,
+  "requests": 12031,
+  "returning": 3959,
+  "output_tokens": 4122048,
+  "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+  "byte_identical_to_tp8": true,
+  "max_live_tokens": 126526,
+  "required_blocks_with_margin": 1979,
+  "capacity_blocks_per_worker": 2034,
+  "capacity_tokens_per_worker": 130176,
+  "capacity_filter_applied": false,
+  "unchanged_memory_bandwidth_bytes_per_s": 3352000000000.0,
+  "microbenchmark_executed": false,
+  "rerun_of": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01",
+  "baseline_configuration_identical": true,
+  "identical_imported_python_checks": [
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-1/mooncake/inf/Serial/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-1/mooncake/nvl4/Serial/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-1/mooncake/nvl4/PPD/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-1/mooncake/nvl4/MigrationTax/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-3/mooncake/pcie6/Serial/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-3/mooncake/pcie6/PPD/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-3/mooncake/pcie6/MigrationTax/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-4/mooncake/ib400/Serial/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-4/mooncake/ib400/PPD/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    },
+    {
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp1-s0-01/phase-4/mooncake/ib400/MigrationTax/seed-0",
+      "common_imported_python_files": 344,
+      "all_unchanged": true
+    }
+  ],
+  "orchestration_note": "Current coordinator includes queue support and dynamic report labels; native worker timing and admission sources match baseline snapshots"
+}

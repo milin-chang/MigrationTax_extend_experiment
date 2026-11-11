@@ -1,0 +1,23 @@
+{
+  "batches": [
+    {
+      "id": "01-mooncake-fast",
+      "phase": 1,
+      "count": 4,
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp1-s0/execution/01-mooncake-fast.plan.json"
+    },
+    {
+      "id": "03-mooncake-pcie6",
+      "phase": 3,
+      "count": 3,
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp1-s0/execution/03-mooncake-pcie6.plan.json"
+    },
+    {
+      "id": "04-mooncake-ib400",
+      "phase": 4,
+      "count": 3,
+      "plan": "config/five-stage-llama7b-h100-sxm80gb-tp1-s0/execution/04-mooncake-ib400.plan.json"
+    }
+  ],
+  "total_jobs": 10
+}

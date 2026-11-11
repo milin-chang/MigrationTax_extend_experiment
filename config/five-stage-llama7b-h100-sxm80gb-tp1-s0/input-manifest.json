@@ -1,0 +1,23 @@
+{
+  "mooncake": {
+    "path": "config/five-stage-llama7b-h100-sxm80gb-tp1-s0/inputs/mooncake-s0.jsonl",
+    "sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+    "source": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-alignment-review/research/results/mooncake-shifted-v1/inputs/mooncake-s0.jsonl",
+    "source_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+    "raw_source": {
+      "path": "Trace/mooncake/conversation_trace.jsonl",
+      "sha256": "b8cbb061a85206d729d91cdc2981f43c9e0d99209dce588d3af5f7934408b9df",
+      "manifest_sha256": "2006522007a0712a648334c57f886bbc1a6708f5c79d42845d90b4c69b226606",
+      "commit": "0ff71517f0f80a198eebff3009834ed00504b982",
+      "download_url": "https://raw.githubusercontent.com/kvcache-ai/Mooncake/0ff71517f0f80a198eebff3009834ed00504b982/FAST25-release/traces/conversation_trace.jsonl",
+      "runtime_role": "Raw prefix-parent reconstruction"
+    },
+    "version": "shifted v1",
+    "requests": 12031,
+    "returning": 3959,
+    "output_tokens": 4122048,
+    "arrivals_rescaled": false,
+    "tokens_clipped": false,
+    "copied_from": "config/five-stage-llama7b-h100-sxm80gb-tp8-s0/inputs/mooncake-s0.jsonl"
+  }
+}

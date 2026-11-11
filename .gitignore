@@ -13,6 +13,11 @@ __pycache__/
 !/native_research/reports/servegen7b-tp8-bw-s0-200-01/
 !/native_research/reports/servegen7b-tp8-bw-s0-8000-01/
 !/native_research/reports/five-stage-llama7b-h100-tp8-s0-01/
+!/native_research/reports/five-stage-llama7b-h100-tp1-s0-01/
+!/native_research/reports/five-stage-llama7b-h100-tp2-s0-01/
+!/native_research/reports/five-stage-llama7b-h100-tp4-s0-01/
+!/native_research/reports/five-stage-llama7b-h100-tp1-s0-02/
+!/native_research/reports/mooncake-tp1-2-4-8-s0-01/
 /native_research/release-assets/
 /native_research/*.log
 /native_research/overnight-launch.json
@@ -24,9 +29,13 @@ __pycache__/
 !/native_research/plans/servegen7b-tp8-bandwidth-s0-200.json
 !/native_research/plans/servegen7b-tp8-bandwidth-s0-8000.json
 
-# Keep the active five-stage design; superseded designs stay local.
+# Keep the selected TP designs; superseded designs stay local.
 /config/*
 !/config/five-stage-llama7b-h100-sxm80gb-tp8-s0/
+!/config/five-stage-llama7b-h100-sxm80gb-tp1-s0/
+!/config/five-stage-llama7b-h100-sxm80gb-tp2-s0/
+!/config/five-stage-llama7b-h100-sxm80gb-tp4-s0/
+!/config/five-stage-llama7b-h100-sxm80gb-tp1-s0-rerun02/
 
 # Selected TP8 configurations and dependencies pinned by their frozen plans.
 /configs/*

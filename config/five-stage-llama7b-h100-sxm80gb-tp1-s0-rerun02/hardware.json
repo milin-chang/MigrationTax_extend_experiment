@@ -1,0 +1,22 @@
+{
+  "model_id": "llama-7b",
+  "model_dtype": "fp16",
+  "kv_dtype": "fp16",
+  "model_parameters": 6738149376,
+  "layers": 32,
+  "hidden_size": 4096,
+  "attention_heads": 32,
+  "kv_heads": 32,
+  "head_dim": 128,
+  "gpu_id": "h100_sxm",
+  "splitwise_hardware": "h100-80gb",
+  "gpu_memory_bytes": 85899345920,
+  "runtime_reserved_bytes": 4169138176,
+  "gpus_per_instance": 1,
+  "tensor_parallel": 1,
+  "pipeline_parallel": 1,
+  "prefill_instances": 4,
+  "decode_instances": 4,
+  "block_tokens": 64,
+  "splitwise_profile": "splitwise-sim/data/perf_model-llama3-8b-h100-tp1-bf16.csv"
+}

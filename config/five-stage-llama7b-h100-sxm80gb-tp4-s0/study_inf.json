@@ -1,0 +1,17 @@
+{
+  "label": "inf",
+  "bandwidth_bytes_per_s": 1000000000000000.0,
+  "reference": true,
+  "time_unit": "s",
+  "bandwidth_unit": "decimal bytes/s",
+  "bandwidth_scope": "Full model KV bundle per TP group endpoint; not per rank",
+  "data_root": "config/five-stage-llama7b-h100-sxm80gb-tp4-s0/data_inf",
+  "cluster_path": "config/five-stage-llama7b-h100-sxm80gb-tp4-s0/cluster.json",
+  "transfer_path": "config/five-stage-llama7b-h100-sxm80gb-tp4-s0/transfer_inf.json",
+  "input_manifest": "config/five-stage-llama7b-h100-sxm80gb-tp4-s0/input-manifest.json",
+  "input_selection": "Full Mooncake shifted-v1 seed-0 input, byte-identical to TP1/TP8; no filtering, clipping or arrival rescaling",
+  "tp_collective_link": "nvlink4",
+  "tp_collective_bandwidth_bytes_per_s": 450000000000.0,
+  "memory_bandwidth_changed": false,
+  "tp_collective_applicable": true
+}

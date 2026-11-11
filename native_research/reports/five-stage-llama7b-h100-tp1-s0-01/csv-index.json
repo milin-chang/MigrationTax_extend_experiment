@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tp1-p1-mooncake-inf-serial-s0",
+    "csv": "tp1-p1-mooncake-inf-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p1-mooncake-nvl4-serial-s0",
+    "csv": "tp1-p1-mooncake-nvl4-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p1-mooncake-nvl4-ppd-s0",
+    "csv": "tp1-p1-mooncake-nvl4-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p1-mooncake-nvl4-migrationtax-s0",
+    "csv": "tp1-p1-mooncake-nvl4-migrationtax-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p3-mooncake-pcie6-serial-s0",
+    "csv": "tp1-p3-mooncake-pcie6-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p3-mooncake-pcie6-ppd-s0",
+    "csv": "tp1-p3-mooncake-pcie6-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p3-mooncake-pcie6-migrationtax-s0",
+    "csv": "tp1-p3-mooncake-pcie6-migrationtax-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p4-mooncake-ib400-serial-s0",
+    "csv": "tp1-p4-mooncake-ib400-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p4-mooncake-ib400-ppd-s0",
+    "csv": "tp1-p4-mooncake-ib400-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "tp1-p4-mooncake-ib400-migrationtax-s0",
+    "csv": "tp1-p4-mooncake-ib400-migrationtax-s0-requests.csv",
+    "rows": 12031
+  }
+]

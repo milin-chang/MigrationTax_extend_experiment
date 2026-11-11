@@ -1,6 +1,6 @@
 # TokenSim 通訊頻寬實驗發布範圍
 
-程式、設定、Trace 與三批實驗的報告目錄放在 [tokensim-llama7b-tp8-bandwidth-s0 分支](https://github.com/milin-chang/MigrationTax_extend_experiment/tree/tokensim-llama7b-tp8-bandwidth-s0)。原始 log、逐請求結果、來源快照、圖與報告的完整備份放在 [GitHub Release](https://github.com/milin-chang/MigrationTax_extend_experiment/releases/tag/tokensim-llama7b-tp8-bandwidth-s0-2026-11-11)。
+程式、設定、Trace 與選定實驗的報告目錄放在 [tokensim-llama7b-tp8-bandwidth-s0 分支](https://github.com/milin-chang/MigrationTax_extend_experiment/tree/tokensim-llama7b-tp8-bandwidth-s0)。最初三批 TP8 實驗的原始 log、來源快照與完整備份放在 [GitHub Release](https://github.com/milin-chang/MigrationTax_extend_experiment/releases/tag/tokensim-llama7b-tp8-bandwidth-s0-2026-11-11)。後續 TP 實驗的分支收錄範圍見下節。
 
 ## 收錄的實驗
 
@@ -16,12 +16,31 @@
 
 ## 分支與 Release 的分工
 
-- 分支：TokenSim 與客製化程式、共用方法與執行工具、三批實驗設定、兩份 ServeGen 執行計畫、五階段執行計畫、實際輸入和來源資訊，以及上述三批各自的 `native_research/reports/<實驗名稱>/`。
+- 分支：TokenSim 與客製化程式、共用方法與執行工具、最初三批 TP8 的設定與報告，以及下節列出的 Mooncake TP 實驗設定與報告。
 - Release：各實驗的 `native_research/runs/<實驗名稱>/` 與 `native_research/reports/<實驗名稱>/`，包含原始 log、收據、原生結果、逐請求時間、執行時來源快照、稽核與圖表。
 - 五階段封裝另收錄 `native_research/reports/mooncake-four-part-s0-01/`，內有 Times New Roman 字體的 PNG／SVG 圖與圖表 ZIP。
-- 其他批次的 runs／reports、所有 probes、已被取代的 `config/archive/`、本機依賴與暫存檔不納入本次發布。本機檔案仍保留。
+- 上述指定範圍以外的 runs／reports、所有 probes、已被取代的 `config/archive/`、本機依賴與暫存檔不納入分支。本機檔案仍保留。
 
 `configs/` 根目錄的舊基礎設定與 `data_*` catalog 同時被這三批的 frozen plan 納入檔案校驗，因此保留為重現相依資料；這些檔案不代表本次額外發布了 TP1 實驗結果。
+
+## 新增 Mooncake TP 實驗與圖表
+
+以下每批皆有 10 組完成並通過稽核的 Mooncake shifted v1 seed 0 正式條件：Serial inf reference、450／128／50 GB/s 各三方法。各自的 report 內以 `figure.png`／`figure.svg` 提供一張整合圖。
+
+| Run／report 名稱 | 設定資料夾，位於 `config/` | 模擬 GPU 總數 |
+|---|---|---:|
+| `five-stage-llama7b-h100-tp1-s0-01` | `five-stage-llama7b-h100-sxm80gb-tp1-s0` | 8 |
+| `five-stage-llama7b-h100-tp2-s0-01` | `five-stage-llama7b-h100-sxm80gb-tp2-s0` | 16 |
+| `five-stage-llama7b-h100-tp4-s0-01` | `five-stage-llama7b-h100-sxm80gb-tp4-s0` | 32 |
+| `five-stage-llama7b-h100-tp1-s0-02` | `five-stage-llama7b-h100-sxm80gb-tp1-s0-rerun02` | 8 |
+
+- 以上四批的設定、實際輸入、report Markdown／CSV、圖表與執行／製圖腳本收錄於分支；原始 `runs/` 與來源快照仍保留本機，本次未新增到 Release。
+- TP8 原 report 同樣新增 `figure.png`／`figure.svg`，只呈現已完成的 Mooncake 正式條件。
+- [CUSTOMIZATION_SPEC.md](CUSTOMIZATION_SPEC.md) 說明客製化範圍、TP／KV 計量、准入與路由、計時及統計定義。
+- [TP1／2／4／8 比較圖表](native_research/reports/mooncake-tp1-2-4-8-s0-01/FIGURES.md) 另收錄 11 張 PNG／SVG、數值 CSV 與圖表 ZIP。
+- 各 TP 的 GPU 總數與 KV 容量不同；affected share 各自使用該 TP 的 Serial inf baseline。TP1 同設定重跑的 120,310 筆配對 request records 相同，未當作新 seed 彙整。
+
+製圖腳本會驗證原始 `runs/` 的逐筆事件與稽核收據。分支中的 CSV 與圖表可直接閱讀；重新執行驗證式製圖還需要對應的本機原始紀錄。既有 Release 僅包含最初三批 TP8 備份，未因本次分支更新而改寫。
 
 ## Release 資產
 
