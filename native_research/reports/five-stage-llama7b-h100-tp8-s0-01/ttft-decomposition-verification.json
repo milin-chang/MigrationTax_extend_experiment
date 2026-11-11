@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p1-mooncake-inf-serial-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/inf/Serial/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "6b324a89c306f5df0f859916d1c15249f5ac1d13d8bdcb8fd551c80e6a7ea658",
+      "routes_sha256": "f6e5545d6d7982564dcb30d317d3f561e1019fd3b98ab99eeeb2d5988fb65a78",
+      "audit_sha256": "e6c0c1a24efab194715768670dd147b08ec651f33e0d2c35311dcfb331ebe2c2",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p1-mooncake-nvl4-serial-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/nvl4/Serial/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "68f4adbf09c3bb610689513fd223f808588694e3d4eb3c663ec5a075354dcfa7",
+      "routes_sha256": "974cd744c39a792ef4ffb0246a8e7acfaa8372999f3a910f2e4c9b45eea7afb8",
+      "audit_sha256": "d9466e50029ba745551c12be036e303cb3fc370e49540127e75b1aebf3b2dc06",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p1-mooncake-nvl4-ppd-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/nvl4/PPD/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "1740d09052a0d9810068bca2b2158ddd0bcf3b90453dcef90d65d6fd393b2116",
+      "routes_sha256": "ba8be6cc2242c33dc1dddd6feb82fd324418146e59b4625d63b2039927a86a3f",
+      "audit_sha256": "9d05ace6283d857675932d1e3714c6eb1a6fe2cce14943aec1088fe279a6f564",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p1-mooncake-nvl4-migrationtax-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/nvl4/MigrationTax/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "8fc48a97cee07e13abaf39ed3671e0dfa991b47921a307329b1ab8225dc0defc",
+      "routes_sha256": "913a78d7609bf9d255da1019a9dc6ed6223ec1a452d17a8e8117db3ff2d57059",
+      "audit_sha256": "3b626752190b5c6c9f00616fdb899b58833736c37e19aeb55223437c4c6dbc17",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p3-mooncake-pcie6-serial-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-3/mooncake/pcie6/Serial/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "dcea48416891fc1e3e496277b283455e11286548a78cab8663df226e6ce96d32",
+      "routes_sha256": "85395573fb6f63d7a5f6e845ff7da76c04dc1b7ee4931aede097dd601eeb6fc9",
+      "audit_sha256": "749df971b9079ae390435c296f8c2dfca8ab209035bf82d37107fcf2c6300198",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p3-mooncake-pcie6-ppd-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-3/mooncake/pcie6/PPD/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "28f7438ff6df020582ceae2f7b75b9853721d693ae31eccbca6b442385dfac58",
+      "routes_sha256": "80d06e859df4e499f277b6d3c40b2548e80cd4b850bf5b5327b499328b23aaf4",
+      "audit_sha256": "18ac87705ca99f045f1f2300c4f0b282091f252afd7961ce99c4cbbf142170ac",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p3-mooncake-pcie6-migrationtax-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-3/mooncake/pcie6/MigrationTax/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "e9adfdb11ebae1c8fd1ce2da1ab9c96b416eeb31494b93f9df130f469dbb2130",
+      "routes_sha256": "ead44a9ed1b93d786ad58b8e615ec93a384864b6df290c3ada2bdca707779d78",
+      "audit_sha256": "ec83cedb9d34736299f837e27a749c847288a7369b79ebc002df83de42f202ff",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p4-mooncake-ib400-serial-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-4/mooncake/ib400/Serial/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "128b15ffef5d89adc381df449d94eede1a26cb62c16da5287b96fb595b688f51",
+      "routes_sha256": "ae846d1688faa3e7d5d9e71562ac755d8f23c9bb6cf7106df459e781307784db",
+      "audit_sha256": "9e8418b32221d5c23b14c4a4728b63d654bfa60587cfdd70ebb27926bb49c660",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p4-mooncake-ib400-ppd-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-4/mooncake/ib400/PPD/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "133186fabc6849b72bc260abe16917dce97b99e79e990d14c8935307eb3665ba",
+      "routes_sha256": "ea42685a82082685e5e38523fadfbfe4895ce1c6d04f9c0a0bffc3d5b5a3d5e0",
+      "audit_sha256": "05ece9269414ae9dae9f69608b40d597da4859134cc801b34306b99f30471187",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    },
+    {
+      "tp": 8,
+      "repeat": false,
+      "id": "p4-mooncake-ib400-migrationtax-s0",
+      "output": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-4/mooncake/ib400/MigrationTax/seed-0",
+      "input_sha256": "dec3adb6a385c640c27346a4e34598f9aedb2f1c6b366f73f0202cc044b258b1",
+      "requests": 12031,
+      "requests_sha256": "79274cf39efd6b2fcc79015632fcd0005cc5de19504a6e8c90d0bc5eca033237",
+      "routes_sha256": "67ae0a2a6f31b02e69ab2fda7c8b87e714ea029caeab71e41988cdb76d43856a",
+      "audit_sha256": "39ce9112122df980f72ef1f29bba12829d779355d4144abace6bfb7dcceae1d7",
+      "max_route_clock_error_s": 0.0,
+      "max_component_sum_error_s": 0.0,
+      "status": "passed"
+    }
+  ],
+  "source": {
+    "source": "/home/user/uwuowoawa/1_lab_nkcu/Simulator-tokensim-bandwidth/native_research/reports/five-stage-llama7b-h100-tp8-s0-01/delivery-mooncake-complete",
+    "sha256": "44d07e63a859b140776e955ac3fc7e9b732f8aecee4155e520ca93ae9bb6d5ec"
+  },
+  "selected_font_faces": [
+    {
+      "family": "Times New Roman",
+      "weight": "normal",
+      "style": "normal",
+      "file": "/mnt/c/Windows/Fonts/times.ttf",
+      "sha256": "0bf1b21b27b370039b60eca23d532c3fe3fb308750d8f13816db70a6cb666804"
+    },
+    {
+      "family": "Times New Roman",
+      "weight": "bold",
+      "style": "normal",
+      "file": "/mnt/c/Windows/Fonts/timesbd.ttf",
+      "sha256": "cb8f85dedb0ab01792baad20da28d26773485ac9c21e112bb5c511a8b2001eee"
+    },
+    {
+      "family": "Times New Roman",
+      "weight": "normal",
+      "style": "italic",
+      "file": "/mnt/c/Windows/Fonts/timesi.ttf",
+      "sha256": "11e6aae7436a5f2442eada66493d1767c78dde02acedc0afa6e7d0afeb0f3a14"
+    },
+    {
+      "family": "Times New Roman",
+      "weight": "bold",
+      "style": "italic",
+      "file": "/mnt/c/Windows/Fonts/timesbi.ttf",
+      "sha256": "5d78b5c66ac8e9c3fc94bd4ead792e1127f5f3faa29f768ff9b599339afe95bf"
+    }
+  ],
+  "generator_sha256": "a648fc8ed916c0d49fd458eace8818ac87a168dcbe7e693f993f7ca9381c8c18",
+  "figures": [
+    {
+      "file": "ttft-decomposition.png",
+      "sha256": "d5e068dab620d30e4a2d02a2af494d361cda8735ffb4b5f14b5ce918c0b9dc16"
+    },
+    {
+      "file": "ttft-decomposition.svg",
+      "sha256": "ccc5fb6ad58faf1b780e7a091cc333e7bfc51d368e1f2557582138b4ec68dc05"
+    }
+  ]
+}

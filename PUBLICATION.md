@@ -38,6 +38,7 @@
 - TP8 原 report 同樣新增 `figure.png`／`figure.svg`，只呈現已完成的 Mooncake 正式條件。
 - [CUSTOMIZATION_SPEC.md](CUSTOMIZATION_SPEC.md) 說明客製化範圍、TP／KV 計量、准入與路由、計時及統計定義。
 - [TP1／2／4／8 比較圖表](native_research/reports/mooncake-tp1-2-4-8-s0-01/FIGURES.md) 另收錄 11 張 PNG／SVG、數值 CSV 與圖表 ZIP。
+- [TTFT 三部分組成圖](native_research/reports/mooncake-ttft-decomposition-tp1-2-4-8-s0-01/TTFT_DECOMPOSITION.md) 收錄 TP1／2／4／8、三方法、450／128／50 GB/s 的時間占比總覽；各 TP report 另附 `ttft-decomposition.png`／`.svg`、數值 CSV、計算說明與驗證紀錄，TP1 重跑亦有獨立一份。TTFT 沿用 `native_prefill_latency_s`，拆為前輪等待、KV 准入等待、准入後至 client 首 token；占比為各段平均秒數除以平均 TTFT。
 - 各 TP 的 GPU 總數與 KV 容量不同；affected share 各自使用該 TP 的 Serial inf baseline。TP1 同設定重跑的 120,310 筆配對 request records 相同，未當作新 seed 彙整。
 
 製圖腳本會驗證原始 `runs/` 的逐筆事件與稽核收據。分支中的 CSV 與圖表可直接閱讀；重新執行驗證式製圖還需要對應的本機原始紀錄。既有 Release 僅包含最初三批 TP8 備份，未因本次分支更新而改寫。
