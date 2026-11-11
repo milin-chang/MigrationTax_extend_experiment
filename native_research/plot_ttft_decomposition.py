@@ -21,6 +21,12 @@ PARTS = (
 )
 
 
+def percent_label(percent):
+    """Keep one decimal, truncating only shares greater than 99.5 percent."""
+    shown = math.floor(percent * 10) / 10 if percent > 99.5 else percent
+    return f"{shown:.1f}%"
+
+
 def collect(source, tp, repeat=False):
     document = read(source / "results.json")
     runs = [r for r in document["runs"] if r["phase"] > 0 and r.get("trace", "mooncake") == "mooncake"]
@@ -100,7 +106,7 @@ def panel(ax, rows, title):
                edgecolor="white", linewidth=.6)
         for i, percent in enumerate(values):
             if percent >= 5:
-                ax.text(i, bottom[i] + percent / 2, f"{percent:.1f}%", ha="center",
+                ax.text(i, bottom[i] + percent / 2, percent_label(percent), ha="center",
                         va="center", color="white" if key == "after_admission" else "#292929",
                         fontsize=10, weight="bold")
             bottom[i] += percent
@@ -140,7 +146,7 @@ def overall(rows, destination):
     caption(figure, "llama-7b / FP16 | H100 SXM | 4P+4D | seed 0 | 12,031 requests per condition",
             y=.905, fontsize=12)
     caption(figure, "Bar = 100% of mean client TTFT; number above bar = mean TTFT in seconds.\n"
-            "Share = mean component seconds / mean TTFT; includes initial and returning turns. Segments below 5% are not labeled.\n"
+            "Labels use 1 decimal; shares >99.5% truncate instead of round. Segments below 5% are not labeled.\n"
             "After admission includes engine queueing, compute and transfer; reconstructed from saved timestamps and waits.\n"
             "Bold green total: lowest mean TTFT within the same TP/link. GPU count and KV capacity vary with TP.",
             y=.045, fontsize=11)
@@ -171,7 +177,7 @@ def per_report(rows, destination, tp, repeat=False):
             y=.875, fontsize=12)
     caption(figure, "TTFT = parent completion wait + KV admission wait + after admission to first client token.\n"
             "Parent completion includes writeback. After admission includes engine queueing, compute and transfer.\n"
-            "Shares use mean seconds / mean TTFT, not the average of per-request percentages. Labels omit segments below 5%.\n"
+            "Shares use mean seconds / mean TTFT. Labels use 1 decimal; values >99.5% truncate instead of round.\n"
             "All completed requests included; inf reference is in the CSV only. Native analytical compute.",
             y=.06, fontsize=11)
     return save_figure(figure, destination, "ttft-decomposition")
@@ -188,6 +194,7 @@ def explanation(rows, png):
         "after_admission = client_TTFT − parent_wait − admission_wait",
         "client_TTFT = parent_wait + admission_wait + after_admission", "```", "",
         "占比＝每段平均秒數／平均 client TTFT × 100%，也等於各段累計時間／累計 TTFT；不是先逐請求算百分比再平均。", "",
+        "柱內占比標籤保留小數點後一位：大於 99.5% 時採截位，其餘正常四捨五入。例如 99.996309% 顯示為 99.9%，75.176950% 顯示為 75.2%。柱高、CSV 與下方六位小數表保留原始計算值；低於 5% 的段落不在柱內標示。", "",
         "分母包含全部 12,031 個完成請求，其中 3,959 筆 returning。初輪亦納入，前輪等待為 0。", "",
         "准入後時間以既有 TTFT 減去兩段等待重建；另外核對原生路由時間戳等於到達＋前輪等待＋准入等待。沒有新增逐 step profiler，也沒有由這張圖拆分引擎內部的計算／傳輸／排隊。", "",
         "這是平均值的組成，不能將三段各自的 P50／P95 相加視為 TTFT P50／P95。占比較高不代表絕對秒數較高；圖上方另標平均 TTFT 秒數。", "",
@@ -227,6 +234,7 @@ def main():
         (report / "TTFT_DECOMPOSITION.md").write_text(explanation(summaries, figures[0]))
         (report / "ttft-decomposition-verification.json").write_text(json.dumps(dict(
             status="passed", checks=verified, source=sources[-1], selected_font_faces=faces,
+            percent_label_policy="one decimal; truncate only values >99.5%, otherwise round; bar heights and CSV retain calculated values",
             generator_sha256=digest(Path(__file__)), figures=[dict(file=name, sha256=digest(report/name)) for name in figures]), indent=2)+"\n")
         if suffix != "02":
             groups.extend(summaries)
@@ -237,6 +245,7 @@ def main():
     (destination / "TTFT_DECOMPOSITION.md").write_text(explanation(groups, images[0]))
     (destination / "verification.json").write_text(json.dumps(dict(status="passed", conditions=50,
         plotted_finite_conditions=36, checks=checks, sources=sources, selected_font_faces=faces,
+        percent_label_policy="one decimal; truncate only values >99.5%, otherwise round; bar heights and CSV retain calculated values",
         simulations_launched=False, generator_sha256=digest(Path(__file__)),
         figures=[dict(file=name, sha256=digest(destination/name)) for name in images]), indent=2)+"\n")
     with ZipFile(destination / "ttft-decomposition-figures.zip", "w", compression=ZIP_DEFLATED) as bundle:

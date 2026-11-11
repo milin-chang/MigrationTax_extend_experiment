@@ -176,15 +176,16 @@
       "sha256": "5d78b5c66ac8e9c3fc94bd4ead792e1127f5f3faa29f768ff9b599339afe95bf"
     }
   ],
-  "generator_sha256": "a648fc8ed916c0d49fd458eace8818ac87a168dcbe7e693f993f7ca9381c8c18",
+  "percent_label_policy": "one decimal; truncate only values >99.5%, otherwise round; bar heights and CSV retain calculated values",
+  "generator_sha256": "201ca49d4d1a4915a4ec5b61c253b5bf13bf797e83245c18d656398e33d5636e",
   "figures": [
     {
       "file": "ttft-decomposition.png",
-      "sha256": "37ed397da1d1545f879510a190f0b745c307c8f2f885eb185e264517cdf8d620"
+      "sha256": "aa395910e48011164d35748fa48ab611740576addd3744234e2b422ec1818b43"
     },
     {
       "file": "ttft-decomposition.svg",
-      "sha256": "035cad3400c16535058171529ef065efb4e61c1927165903f0cdf9a0b1554587"
+      "sha256": "b099b87a3fb7d60a9382a2b32b5ce3e9844d6f98f7c23e3737a70f4188b3bc43"
     }
   ]
 }
