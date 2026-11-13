@@ -19,6 +19,10 @@ __pycache__/
 !/native_research/reports/five-stage-llama7b-h100-tp1-s0-02/
 !/native_research/reports/mooncake-tp1-2-4-8-s0-01/
 !/native_research/reports/mooncake-ttft-decomposition-tp1-2-4-8-s0-01/
+!/native_research/reports/mooncake7b-h100-tp1-pd-timeline-s0-02/
+!/native_research/reports/mooncake7b-h100-tp4-pd-timeline-s0-02/
+!/native_research/reports/mooncake7b-h100-tp8-pd-timeline-s0-02/
+!/native_research/reports/mooncake-pd-timeline-tp1-4-8-s0-02/
 /native_research/release-assets/
 /native_research/*.log
 /native_research/overnight-launch.json
@@ -37,6 +41,9 @@ __pycache__/
 !/config/five-stage-llama7b-h100-sxm80gb-tp2-s0/
 !/config/five-stage-llama7b-h100-sxm80gb-tp4-s0/
 !/config/five-stage-llama7b-h100-sxm80gb-tp1-s0-rerun02/
+!/config/mooncake7b-h100-tp1-pd-timeline-s0-02/
+!/config/mooncake7b-h100-tp4-pd-timeline-s0-02/
+!/config/mooncake7b-h100-tp8-pd-timeline-s0-02/
 
 # Selected TP8 configurations and dependencies pinned by their frozen plans.
 /configs/*

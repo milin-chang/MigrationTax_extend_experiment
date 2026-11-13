@@ -1,0 +1,20 @@
+{
+  "returning": "source_turn > 0",
+  "arrival": "Original trace arrival before parent/admission waits",
+  "d_first": "first_d_output_sampled_at_s - arrival_s",
+  "client_ttft": "native_prefill_latency_s; exported separately",
+  "affected": "D-first strictly greater than 2 times the same source request in the trace-specific Serial inf reference",
+  "denominator": "All returning requests in the full source input; no cache-cell filtering",
+  "decode_miss": "Inherited prefix not completely resident on the eventually chosen D at original arrival; include partial coverage as miss and export partial and zero coverage separately",
+  "cache_probe": "Original-arrival cache snapshot before parent wait, admission or Store load; never substitute d_admit_hit",
+  "missing_d_sample_policy": "Retain short HF responses completed entirely on P; export missing D samples; primary affected share is a lower/upper interval over all returning turns when missing samples exist; never substitute client or ownership timing",
+  "pairing": "Exact source_id, source_turn, arrival, input hash and output token count match",
+  "reference_scope": "One full Serial inf reference per trace, shared across all three methods and three finite links",
+  "export": [
+    "per-request CSV including D-first, client TTFT, reference latency, affected flags and arrival-time cache coverage",
+    "affected share and decode miss by link, trace and method",
+    "native latency/TPOT/throughput",
+    "native timing match counts and source receipts"
+  ],
+  "acceptance": "No target affected percentages; measured results determine ordering"
+}

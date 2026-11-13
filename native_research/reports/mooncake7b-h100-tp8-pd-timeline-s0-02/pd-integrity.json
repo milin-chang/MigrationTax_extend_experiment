@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "tp": 8,
+  "conditions": 10,
+  "requests_per_condition": 12031,
+  "full_request_logs_identical": 10,
+  "checks": [
+    {
+      "condition": "pd02-tp8-inf-serial-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3116257,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "6b324a89c306f5df0f859916d1c15249f5ac1d13d8bdcb8fd551c80e6a7ea658",
+      "baseline_requests_sha256": "6b324a89c306f5df0f859916d1c15249f5ac1d13d8bdcb8fd551c80e6a7ea658",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/inf/Serial/seed-0/requests.jsonl",
+      "request_timeline_sha256": "a18082dbc85e5a85c5df0bf36c8d32d8aa55b62412a79d195fa8729d2c562cd5"
+    },
+    {
+      "condition": "pd02-tp8-nvl4-serial-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3091716,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "68f4adbf09c3bb610689513fd223f808588694e3d4eb3c663ec5a075354dcfa7",
+      "baseline_requests_sha256": "68f4adbf09c3bb610689513fd223f808588694e3d4eb3c663ec5a075354dcfa7",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/nvl4/Serial/seed-0/requests.jsonl",
+      "request_timeline_sha256": "f7567c01d93c48a933653c8fcf0b8c7a5c2ea267e0af688c6a6d6e2075ae5a2a"
+    },
+    {
+      "condition": "pd02-tp8-nvl4-ppd-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3089496,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "1740d09052a0d9810068bca2b2158ddd0bcf3b90453dcef90d65d6fd393b2116",
+      "baseline_requests_sha256": "1740d09052a0d9810068bca2b2158ddd0bcf3b90453dcef90d65d6fd393b2116",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/nvl4/PPD/seed-0/requests.jsonl",
+      "request_timeline_sha256": "82dedcfe70d10f5ff60a7334c75cd1734426ebbaa320168ba7d3149e3ef78fb8"
+    },
+    {
+      "condition": "pd02-tp8-nvl4-migrationtax-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3108305,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "8fc48a97cee07e13abaf39ed3671e0dfa991b47921a307329b1ab8225dc0defc",
+      "baseline_requests_sha256": "8fc48a97cee07e13abaf39ed3671e0dfa991b47921a307329b1ab8225dc0defc",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-1/mooncake/nvl4/MigrationTax/seed-0/requests.jsonl",
+      "request_timeline_sha256": "7eac18aa93e9ed45cac71550bcefb4dc65939ebfbff17a320fb558fb6f41b28c"
+    },
+    {
+      "condition": "pd02-tp8-pcie6-serial-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3018225,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "dcea48416891fc1e3e496277b283455e11286548a78cab8663df226e6ce96d32",
+      "baseline_requests_sha256": "dcea48416891fc1e3e496277b283455e11286548a78cab8663df226e6ce96d32",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-3/mooncake/pcie6/Serial/seed-0/requests.jsonl",
+      "request_timeline_sha256": "0792091d07f2495e7c6ad06188a9c883241d284550efee2211081db161b05753"
+    },
+    {
+      "condition": "pd02-tp8-pcie6-ppd-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3013313,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "28f7438ff6df020582ceae2f7b75b9853721d693ae31eccbca6b442385dfac58",
+      "baseline_requests_sha256": "28f7438ff6df020582ceae2f7b75b9853721d693ae31eccbca6b442385dfac58",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-3/mooncake/pcie6/PPD/seed-0/requests.jsonl",
+      "request_timeline_sha256": "405b3e48709254577765916d1616f95358fa6aff4e841b0a6879d2d747667189"
+    },
+    {
+      "condition": "pd02-tp8-pcie6-migrationtax-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3103881,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "e9adfdb11ebae1c8fd1ce2da1ab9c96b416eeb31494b93f9df130f469dbb2130",
+      "baseline_requests_sha256": "e9adfdb11ebae1c8fd1ce2da1ab9c96b416eeb31494b93f9df130f469dbb2130",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-3/mooncake/pcie6/MigrationTax/seed-0/requests.jsonl",
+      "request_timeline_sha256": "13f7683303893f97597b5b82d8183cc7aeab980980d28fb0451a54ae3dc6d2fa"
+    },
+    {
+      "condition": "pd02-tp8-ib400-serial-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 2874324,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "128b15ffef5d89adc381df449d94eede1a26cb62c16da5287b96fb595b688f51",
+      "baseline_requests_sha256": "128b15ffef5d89adc381df449d94eede1a26cb62c16da5287b96fb595b688f51",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-4/mooncake/ib400/Serial/seed-0/requests.jsonl",
+      "request_timeline_sha256": "12b389deb014c36ef846d56c403e5d12905f5c396f485117446c9cd3ea24d2e0"
+    },
+    {
+      "condition": "pd02-tp8-ib400-ppd-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 2871864,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "133186fabc6849b72bc260abe16917dce97b99e79e990d14c8935307eb3665ba",
+      "baseline_requests_sha256": "133186fabc6849b72bc260abe16917dce97b99e79e990d14c8935307eb3665ba",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-4/mooncake/ib400/PPD/seed-0/requests.jsonl",
+      "request_timeline_sha256": "18e069dc913a6d0b14dd2ba3363bae3f6d42c3f7991369f814561df5515ffbe8"
+    },
+    {
+      "condition": "pd02-tp8-ib400-migrationtax-s0",
+      "status": "passed",
+      "requests": 12031,
+      "streamed_steps": 3050870,
+      "request_records_identical": true,
+      "recorded_requests_sha256": "79274cf39efd6b2fcc79015632fcd0005cc5de19504a6e8c90d0bc5eca033237",
+      "baseline_requests_sha256": "79274cf39efd6b2fcc79015632fcd0005cc5de19504a6e8c90d0bc5eca033237",
+      "baseline": "native_research/runs/five-stage-llama7b-h100-tp8-s0-01/phase-4/mooncake/ib400/MigrationTax/seed-0/requests.jsonl",
+      "request_timeline_sha256": "2adfc153c0d10197402644e7af36c4de8e841ff89d6bb6bdcc2770c1240f4ede"
+    }
+  ],
+  "request_archive_sha256": "63e04d9c9fa906eb707d85a72582278d3e22ef639d39b580ac934044f2611f5d"
+}

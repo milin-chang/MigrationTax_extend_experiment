@@ -44,9 +44,12 @@ def execute(
     probe=None,
     hardware_profile=None,
     experiment_config=None,
+    record_timeline=False,
 ):
     if method not in ("Serial", "PPD", "MigrationTax"):
         raise ValueError("Unknown native method: " + str(method))
+    if type(record_timeline) is not bool:
+        raise ValueError("record_timeline must be boolean")
     output = Path(output)
     root = Path(__file__).resolve().parents[2]
     env = simpy.Environment()
@@ -182,6 +185,12 @@ def execute(
 
     engine.run_complete_compute = compute
     log = (output / "requests.jsonl").open("x")
+    timeline = None
+    if record_timeline:
+        from TokenSim.research.native_timeline import NativeTimeline
+
+        timeline = NativeTimeline(engine, output, method)
+    timeline_status = "failed"
     started = time.monotonic()
     effective = dict(
         method=method,
@@ -215,6 +224,7 @@ def execute(
         admission=admission.describe(),
         memory_policy="Retire completed request-local identity lists after full writeback and native release callbacks; preserve cache/store ownership and native metric scalars",
         bandwidth_study=study,
+        request_timeline_enabled=record_timeline,
         hardware_memory_bandwidth_bytes_per_s=hardware.device(
             deployment.gpu_id
         ).memory_bandwidth_bytes_per_s.value,
@@ -247,6 +257,8 @@ def execute(
         )
         req.arrive(env)
         requests[rid] = req
+        if timeline is not None:
+            timeline.arrival(req, row)
         if study:
             observe_arrival(engine, admission, req)
         parent = row["previous_source_id"]
@@ -262,7 +274,11 @@ def execute(
                     dict(source_id=rid, status="ancestor_failed", parent=parent)
                 )
                 req.completion_event.succeed(None)
+                if timeline is not None:
+                    timeline.completed(req, "ancestor_failed", "Explicit parent failed")
                 return
+        if timeline is not None:
+            timeline.ready(req)
         try:
             engine.validate_request_capacity([req])
         except Exception as e:
@@ -278,8 +294,12 @@ def execute(
             )
             if not req.completion_event.triggered:
                 req.completion_event.succeed(None)
+            if timeline is not None:
+                timeline.completed(req, "rejected", str(e))
             return
         yield from admission.acquire(req, method)
+        if timeline is not None:
+            timeline.submitted(req)
         nt = ordinal[cid]
         ordinal[cid] += 1
         req.turn = nt
@@ -291,6 +311,8 @@ def execute(
         engine.raise_if_failed()
         admission.release(req)
         completed.append(req)
+        if timeline is not None:
+            timeline.completed(req)
         log.write(
             json.dumps(
                 dict(
@@ -412,8 +434,11 @@ def execute(
             method=method,
         )
         (output / "summary.json").write_text(json.dumps(result, indent=2) + "\n")
+        timeline_status = result["status"]
         return result
     finally:
         if migration is not None:
             migration.finish()
         log.close()
+        if timeline is not None:
+            timeline.close(timeline_status)

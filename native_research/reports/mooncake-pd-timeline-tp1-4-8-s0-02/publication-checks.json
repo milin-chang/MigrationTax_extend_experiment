@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "targeted_tests": 13,
+  "source_tests_previously_passed": 658,
+  "source_test_receipt": "native-observer-validation.json",
+  "targeted_test_command": "python3 -m unittest native_research.tests.test_pd_timeline_analysis TokenSim.tests.test_native_timeline -v",
+  "targeted_log_sha256": "90a110d81a0f8559344c29c78989e595cdedede755fbbc14d1ad843f34179d7e",
+  "full_conditions_verified": 30,
+  "complete_request_logs_unchanged": 30,
+  "observed_requests": 360930,
+  "streamed_native_steps": 68020828,
+  "simulated_workload_changed": false,
+  "readme_changed": false
+}

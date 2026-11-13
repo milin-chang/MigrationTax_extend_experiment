@@ -1,0 +1,66 @@
+test_d_only_has_no_fabricated_p_observation (native_research.tests.test_pd_timeline_analysis.TimelineAnalysisTests.test_d_only_has_no_fabricated_p_observation) ... ok
+test_exact_quantiles_and_empty_population (native_research.tests.test_pd_timeline_analysis.TimelineAnalysisTests.test_exact_quantiles_and_empty_population) ... ok
+test_first_output_differs_from_first_decode_end (native_research.tests.test_pd_timeline_analysis.TimelineAnalysisTests.test_first_output_differs_from_first_decode_end) ... ok
+test_missing_or_reversed_budget_is_rejected (native_research.tests.test_pd_timeline_analysis.TimelineAnalysisTests.test_missing_or_reversed_budget_is_rejected) ... ok
+test_p_then_d_gate_sum (native_research.tests.test_pd_timeline_analysis.TimelineAnalysisTests.test_p_then_d_gate_sum) ... ok
+test_steps_are_weighted_once_per_batch (native_research.tests.test_pd_timeline_analysis.TimelineAnalysisTests.test_steps_are_weighted_once_per_batch) ... ok
+test_all_methods_tp1_tp8_chunks_and_d_local_prefill (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_all_methods_tp1_tp8_chunks_and_d_local_prefill) ... ok
+test_busy_d_worker_message_precedes_scheduler_insertion (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_busy_d_worker_message_precedes_scheduler_insertion) ... ok
+test_failure_closes_partial_csv (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_failure_closes_partial_csv) ... worker 0 failed while handling Task.STEP for requests=[] metadata=None
+Traceback (most recent call last):
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/worker.py", line 377, in run
+    latency = yield from run_worker_compute(self, running)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/af_worker.py", line 105, in run_worker_compute
+    return (yield from _complete_compute(worker, running))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/af_worker.py", line 85, in _complete_compute
+    yield from worker.engine.run_complete_compute(worker.id, latency)
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/research/native_timeline_hooks.py", line 61, in compute
+    result = yield from original_compute(worker_id, latency)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/tests/test_native_timeline.py", line 336, in fail
+    raise RuntimeError("injected compute failure")
+RuntimeError: injected compute failure
+worker 0 failed while handling Task.STEP for requests=[] metadata=None
+Traceback (most recent call last):
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/worker.py", line 377, in run
+    latency = yield from run_worker_compute(self, running)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/af_worker.py", line 105, in run_worker_compute
+    return (yield from _complete_compute(worker, running))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/af_worker.py", line 85, in _complete_compute
+    yield from worker.engine.run_complete_compute(worker.id, latency)
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/research/native_timeline_hooks.py", line 61, in compute
+    result = yield from original_compute(worker_id, latency)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/tests/test_native_timeline.py", line 336, in fail
+    raise RuntimeError("injected compute failure")
+RuntimeError: injected compute failure
+worker 0 failed while handling Task.STEP for requests=[] metadata=None
+Traceback (most recent call last):
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/worker.py", line 377, in run
+    latency = yield from run_worker_compute(self, running)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/af_worker.py", line 105, in run_worker_compute
+    return (yield from _complete_compute(worker, running))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/llm/engine/af_worker.py", line 85, in _complete_compute
+    yield from worker.engine.run_complete_compute(worker.id, latency)
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/TokenSim/research/native_timeline_hooks.py", line 61, in compute
+    result = yield from original_compute(worker_id, latency)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/migrationtax-bandwidth-publish-20261111/TokenSim/tests/test_native_timeline.py", line 336, in fail
+    raise RuntimeError("injected compute failure")
+RuntimeError: injected compute failure
+ok
+test_hf_short_responses_and_ff_store_reads (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_hf_short_responses_and_ff_store_reads) ... ok
+test_migration_lost_d_hit_records_only_successful_acquisitions (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_migration_lost_d_hit_records_only_successful_acquisitions) ... ok
+test_rejected_request_is_explicit (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_rejected_request_is_explicit) ... ok
+test_shared_batch_and_budget_wait (TokenSim.tests.test_native_timeline.NativeTimelineTests.test_shared_batch_and_budget_wait) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 62.482s
+
+OK

@@ -25,6 +25,7 @@ def install_admission(admission):
             yield admission.budgets[d.id].get(d_blocks)
             admission.track_peak(d)
             if admission.router._hits(d, req) >= req.prefix_tokens:
+                admission.observe_budget(req, d)
                 p = admission.choose_p(req)
                 admission.acquired(req, p, d, 0, d_blocks, started)
                 try:
@@ -39,12 +40,14 @@ def install_admission(admission):
             raise ValueError("Source cannot fit native P live-block budget")
         yield admission.budgets[p.id].get(p_blocks)
         admission.track_peak(p)
+        admission.observe_budget(req, p)
         try:
             d = admission.choose_d(req)
             if d_blocks > admission.budgets[d.id].capacity:
                 raise ValueError("Source cannot fit native D live-block budget")
             yield admission.budgets[d.id].get(d_blocks)
             admission.track_peak(d)
+            admission.observe_budget(req, d)
         except BaseException:
             admission.budgets[p.id].put(p_blocks)
             raise

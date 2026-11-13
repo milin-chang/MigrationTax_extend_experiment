@@ -1,0 +1,85 @@
+{
+  "nvl4": {
+    "data_root": "config/mooncake7b-h100-tp1-pd-timeline-s0-02/data_nvl4",
+    "selected_link": "nvlink4",
+    "bandwidth_bytes_per_s": 450000000000.0,
+    "latency_us": 1.0,
+    "tp_scale_up_link": "nvlink4",
+    "host_link": "nvlink4",
+    "native_link_metadata": {
+      "display_name": "NVLink 4 via NVSwitch (H100/H200/H20), aggregate per GPU",
+      "bandwidth_per_direction_bytes_per_s": "450.0e9",
+      "latency_us": 1.0,
+      "duplex": "full",
+      "half_bandwidth_bytes": 4194304,
+      "collective_efficiency": 0.5,
+      "source_id": "nvidia-h100-datasheet",
+      "notes": "900 GB/s bidirectional total across 18 links."
+    },
+    "kv_service_formula": "selected_link.latency_us/1e6 + full_TP_KV_bytes / selected_link.bandwidth_per_direction_bytes_per_s",
+    "half_bandwidth_ramp_applied_to_kv": false,
+    "collective_efficiency_applied_to_kv": false,
+    "note": "Native uniform Mooncake KV transport uses peak bandwidth and fixed latency only; link ramp/collective fields remain catalog metadata. TP collectives use fixed nvlink4 independently."
+  },
+  "pcie6": {
+    "data_root": "config/mooncake7b-h100-tp1-pd-timeline-s0-02/data_pcie6",
+    "selected_link": "pcie6_x16",
+    "bandwidth_bytes_per_s": 128000000000.0,
+    "latency_us": 3.0,
+    "tp_scale_up_link": "nvlink4",
+    "host_link": "pcie6_x16",
+    "native_link_metadata": {
+      "display_name": "PCIe 6.0 x16",
+      "bandwidth_per_direction_bytes_per_s": "128.0e9",
+      "latency_us": 3.0,
+      "duplex": "full",
+      "half_bandwidth_bytes": 1048576,
+      "collective_efficiency": 0.7,
+      "source_id": "pcie-sig-spec"
+    },
+    "kv_service_formula": "selected_link.latency_us/1e6 + full_TP_KV_bytes / selected_link.bandwidth_per_direction_bytes_per_s",
+    "half_bandwidth_ramp_applied_to_kv": false,
+    "collective_efficiency_applied_to_kv": false,
+    "note": "Native uniform Mooncake KV transport uses peak bandwidth and fixed latency only; link ramp/collective fields remain catalog metadata. TP collectives use fixed nvlink4 independently."
+  },
+  "ib400": {
+    "data_root": "config/mooncake7b-h100-tp1-pd-timeline-s0-02/data_ib400",
+    "selected_link": "ib_ndr400",
+    "bandwidth_bytes_per_s": 50000000000.0,
+    "latency_us": 3.0,
+    "tp_scale_up_link": "nvlink4",
+    "host_link": "ib_ndr400",
+    "native_link_metadata": {
+      "display_name": "InfiniBand NDR 400 Gb/s NIC",
+      "bandwidth_per_direction_bytes_per_s": "50.0e9",
+      "latency_us": 3.0,
+      "duplex": "full",
+      "half_bandwidth_bytes": 8388608,
+      "collective_efficiency": 0.85,
+      "source_id": "nvidia-connectx-7-datasheet"
+    },
+    "kv_service_formula": "selected_link.latency_us/1e6 + full_TP_KV_bytes / selected_link.bandwidth_per_direction_bytes_per_s",
+    "half_bandwidth_ramp_applied_to_kv": false,
+    "collective_efficiency_applied_to_kv": false,
+    "note": "Native uniform Mooncake KV transport uses peak bandwidth and fixed latency only; link ramp/collective fields remain catalog metadata. TP collectives use fixed nvlink4 independently."
+  },
+  "inf": {
+    "data_root": "config/mooncake7b-h100-tp1-pd-timeline-s0-02/data_inf",
+    "selected_link": "inf_link",
+    "bandwidth_bytes_per_s": 1000000000000000.0,
+    "latency_us": 0.0,
+    "tp_scale_up_link": "nvlink4",
+    "host_link": "inf_link",
+    "native_link_metadata": {
+      "bandwidth_per_direction_bytes_per_s": 1000000000000000.0,
+      "latency_us": 0.0,
+      "half_bandwidth_bytes": 0,
+      "source_id": "five-stage-ideal-reference",
+      "grade": "D"
+    },
+    "kv_service_formula": "selected_link.latency_us/1e6 + full_TP_KV_bytes / selected_link.bandwidth_per_direction_bytes_per_s",
+    "half_bandwidth_ramp_applied_to_kv": false,
+    "collective_efficiency_applied_to_kv": false,
+    "note": "Native uniform Mooncake KV transport uses peak bandwidth and fixed latency only; link ramp/collective fields remain catalog metadata. TP collectives use fixed nvlink4 independently."
+  }
+}

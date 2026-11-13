@@ -1,0 +1,17 @@
+{
+  "label": "ib400",
+  "bandwidth_bytes_per_s": 50000000000.0,
+  "reference": false,
+  "time_unit": "s",
+  "bandwidth_unit": "decimal bytes/s",
+  "bandwidth_scope": "Full model KV bundle per TP group endpoint; not per rank",
+  "data_root": "config/mooncake7b-h100-tp4-pd-timeline-s0-02/data_ib400",
+  "cluster_path": "config/mooncake7b-h100-tp4-pd-timeline-s0-02/cluster.json",
+  "transfer_path": "config/mooncake7b-h100-tp4-pd-timeline-s0-02/transfer_ib400.json",
+  "input_manifest": "config/mooncake7b-h100-tp4-pd-timeline-s0-02/input-manifest.json",
+  "input_selection": "Full Mooncake shifted-v1 seed-0 input, byte-identical to TP1/TP8; no filtering, clipping or arrival rescaling",
+  "tp_collective_link": "nvlink4",
+  "tp_collective_bandwidth_bytes_per_s": 450000000000.0,
+  "memory_bandwidth_changed": false,
+  "tp_collective_applicable": true
+}

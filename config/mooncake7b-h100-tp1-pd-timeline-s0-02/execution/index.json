@@ -1,0 +1,11 @@
+{
+  "batches": [
+    {
+      "id": "all-mooncake",
+      "phase": "1+3+4",
+      "count": 10,
+      "plan": "config/mooncake7b-h100-tp1-pd-timeline-s0-02/execution/all-mooncake.plan.json"
+    }
+  ],
+  "total_jobs": 10
+}

@@ -111,7 +111,14 @@ def main():
     p.add_argument("--limit", type=int)
     p.add_argument("--hardware-profile", type=Path)
     p.add_argument("--experiment-config", type=Path)
+    p.add_argument(
+        "--record-timeline",
+        action="store_true",
+        help="Stream TokenSim request/worker-step CSV diagnostics into the run output",
+    )
     a = p.parse_args()
+    if a.record_timeline and a.backend != "tokensim":
+        p.error("--record-timeline requires TokenSim")
     a.output = a.output.resolve()
     if a.hardware_profile is not None:
         a.hardware_profile = a.hardware_profile.resolve()
@@ -129,6 +136,7 @@ def main():
         seed=a.seed,
         input_sha256=sha256(a.input.read_bytes()).hexdigest(),
         limit=a.limit,
+        record_timeline=a.record_timeline,
         analytical_evaluate_used_for_timing=False,
         analytical_evaluate_guard=True,
         environment_versions={d.metadata["Name"]: d.version for d in distributions()},
@@ -223,6 +231,8 @@ def main():
         )
         if a.experiment_config is not None:
             options["experiment_config"] = a.experiment_config
+        if a.backend == "tokensim":
+            options["record_timeline"] = a.record_timeline
         result = module.execute(rows, a.method, a.seed, a.output, **options)
         report.update(status=result["status"])
     except NotImplementedError as error:

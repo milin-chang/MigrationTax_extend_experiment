@@ -76,6 +76,11 @@ class NativeAdmission:
     def track_peak(self, worker):
         self.peak[worker.id] = max(self.peak[worker.id], self.occupied(worker))
 
+    def observe_budget(self, req, worker):
+        timeline = getattr(self.engine, "native_timeline", None)
+        if timeline is not None:
+            timeline.budget(req, worker.role)
+
     def acquired(self, req, p, d, p_blocks, d_blocks, started):
         req.native_budget_p, req.native_budget_d = p, d
         req.native_budget_blocks = (p_blocks, d_blocks)
@@ -102,6 +107,7 @@ class NativeAdmission:
                 yield gate
             self.track_peak(d)
             if self.router._hits(d, req) >= req.prefix_tokens:
+                self.observe_budget(req, d)
                 p = self.choose_p(req)
                 self.acquired(req, p, d, 0, d_blocks, started)
                 try:
@@ -118,6 +124,7 @@ class NativeAdmission:
         with self.budgets[p.id].get(p_blocks) as gate:
             yield gate
         self.track_peak(p)
+        self.observe_budget(req, p)
         try:
             d = self.choose_d(req)
             if d_blocks > self.budgets[d.id].capacity:
@@ -125,6 +132,7 @@ class NativeAdmission:
             with self.budgets[d.id].get(d_blocks) as gate:
                 yield gate
             self.track_peak(d)
+            self.observe_budget(req, d)
         except BaseException:
             self.budgets[p.id].put(p_blocks)
             raise

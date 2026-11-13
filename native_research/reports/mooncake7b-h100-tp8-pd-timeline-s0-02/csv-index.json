@@ -1,0 +1,52 @@
+[
+  {
+    "id": "pd02-tp8-inf-serial-s0",
+    "csv": "pd02-tp8-inf-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-nvl4-serial-s0",
+    "csv": "pd02-tp8-nvl4-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-nvl4-ppd-s0",
+    "csv": "pd02-tp8-nvl4-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-nvl4-migrationtax-s0",
+    "csv": "pd02-tp8-nvl4-migrationtax-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-pcie6-serial-s0",
+    "csv": "pd02-tp8-pcie6-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-pcie6-ppd-s0",
+    "csv": "pd02-tp8-pcie6-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-pcie6-migrationtax-s0",
+    "csv": "pd02-tp8-pcie6-migrationtax-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-ib400-serial-s0",
+    "csv": "pd02-tp8-ib400-serial-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-ib400-ppd-s0",
+    "csv": "pd02-tp8-ib400-ppd-s0-requests.csv",
+    "rows": 12031
+  },
+  {
+    "id": "pd02-tp8-ib400-migrationtax-s0",
+    "csv": "pd02-tp8-ib400-migrationtax-s0-requests.csv",
+    "rows": 12031
+  }
+]

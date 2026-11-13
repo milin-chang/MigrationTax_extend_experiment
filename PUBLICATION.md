@@ -43,6 +43,24 @@
 
 製圖腳本會驗證原始 `runs/` 的逐筆事件與稽核收據。分支中的 CSV 與圖表可直接閱讀；重新執行驗證式製圖還需要對應的本機原始紀錄。既有 Release 僅包含最初三批 TP8 備份，未因本次分支更新而改寫。
 
+## 新增 P／D 時間觀測報告（2026-11-13）
+
+修正 MigrationTax 專用准入分支的 P／D 預算時間戳後，Mooncake shifted v1、seed 0、TP1／4／8 各十條件皆已完成，共 30／30。
+本次分支新增三批完整設定、觀測功能的程式與測試、分析／製圖工具與下列報告；既有 Release 保持原有附件。
+
+- [TP1／4／8 圖表與欄位說明總覽](native_research/reports/mooncake-pd-timeline-tp1-4-8-s0-02/PD_TIMELINE.md)
+- [TP1：8 GPU](native_research/reports/mooncake7b-h100-tp1-pd-timeline-s0-02/PD_TIMELINE.md)
+- [TP4：32 GPU](native_research/reports/mooncake7b-h100-tp4-pd-timeline-s0-02/PD_TIMELINE.md)
+- [TP8：64 GPU](native_research/reports/mooncake7b-h100-tp8-pd-timeline-s0-02/PD_TIMELINE.md)
+
+各批包含 `figure.png/svg`（TTFT 與 P／D 等待）、`worker-steps.png/svg`（每步載入、運算與 batch）、`matched-request-timeline.png/svg`（同一請求三方法時間線）、`ttft-decomposition.png/svg`（TTFT 占比），以及統計 CSV、欄位公式、驗證紀錄。
+每批的 `request-timelines.zip` 收錄十條件完整逐請求 P／D 時間戳，供比對；只把指定請求的少量逐步／傳輸樣本納入 Git 報告，完整的逐步與傳輸 CSV 保留於本機 `runs/`。
+這 30 條件的 `requests.jsonl` 與加觀測前對應實驗逐位元組相同；校驗值見各報告的 `pd-integrity.json`。
+
+TP1 的長 TTFT 主要出現在前輪依賴與 adapter 的 KV 准入等待；短的引擎內 D queue 不足以證明 D 沒有壓力。
+TP 改變時 GPU 總數與 KV 容量也改變；本次沒有調低 arrival rate，也沒有重新校準 analytical 計時。
+觀測功能以 `--record-timeline` 開啟，輸出欄位定義見 [TokenSim/docs/native-timeline.md](TokenSim/docs/native-timeline.md)。
+
 ## Release 資產
 
 | 資產 | 內容 |

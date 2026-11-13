@@ -1,0 +1,228 @@
+{
+  "unit_and_coverage": {
+    "status": "passed",
+    "verified_utc": "2026-11-12T22:48:11.601824+00:00",
+    "unit_tests": 658,
+    "cli_pairs": 6,
+    "request_records_unchanged": true,
+    "coverage": [
+      {
+        "tp": 1,
+        "trace": "mooncake",
+        "requests": 128,
+        "d_timestamps": 128,
+        "p_timestamps": 128,
+        "p_required": 128
+      },
+      {
+        "tp": 1,
+        "trace": "servegen",
+        "requests": 128,
+        "d_timestamps": 128,
+        "p_timestamps": 127,
+        "p_required": 127
+      },
+      {
+        "tp": 4,
+        "trace": "mooncake",
+        "requests": 128,
+        "d_timestamps": 128,
+        "p_timestamps": 128,
+        "p_required": 128
+      },
+      {
+        "tp": 4,
+        "trace": "servegen",
+        "requests": 128,
+        "d_timestamps": 128,
+        "p_timestamps": 127,
+        "p_required": 127
+      },
+      {
+        "tp": 8,
+        "trace": "mooncake",
+        "requests": 128,
+        "d_timestamps": 128,
+        "p_timestamps": 128,
+        "p_required": 128
+      },
+      {
+        "tp": 8,
+        "trace": "servegen",
+        "requests": 128,
+        "d_timestamps": 128,
+        "p_timestamps": 127,
+        "p_required": 127
+      }
+    ],
+    "fix_source_sha256": "dafd2f0bf89df3010d8549f868c44d077d82e2f3878f8ae52b8fb442a65d7a99"
+  },
+  "cli_on_off": {
+    "status": "passed",
+    "started_utc": "2026-11-12T22:44:59.094730+00:00",
+    "cases": [
+      {
+        "tp": 1,
+        "trace": "mooncake",
+        "method": "MigrationTax",
+        "status": "passed",
+        "requests": 128,
+        "returning": 1,
+        "baseline": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp1/mooncake/nvl4/MigrationTax/baseline/seed-0",
+        "observed": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp1/mooncake/nvl4/MigrationTax/seed-0",
+        "wall_seconds": {
+          "baseline": 6.952641023992328,
+          "recorded": 7.358254673017655
+        },
+        "native_metrics_equal": true,
+        "request_records_equal": true,
+        "request_sha256": {
+          "baseline": "c7a4367bcb4d1fcdbb7801e3b694baaa571c1838dc74ea94db5a7d66e6aa886d",
+          "recorded": "c7a4367bcb4d1fcdbb7801e3b694baaa571c1838dc74ea94db5a7d66e6aa886d"
+        },
+        "csv_checks": {
+          "requests": 128,
+          "steps": 21728,
+          "explicit_transfers": 8128,
+          "status": "passed"
+        }
+      },
+      {
+        "tp": 1,
+        "trace": "servegen",
+        "method": "MigrationTax",
+        "status": "passed",
+        "requests": 128,
+        "returning": 41,
+        "baseline": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp1/servegen/nvl4/MigrationTax/baseline/seed-0",
+        "observed": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp1/servegen/nvl4/MigrationTax/seed-0",
+        "wall_seconds": {
+          "baseline": 9.470815909997327,
+          "recorded": 11.46964043501066
+        },
+        "native_metrics_equal": true,
+        "request_records_equal": true,
+        "request_sha256": {
+          "baseline": "5362fb67afe80f84d57bcd39605fe92bb43bed73957bfd2e2bd0f4f13902283c",
+          "recorded": "5362fb67afe80f84d57bcd39605fe92bb43bed73957bfd2e2bd0f4f13902283c"
+        },
+        "csv_checks": {
+          "requests": 128,
+          "steps": 75247,
+          "explicit_transfers": 5376,
+          "status": "passed"
+        }
+      },
+      {
+        "tp": 4,
+        "trace": "mooncake",
+        "method": "MigrationTax",
+        "status": "passed",
+        "requests": 128,
+        "returning": 1,
+        "baseline": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp4/mooncake/nvl4/MigrationTax/baseline/seed-0",
+        "observed": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp4/mooncake/nvl4/MigrationTax/seed-0",
+        "wall_seconds": {
+          "baseline": 10.03463573299814,
+          "recorded": 11.640444944001501
+        },
+        "native_metrics_equal": true,
+        "request_records_equal": true,
+        "request_sha256": {
+          "baseline": "d6d8bbe73d47efe5da748870a9e12fe9b9b6b4fea3edb7534f78aeaa7b2b12b9",
+          "recorded": "d6d8bbe73d47efe5da748870a9e12fe9b9b6b4fea3edb7534f78aeaa7b2b12b9"
+        },
+        "csv_checks": {
+          "requests": 128,
+          "steps": 36941,
+          "explicit_transfers": 8000,
+          "status": "passed"
+        }
+      },
+      {
+        "tp": 4,
+        "trace": "servegen",
+        "method": "MigrationTax",
+        "status": "passed",
+        "requests": 128,
+        "returning": 41,
+        "baseline": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp4/servegen/nvl4/MigrationTax/baseline/seed-0",
+        "observed": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp4/servegen/nvl4/MigrationTax/seed-0",
+        "wall_seconds": {
+          "baseline": 14.371042743994622,
+          "recorded": 17.290061718988
+        },
+        "native_metrics_equal": true,
+        "request_records_equal": true,
+        "request_sha256": {
+          "baseline": "07d638c4545de0db31d006c03a33c23c52077b34bf56dd851a8d6922cf88963c",
+          "recorded": "07d638c4545de0db31d006c03a33c23c52077b34bf56dd851a8d6922cf88963c"
+        },
+        "csv_checks": {
+          "requests": 128,
+          "steps": 78317,
+          "explicit_transfers": 5120,
+          "status": "passed"
+        }
+      },
+      {
+        "tp": 8,
+        "trace": "mooncake",
+        "method": "MigrationTax",
+        "status": "passed",
+        "requests": 128,
+        "returning": 1,
+        "baseline": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp8/mooncake/nvl4/MigrationTax/baseline/seed-0",
+        "observed": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp8/mooncake/nvl4/MigrationTax/seed-0",
+        "wall_seconds": {
+          "baseline": 10.349824695993448,
+          "recorded": 12.264186900982168
+        },
+        "native_metrics_equal": true,
+        "request_records_equal": true,
+        "request_sha256": {
+          "baseline": "ba9184db1d455a4aa883f1676d4b3c6e5c50b0edf828997b746be33a767023c2",
+          "recorded": "ba9184db1d455a4aa883f1676d4b3c6e5c50b0edf828997b746be33a767023c2"
+        },
+        "csv_checks": {
+          "requests": 128,
+          "steps": 38498,
+          "explicit_transfers": 8000,
+          "status": "passed"
+        }
+      },
+      {
+        "tp": 8,
+        "trace": "servegen",
+        "method": "MigrationTax",
+        "status": "passed",
+        "requests": 128,
+        "returning": 41,
+        "baseline": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp8/servegen/nvl4/MigrationTax/baseline/seed-0",
+        "observed": "native_research/runs/native-timeline-budget-fix-validation-s0-128-01/tp8/servegen/nvl4/MigrationTax/seed-0",
+        "wall_seconds": {
+          "baseline": 15.285400410997681,
+          "recorded": 18.32141125400085
+        },
+        "native_metrics_equal": true,
+        "request_records_equal": true,
+        "request_sha256": {
+          "baseline": "6e0cc4a7ef992d5a9f4854905328ee7d3dfd5b23b3c8d5c8cfd22044ecdfa387",
+          "recorded": "6e0cc4a7ef992d5a9f4854905328ee7d3dfd5b23b3c8d5c8cfd22044ecdfa387"
+        },
+        "csv_checks": {
+          "requests": 128,
+          "steps": 78762,
+          "explicit_transfers": 5120,
+          "status": "passed"
+        }
+      }
+    ],
+    "current": {
+      "tp": 8,
+      "trace": "servegen",
+      "method": "MigrationTax"
+    },
+    "completed_utc": "2026-11-12T22:47:26.574061+00:00"
+  }
+}
